@@ -71,7 +71,7 @@ Simply run ```npm run build```
 followed by ```npm run start``` to check if your application is working offline as well.
 
 #### Keep in Mind
-While working on your React project in the development environment using ```npm run dev```, you might not be able to fully experience all the Progressive Web App (PWA) functionality. To fully test your PWA features, you should build your project. However, you can still check if your PWA is functioning correctly by inspecting the 'Application' section in Chrome DevTools.
+While working on your React project in the development environment using ```npm run dev```, you might not be able to fully experience all the Progressive Web App (PWA) functionality. To fully test your PWA features, you should  `npm run build` your project and see in hte production mode. However, you can still check if your PWA is functioning correctly by inspecting the 'Application' section in Chrome DevTools.
 
 
 ![Chrome-Dev Tools/Application](https://github.com/abroroo/til/blob/main/PWA/pwaCheck-Applications.png?raw=true)
