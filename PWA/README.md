@@ -8,7 +8,7 @@
 PWA works with the help of [service workers](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/service-workers). So basically, when the user accesses your app, PWA's Service Worker is installed. The service worker then runs in parallel with your app and can continue doing work even when your app is not running. Service workers are responsible for intercepting, modifying, and responding to network requests.
 
 #### How do I add PWA functionality to a React.js r Next.js app? 
-1. Install the service worker. The two most common ones are [workbox](https://www.npmjs.com/package/workbox), [next-pwa](https://www.npmjs.com/package/next-pwa) , next-pwa is the most recent one, released in 2022.
+1. Install the service worker. The two most common ones are [workbox](https://www.npmjs.com/package/workbox), [next-pwa](https://www.npmjs.com/package/next-pwa) , next-pwa is the most recent one, published in 2022.
 
 ```
 npm i next-pwa 
@@ -64,12 +64,19 @@ Sample ```manifest.json``` file:
    ```
 
 ### and that should be it!
-Run ```npm run build```
-and then ```npm run start``` to check if your application is working offline as well.
+Simply run ```npm run build```
+followed by ```npm run start``` to check if your application is working offline as well.
 
-#### Rememeber to Note
-When you see your React project in the development environment, ```npm run dev```, not all PWA functionality can be observed. PWA functionality will be available in the built environment, But you can still check if your pwa is working in the Chrome Dev tools ```Application``` section 
+#### Keep in Mind
+While working on your React project in the development environment using ```npm run dev```, you might not be able to fully experience all the Progressive Web App (PWA) functionality. To fully test your PWA features, you should build your project. However, you can still check if your PWA is functioning correctly by inspecting the 'Application' section in Chrome DevTools.
+
 
 ![Chrome-Dev Tools/Application](https://github.com/abroroo/til/blob/main/PWA/pwaCheck-Applications.png?raw=true)
+
+
+
+
+
+
 
 
