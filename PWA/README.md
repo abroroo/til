@@ -1,7 +1,9 @@
 ## PWA (Progressive Web App)
 
 #### What is PWA?
-[Progeressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) is a functionality that can make webapps act like native apps in the Apple Store or Google Store. Your webapp is still going to be hosted on the web, but by adding PWA functionality to it, we can enable them to work offline, giving users a smooth experience regardless of their network connection or device.
+[Progeressive Web App](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) is a functionality that can make webapps act like native apps in the Apple Store or Google Store. 
+
+Your webapp is still going to be hosted on the web, but by adding PWA functionality to it, we can enable them to work offline, access to push notifications, and the ability to be added to the user's home screen for quick access giving users a smooth experience regardless of their network connection or device.
 
 #### How does it work?
 
