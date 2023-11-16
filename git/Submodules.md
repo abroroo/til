@@ -11,7 +11,7 @@ Then we learned about **[git submodules](https://git-scm.com/book/en/v2/Git-Tool
  
 It was also useful in our case, where we had a backend in Django and a frontend in Next.js
 
-### How To Use git submodules in Your Project Where You Have Backend and Frontend in Different Environments.  
+### How to use Git submodules in a project with separate backend and frontend environments.  
 1. First create separate repos for the backend and frontend. aka "submodules"
 2. Then create the main repository to include your backend and frontend as submodules.
    * `git init myProject cd myMainProject`
