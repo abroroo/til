@@ -13,7 +13,7 @@ It was also useful in our case, where we had a backend in Django and a frontend 
 
 ### How to use Git submodules in a project with separate backend and frontend environments.  
 1. First create separate repos for the backend and frontend. aka "submodules"
-2. Then create the main repository to include your backend and frontend as submodules.
+2. Then create the main repository to include your submodules (backend and frontend).
    * `git init myProject cd myMainProject`
 3. In the root of your myMainProject, add frontend and backend as submodule
    * `git submodule add <repository_URL> frontend`
