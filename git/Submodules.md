@@ -1,15 +1,15 @@
 ## Git Submodules
 
-So me and my friend were working on a project, frontend and backend with one git repo. I was making updates in frontend and he is in the backend, and we were commiting our chnages in our respective folders only `git add ./backend` or `git add ./frontend` and pushing them to the repo.
+So me and my friend were working on a project, frontend and backend, with one git repo. I was making updates in the frontend, and he was in the backend, and we were committing our changes in our respective folders only, `git add ./backend` or `git add ./frontend` and pushing them to the repo.
 
-However, we've got a problem, whenever either of us pushed changes in our designated folder, it unintentionally overwrote the contents of the `/frontend` or `/backend` directory too.
+However, we've got a problem: whenever either of us pushed changes in our designated folder, it unintentionally overwrote the contents of the `/frontend` or `/backend` directory too.
 
 Then we learned about **[git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)** , this [article](https://github.blog/2016-02-01-working-with-submodules/) also explains it well
 
 ***Submodule is repository embedded in your main repository. It is mostly used to include another project within your main project.***
 
  
-It also usefeul in our case where we had backend in Django and frontend in Next.js
+It was also useful in our case, where we had a backend in Django and a frontend in Next.js
 
 ### How To Use git submodules in Your Project Where You Have Backend and Frontend in Different Environments.  
 1. First create seperate repos for backend and frontend. aka "submodules"
