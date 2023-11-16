@@ -36,7 +36,7 @@ It was also useful in our case, where we had a backend in Django and a frontend 
 
  > Because of sub­mod­ules are ​“sta­t­i­cal­ly point­ed” at a spe­cif­ic com­mit object, you need ensure that you **push any changes to the sub­mod­ule project before you push up changes to the par­ent project**. If you don’t, you’ll have a par­ent project link­ing a sub­mod­ule at a com­mit object that doesn’t yet exist in a remote repository.
 
-1.  Go to your respective submodules `cd frontend` or `cd backend`, and make your changes. 
+1.  Go to your respective submodule `cd frontend` or `cd backend`, and make your changes. 
 2.  Commit your changes as usual `git add .` & `git commit -m " " `
 3.  Within your submodules, push the changes `git push`
 4.  ***Important part***
