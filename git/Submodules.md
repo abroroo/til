@@ -19,7 +19,7 @@ It was also useful in our case, where we had a backend in Django and a frontend 
    * `git submodule add <repository_URL> frontend`
    * `git submodule add <repository_URL> backend`
      
-   _Note:_ This submodules aren't cloned yet
+   _Note:_ These submodules aren't cloned yet
 
 4. Initialize (set up) the submodules. 
    * `git submodule init ` It adds the necessary submodule metadata to the repository so that Git is aware of the submodules.
