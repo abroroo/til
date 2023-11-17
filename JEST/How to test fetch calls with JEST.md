@@ -1,3 +1,3 @@
-## How to test fetch API's with JEST 
+## How to test fetch APIs with JEST 
 
 Coming soon ...
