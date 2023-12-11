@@ -5,7 +5,7 @@ Docker enables your app to run on any computer with the same configuration, for 
  ![, but it works on my computer problem](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAKilXOwKaMrv205lA2YL8ALeY2xgQunfVCKZl-AeL2vg73Wu0kJuFBNWHIV9QdGcTqAQ&usqp=CAU)
 
 
-Docker uses a concept of **image** which are like pre-packaged services (Node.js, MongoDB, Postgres, Ubuntu, etc.) ready to run in isolated containers. Think of them like npm packages in Node.js. See [docker hub](https://hub.docker.com/) for the collection of images available to use in docker containers  
+Docker uses a concept of **image** which is like a pre-packaged service (Node.js, MongoDB, Postgres, Ubuntu, etc.) ready to run in isolated containers. Think of them like npm packages in Node.js. See [docker hub](https://hub.docker.com/) for the collection of images available to use in docker containers  
 
 #### Getting Started: 
 1. Create a Dockerfile in your app's root directory. This text file instructs Docker how to build your application's image. Nameing _Dockerfile_ is required. 
