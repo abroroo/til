@@ -25,3 +25,23 @@ Docker uses a concept of **image** which are services you can run on docker cont
 
    ``` 
 
+* Then build the container with  `docker build -t anyContainerName`
+* Once the build is complete you can run it with `cocker run -it -d anyContainerName`  `-d` allows it to run in the background without opening the terminal with the container directory, if run without `-d` terminal navigates to the inside of the container  
+
+That should be it!
+
+You can also specify the port where the container should run, with `docker run -it -p 3000:3000 anyContainerName` port forward from : to port  
+
+
+**Other common commands:**
+
+`docker ps` can see current containers
+
+`docker exec -it containerId  bash` opens an interactive shell session inside the specified container, allowing you to execute commands and interact with the container's files and processes.
+
+`docker stop containerId`  stops a running container
+
+See all available commands in the [docs](https://docs.docker.com/engine/reference/commandline/cli/) 
+
+
+     
