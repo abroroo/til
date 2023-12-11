@@ -8,7 +8,7 @@ Docker enables your app to run on any computer with the same configuration, for 
 Docker uses a concept of **image** which is like a pre-packaged service (Node.js, MongoDB, Postgres, Ubuntu, etc.) ready to run in isolated containers. Think of them like npm packages in Node.js. See [docker hub](https://hub.docker.com/) for the collection of images available to use in docker containers  
 
 #### Getting Started: 
-1. Create a Dockerfile in your app's root directory. This text file instructs Docker how to build your application's image. Nameing _Dockerfile_ is required. 
+1. Create a Dockerfile in your app's root directory. This text file instructs Docker how to build your application's image. Naming _Dockerfile_ is required. 
   > A Dockerfile is a text file that contains instructions for building a Docker image. The Docker image is a self-contained package that includes everything needed to run       an application, including the application code, libraries, and dependencies. The Dockerfile ensures that your application is built the same way every time, regardless of the environment. This is important for reproducibility and debugging.
   Sample [Dockerfile](https://docs.docker.com/engine/reference/builder/)
    ```
