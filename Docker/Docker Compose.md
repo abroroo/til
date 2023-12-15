@@ -83,7 +83,7 @@ volumes:
 
 
 ```
-*You can learn more about available options for Compose file in [here](https://docs.docker.com/compose/compose-file/03-compose-file/)*
+*You can learn more about available options in [here](https://docs.docker.com/compose/compose-file/03-compose-file/)*
 
 * Once you have a Compose file, you can build it with following command:
 
