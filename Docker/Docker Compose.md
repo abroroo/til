@@ -9,7 +9,8 @@ Basically, it's a file with [some-name].yaml extension in the root of your proje
 ### How to get started with Docker Compose
 They have a very nice [tutorial](https://docs.docker.com/compose/gettingstarted/) on how to get started with docker compose. 
 
-For Mac and Windows, it comes with the Docker app that you have installed on your computer. So all you need to do is to create a docker-compose.yaml file in the root of your project. 
+For Mac and Windows, it comes with the Docker app that you have installed on your computer. 
+* So all you need to do is to create a docker-compose.yaml  file in the root of your project. _docker-compose.yml is the most common name for Docker Compose_
 
 Here's an example of a simple Compose file for a nextjs application with postgres database:
 
