@@ -82,13 +82,18 @@ volumes:
 
 
 ```
- **You can learn more about available options for Compose file in [here](https://docs.docker.com/compose/compose-file/03-compose-file/)**
+*You can learn more about available options for Compose file in [here](https://docs.docker.com/compose/compose-file/03-compose-file/)*
 
-Once you have a Compose file, you can use the following commands to manage your application:
+* Once you have a Compose file, you can build it with following command:
 
-`docker-compose up` : Starts all of the services defined in your Compose file.
+    `docker-compose up --build` - Builds and starts all of the services defined in your Compose file. You just need to build once, then you can run `docker-compose up` to start all of the services. 
 
-`docker-compose down` : Stops all of the services defined in your Compose file.
+* You can manage it with:
 
-`docker-compose ps` : Shows the status of all of the services defined in your Compose file.
+    `docker-compose down` - Stops all of the services defined in your Compose file.
+    
+    `docker-compose ps` - Shows the status of all of the services defined in your Compose file.
+    
+
+
 
