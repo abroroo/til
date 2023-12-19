@@ -3,7 +3,7 @@
 > Docker Compose is a tool for defining and running multi-container Docker applications. It lets you describe the services that make up your app in a YAML file, and then provides a convenient way to start, stop, and scale them.
 
 ### In my own words: 
-Basically, it's a file with [some-name].yaml [extension](https://yaml.org/) in the root of your project, with which you can manage multiple docker containers. Instead of having to manage each container individually, you can define them all in one place and then manage them as a group.
+Basically, it's a file with [some-name].[yaml extension](https://yaml.org/) in the root of your project, with which you can manage multiple docker containers. Instead of having to manage each container individually, you can define them all in one place and then manage them as a group.
 
 
 ### How to get started with Docker Compose
