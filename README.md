@@ -17,6 +17,6 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [What's docker](https://github.com/abroroo/til/blob/main/Docker/What%20is%20Docker%2C%20and%20how%20to%20use%20it.md)
 * [Docker Compose](https://github.com/abroroo/til/blob/main/Docker/Docker%20Compose.md)
 
-#### [WebSocket](https://github.com/abroroo/til/blob/main/Websocket)
+#### [WebSockets](https://github.com/abroroo/til/blob/main/Websocket)
 * [What's WebSockets and use case](https://github.com/abroroo/til/blob/main/Websocket/websocket.md)
 * [Websockets behind the scenes](https://github.com/abroroo/til/blob/main/Websocket/Websockets%20behind%20the%20scenes.md)
