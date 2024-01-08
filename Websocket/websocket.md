@@ -1,5 +1,5 @@
 
-So, I got curious about [Tenserflow.js Models](https://www.tensorflow.org/js/models) after reading this [article](https://dev.to/devdevcharlie/acoustic-activity-recognition-in-javascript-2go4) in medium about sound recognizer. 
+So, I got curious about [Tenserflow.js Models](https://www.tensorflow.org/js/models) after reading this [article](https://dev.to/devdevcharlie/acoustic-activity-recognition-in-javascript-2go4) in medium.
 
 I wanted it to try it myself with Next.js. The goal was simple: use the microphone to capture sounds and then identify them based on predefined classes I'd set up with [Google Teachable Machine](https://teachablemachine.withgoogle.com/v1/)
 
