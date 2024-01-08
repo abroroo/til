@@ -17,7 +17,36 @@ Given the real-time nature of what I wanted to achieve **capturing and analyzing
 
 In other words: 
 
-Instead of constantly setting up new connections between the frontend and backend every time when you need to send or receive data, WebSockets set up this cool handshake thing. It's like they're creating a direct line between your browser and the server. This way, they can shoot data back and forth super quickly, making it perfect for stuff like chat apps where you want things to happen instantly.
+Instead of constantly setting up new connections between the frontend and backend every time when you need to send or receive data, WebSockets set up this cool handshake thing. WebSockets Handshake ```ws://``` or with SLL `wss://`. It's like they're creating a direct line between your browser and the server. This way, they can shoot data back and forth super quickly, making it perfect for stuff like chat apps where you want things to happen instantly.
 
 It's mostly used in chat apps where sending and receiveing data should be very fast in real time. 
+
+### Here is how it works: 
+First it makes a HTTP 1.1 request with special `UPGRADE: websocket` header in that request, and when server receives it, it will upgrade the protocol sending back `101 - Switching Protocols` and that's the HandShake essentially. 
+
+#### Here's how sample WebSocket Handshake looks like 
+
+#### Client 
+
+```
+GET /chat HTTP/1.1
+Host: server.example.com
+Upgrade: websocket
+Connection: Upgrade
+Sec-Websocket-Key: x3JJHMbDLEzLkh9Gv3d...
+Sec-Websocket-Protocol: chat, superchat
+Sec-Websocket-Version: 13
+Origin: https://example.com
+```
+Client just do GET request with these headers, the headers like `Sec-Websocket-` are needed for the server to do some hashing and seeding and send back `Sec-Websocket-Accept` to the client so that client can verify and authenticate the server who's is sending the request. 
+
+#### Server
+
+```
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Sec-Websocket-Accept: HSmrcw0ksdlsdfs3mfdfg1DLkls...
+Sec-Websocket-Protocol: chat
+```
+
 
