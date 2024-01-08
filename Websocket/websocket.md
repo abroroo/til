@@ -16,6 +16,7 @@ Given the real-time nature of what I wanted to achieve **capturing and analyzing
 > The [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 
 In other words: 
+
 Instead of constantly setting up new connections between the frontend and backend every time when you need to send or receive data, WebSockets set up this cool handshake thing. It's like they're creating a direct line between your browser and the server. This way, they can shoot data back and forth super quickly, making it perfect for stuff like chat apps where you want things to happen instantly.
 
 It's mostly used in chat apps where sending and receiveing data should be very fast in real time. 
