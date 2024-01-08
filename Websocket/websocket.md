@@ -64,8 +64,13 @@ export default function handler(req, res) {
 }
 
 ```
+The server sets up a Socket.io instance on its HTTP server.
+- Connection Handling: When a client connects `connection` event, a callback function runs to handle events from that client.
+- Event Listening: The server listens for an event named `audioData` from the client.
+- Data Processing: Upon receiving audioData, the server processes the data (mutates it in this case) and emits the processed data back to all connected clients using the `soundPrediction` event.
+- Disconnection: The server listens for disconnection events `disconnect` and logs when a client disconnects.
 
-Your client side 
+#### Client side 
 
 ```
 import { useEffect } from 'react';
@@ -109,6 +114,10 @@ const audio = ['Data'];
 
 ```
 
-
+Connection Setup: The client establishes a connection to the server `api/socket`
+ - Connection Confirmation: Upon successful connection `connect` event, the client sends an `audioData` event to the server.
+ - Listening to Server: The client listens for the `soundPrediction` event from the server.
+ - Disconnection Handling: The client listens for disconnection events `disconnect` and logs when disconnected.
+ - Cleanup: When the component unmounts or the effect cleanup runs, the client disconnects from the server.
 
 
