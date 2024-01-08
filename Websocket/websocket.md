@@ -1,5 +1,5 @@
 
-So, I got curious about [Tenserflow.js Models](https://www.tensorflow.org/js/models) after reading this [article](https://dev.to/devdevcharlie/acoustic-activity-recognition-in-javascript-2go4) in medium about sound recognizer. So i wanted it to try it myself. The goal was simple: use the microphone to capture sounds and then identify them based on predefined classes I'd set up with Google Teachable Machine.
+So, I got curious about [Tenserflow.js Models](https://www.tensorflow.org/js/models) after reading this [article](https://dev.to/devdevcharlie/acoustic-activity-recognition-in-javascript-2go4) in medium about sound recognizer. So i wanted it to try it myself. The goal was simple: use the microphone to capture sounds and then identify them based on predefined classes I'd set up with [Google Teachable Machine](https://teachablemachine.withgoogle.com/v1/)
 
 Starting on the frontend, I needed a way to access the user's microphone. I learned that I can do with WebRTC. Once I had access to the raw audio, I discovered the Web Audio API which enables to process and transform raw audio into a format I could work with. This API essentially helped me convert those sound waves into actionable data points.
 
