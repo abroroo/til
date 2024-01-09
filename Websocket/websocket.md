@@ -17,7 +17,7 @@ Given the real-time nature of what I wanted to achieve **capturing and analyzing
 
 In other words: 
 
-Instead of constantly setting up new connections between the frontend and backend every time when you need to send or receive data, WebSockets set up this cool handshake thing. WebSockets Handshake ```ws://``` or with SLL `wss://`. It's like they're creating a direct line between your browser and the server. This way, they can shoot data back and forth super quickly, making it perfect for stuff like chat apps where you want things to happen instantly.
+Instead of constantly setting up new connections between the frontend and backend every time when you need to send or receive data, WebSockets set up this cool handshake thing. WebSockets Handshake ```ws://``` or with SSL `wss://`. It's like they're creating a direct line between your browser and the server. This way, they can shoot data back and forth super quickly, making it perfect for stuff like chat apps where you want things to happen instantly.
 
 ### How to set up socket in nextjs?
 
