@@ -22,7 +22,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [Websockets behind the scenes](https://github.com/abroroo/til/blob/main/Websocket/Websockets%20behind%20the%20scenes.md)
 
 #### [WebRTC](https://github.com/abroroo/til/blob/main/WebRTC)
-* [What's WebRTC and How to Use It?](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
+* [What's WebRTC and How to Use It](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
 
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
-* [What's Web Audio API and How to Use it?](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md) 
+* [How to Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md) 
