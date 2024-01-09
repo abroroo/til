@@ -1,6 +1,6 @@
 [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) is very cool api that helps to create and manipulate audio in web applications. I've tried it with Audio Visualization, here is a good [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API) on how to do it!
 
-### Key Components of Web Audio API:
+### Key Components:
 #### [AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext):
 
 The core of the Web Audio API is the `AudioContext` interface.
@@ -15,7 +15,7 @@ It's the main container or environment where you create, process, and manage aud
   * Processing Nodes: Modify or process audio (e.g., `GainNode` for volume control, `BiquadFilterNode` for filtering).
   * Destination Node: Represents the final output (usually the speakers or headphones).
 
- ### How to Use Web Audio API
+ ### How to Use 
 
 1. Creating an AudioContext:
    
