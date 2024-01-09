@@ -25,4 +25,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [What's WebRTC and How to Use It](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
 
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
-* [How to Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md) 
+* [How to Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
+
+#### [Canvas](https://github.com/abroroo/til/blob/main/Canvas)
+* [Intro To Canvas](https://github.com/abroroo/til/blob/main/Canvas/CanvasIntro.md)
