@@ -1,5 +1,6 @@
 ### What's WebRTC? 
-(Web Real-Time Communication)
+(Web Real-Time Communication) native to browsers
+
 [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) allows two browsers to talk directly to each other without needing a server in the middle. 
 Built with set of protocols and APIs, it can give access to microphone, camera and enables to connect with other browsers. 
 WebRTC is mostly useful for video streams or phone calls via the web ([used](https://medium.com/swlh/webrtc-the-technology-that-powers-google-meet-hangout-facebook-messenger-and-discord-cb926973d786) in Goole Meets, Discord)  
