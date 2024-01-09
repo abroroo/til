@@ -1,4 +1,4 @@
-[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) is very cool api that helps to create and manipulate audio in web applications. I've tried it with Audio Visualization, here is a good [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API) on how to do it!
+[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) is very cool api that helps to create and manipulate audio in web applications. I've tried it with Audio Visualization, they have a very good [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API) on how to do it!
 
 ### Key Components:
 #### [AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext):
