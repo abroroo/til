@@ -6,7 +6,7 @@ It explains it so well, I'll just add what I learned with additonal research on 
 
 So, 
 ## What's JS Engine? 
-> A JavaScript engine is a program or an integral part of a web browser that interprets and executes JavaScript code. It's responsible for taking the JavaScript source code, parsing it, and then executing the instructions. Each browser has its own JavaScript engine.
+> A JavaScript engine is simply a computer program that executes JavaScript code. It's responsible for translating human-readable JavaScript code into machine-readable instructions that the computer's hardware can execute.
 
  Some of the popular ones include:
   - V8 (used in Google Chrome)
