@@ -2,7 +2,7 @@ I came across this very simple and brilliant [article](https://www.freecodecamp.
 
 Highly recommend to [read](https://www.freecodecamp.org/news/javascript-engine-and-runtime-explained/) it yourself
 
-It explains it so well, I'll just add what I learned with additonal research on the topic
+It explains it so well, I'll just add my summary of the article with some additonal research on the topic
 
 So, 
 ## What's JS Engine? 
@@ -15,6 +15,13 @@ So,
   - Chakra (used in Microsoft Edge):
 
 
-### JS Engine in my own words: 
+### Js engine has two components : 
+
+**Call Stack** and **Heap**
+
+- In CallStack our code gets executed, it manages the order in which functions are called, each new function is added on top (stack data structure (Last In First Out)), when fnished execusion, its removed from top, and function below are left to be executed
+- Heap is something like an open space where you can store things. In the case of JavaScript, it's where the computer allocates memory for variables and objects.
+
+ 
 
 
