@@ -56,4 +56,7 @@ We'are done with the concepts, now let's get to the process
    > Once the program is running, the JavaScript engine doesn't stop there. It continues to work in the background to optimize the code further.
    > 
 4. ### The engine takes the already pre-compiled code that is currently running and applies optimizations to make it more efficient.
-   > It does things like reordering instructions, inlining functions, or removing unnecessary operations 
+   > It does things like reordering instructions, inlining functions, or removing unnecessary operations
+
+
+#### Conceptually this it, if you want to have a look how it works in real example , you can read [second part](https://github.com/abroroo/til/blob/main/Javascript/Javascript%20Runtime.md) 
