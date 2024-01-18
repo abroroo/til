@@ -23,7 +23,7 @@ When you write JavaScript code and run it in a browser, the code doesn't directl
   
 - Heap - is something like an open space where you can store things. In the case of JavaScript, it's where the computer allocates memory for variables and objects.
 
-![](https://www.freecodecamp.org/news/content/images/2024/01/js_engine.png)
+<img src="https://www.freecodecamp.org/news/content/images/2024/01/js_engine.png" width="600" height="400">
 
 ### **Compiliation** vs **Interpretation** 
 
