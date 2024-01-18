@@ -44,7 +44,7 @@ Let's take as an example *button click handler* function and see how it is execu
 
     So, in short, the event loop takes callback functions from the callback queue and puts it into the call stack, so that it can be executed.
 
-__Event Loop__ is itself another topic to read on, there is additional process you might wanna learn:
+__Event Loop__ is itself another topic to consider, there is additional process you might wanna read on:
 
 * __Garbage Collection:__ reclaims any unused memory so your code doesn't get bogged down with clutter.
 * __WebAssembly:__ This is like inviting a friend who speaks a different language (like C++ or Rust) to the JavaScript playground. It lets you run code written in other languages alongside your JavaScript, making things even more powerful and versatile. 
