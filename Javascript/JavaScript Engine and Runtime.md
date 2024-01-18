@@ -41,19 +41,19 @@ JS engine uses JIT, where only the specific parts of the code that are needed fo
 We'are done with the concepts, now let's get to the process 
 
 
- ## How actually Javascript gets converted into hardware-readable (binary) code?
+ # How actually Javascript gets converted into hardware-readable (binary) code?
 
-1. Whenever a piece of JavaScript code enters the engine, the first step is to parse the code. 
+1. ### Whenever a piece of JavaScript code enters the engine, the first step is to parse the code. 
 
    During this parsing process, the code is parsed into a data structure called the AST (Abstract Syntax Tree). This step also checks if there are any syntax errors. 
 
    You don't need to know or understand how AST works, just for curiosity you can play around in [here](https://astexplorer.net/#/gist/8db37db99b4a20190a348d92618df357/fb9a6139ecd6f9c515bd5c20d165cd6dd4a2a425), to see how JS code looks like in AST.
 
-2. The next step is compilation. Here the engine takes the AST and compiles it to machine code.
-3. Then, this machine code gets executed immediately because its using JIT – remember that this execution happens in the call stack.
+2. ### The next step is compilation. Here the engine takes the AST and compiles it to machine code.
+3. ### Then, this machine code gets executed immediately because its using JIT – remember that this execution happens in the call stack.
    > The initial machine code generated might not be the most optimized for performance. The engine might prioritize quick execution over highly optimized code at this stage to start running the program as fast as possible.
    > 
    > Once the program is running, the JavaScript engine doesn't stop there. It continues to work in the background to optimize the code further.
    > 
-4. The engine takes the already pre-compiled code that is currently running and applies optimizations to make it more efficient.
+4. ### The engine takes the already pre-compiled code that is currently running and applies optimizations to make it more efficient.
    > It does things like reordering instructions, inlining functions, or removing unnecessary operations 
