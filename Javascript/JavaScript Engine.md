@@ -50,7 +50,7 @@ We'are done with the concepts, now let's get to the process
    You don't need to know or understand how AST works, just for curiosity you can play around in [here](https://astexplorer.net/#/gist/8db37db99b4a20190a348d92618df357/fb9a6139ecd6f9c515bd5c20d165cd6dd4a2a425), to see how JS code looks like in AST.
 
 2. ### The next step is compilation. Here the engine takes the AST and compiles it to machine code.
-3. ### Then, this machine code gets executed immediately because its using JIT – remember that this execution happens in the call stack.
+3. ### Then, this machine code gets executed immediately because its using JIT – this execution happens in the call stack.
    > The initial machine code generated might not be the most optimized for performance. The engine might prioritize quick execution over highly optimized code at this stage to start running the program as fast as possible.
    > 
    > Once the program is running, the JavaScript engine doesn't stop there. It continues to work in the background to optimize the code further.
