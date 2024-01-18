@@ -19,7 +19,7 @@ When you write JavaScript code and run it in a browser, the code doesn't directl
 
 **Call Stack** and **Heap**
 
-- CallStack - is where our code gets executed, it manages the order in which functions are called, each new __function__ (Execution Context) is added on top (stack data structure (Last In First Out)), when fnished execusion, its removed from top, and function below is next to be executed
+- CallStack - is where our code gets executed, it manages the order in which functions are called, each new __function__ (Execution Context) is added on top (stack data structure (Last In First Out)), when finished execusion its removed from top, and the function below is next to be executed
   
 - Heap - is something like an open space where you can store things. In the case of JavaScript, it's where the computer allocates memory for variables and objects.
 
@@ -27,10 +27,26 @@ When you write JavaScript code and run it in a browser, the code doesn't directl
 
 ### **Compiliation** vs **Interpretation** 
 
-- In **Compilation**, all of the code is converted into machine code at once and written in a binary file later to be executed by hardware
+- In **Compilation**, all of the code is converted into machine code first(written in a binary file) then it can be executed by hardware when needed. It is mostly refered as AOT - Ahead-Of-Time compiliation
 
 - In **Interpretation**, code still needs to get converted into binary code, but this time it is happening line by line simultaneously executing that line by hardware.
 
- ## How Javascript gets converted into hardware-readable (binary) code?
+#### Why need to know it? 
+Well we know that JS is a purely interpreted language. 
+
+But the modern JS engine now uses a mix of compilation and interpretation which is known as "just-in-time" (JIT) compilation.
+
+JS engine uses JIT, where only the specific parts of the code that are needed for execution are translated into machine code and executed by the hardware right away. 
+
+We'are done with the concepts, now let's get to the process 
 
 
+ ## How actually Javascript gets converted into hardware-readable (binary) code?
+
+1. Whenever a piece of JavaScript code enters the engine, the first step is to parse the code. 
+
+   During this parsing process, the code is parsed into a data structure called the AST (Abstract Syntax Tree). This step also checks if there are any syntax errors. 
+
+   You don't need to know or understand how AST works, just for curiosity you can play around in [here](https://astexplorer.net/#/gist/8db37db99b4a20190a348d92618df357/fb9a6139ecd6f9c515bd5c20d165cd6dd4a2a425), to see how JS code looks like in AST.
+
+2. The next step is compilation. Here the engine takes the AST and compiles it to machine code.
