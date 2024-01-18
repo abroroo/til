@@ -19,11 +19,11 @@ Just think of a JS runtime as a big box that includes all the things we need to 
 
 <img src="https://www.freecodecamp.org/news/content/images/2024/01/JS_runtime_1.png" width="400" height="250" />
 
+There are 3 main components of JS runtime in the browser: __JS engine__, __Web APIs__, __Callback Queue__
+
  - The core of a JS runtime is the __JS engine__.
 
- - JS runtimes, especially in the context of web browsers, come with __Web APIs__. 
-
-     - Web APIs are functionalities that are provided to the engine but they are not a part of the JavaScript language itself. JavaScript gets access to these APIs through the `window` object.
+ - __Web APIs__ are functionalities that are provided to the engine but they are not a part of the JavaScript language itself. JavaScript gets access to these APIs through the `window` object.
 
  - Asynchronous operations in JavaScript, such as handling user input or making network requests, utilize callback functions. These functions are placed in a queue known as the __Callback Queue__, awaiting execution.
 
@@ -38,9 +38,14 @@ Let's take as an example *button click handler* function and see how it is execu
    
      <img src="https://www.freecodecamp.org/news/content/images/2024/01/JS_runtime_5.png" width="400" height="250" />
 
-2. Then, when the call stack is empty, the callback queue gets passed to the call stack so that it can be executed and this happens by something called the Event Loop.
+2. Then, when the call stack is empty, the callback queue gets passed to the call stack so that it can be executed and this happens by something called the __Event Loop__.
 
    <img src="https://www.freecodecamp.org/news/content/images/2024/01/JS_runtime_7.png" width="400" height="250" />
 
     So, in short, the event loop takes callback functions from the callback queue and puts it into the call stack, so that it can be executed.
+
+__Event Loop__ is itself another topic to read on, there is additional process you might wanna learn:
+
+* __Garbage Collection:__ reclaims any unused memory so your code doesn't get bogged down with clutter.
+* __WebAssembly:__ This is like inviting a friend who speaks a different language (like C++ or Rust) to the JavaScript playground. It lets you run code written in other languages alongside your JavaScript, making things even more powerful and versatile. 
    
