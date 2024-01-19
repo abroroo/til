@@ -38,6 +38,6 @@ And a test for this function:
 
 ## Async/Await:
 
-The same aboove mentioned promise-based function can be tested using async/await too: 
+The same above mentioned promise based function can be tested using async/await too: 
 
 <img src="https://raw.githubusercontent.com/abroroo/til/main/JEST/images/2.2.png" width="900" height="200" />
