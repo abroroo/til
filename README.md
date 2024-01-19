@@ -25,7 +25,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [What's WebRTC and How to Use It](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
 
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
-* [How to Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
+* [Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
 
 #### [Canvas](https://github.com/abroroo/til/blob/main/Canvas)
 * [Intro To Canvas](https://github.com/abroroo/til/blob/main/Canvas/CanvasIntro.md)
@@ -35,4 +35,4 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [JS Runtime behind the scenes](https://github.com/abroroo/til/blob/main/Javascript/Javascript%20Runtime.md)
 
 #### [Jest](https://github.com/abroroo/til/blob/main/JEST)
-* [How to test fetch calls with Jest](https://github.com/abroroo/til/blob/main/JEST/How%20to%20test%20fetch%20calls%20with%20JEST.md)
+* [Test fetch calls with Jest](https://github.com/abroroo/til/blob/main/JEST/How%20to%20test%20fetch%20calls%20with%20JEST.md)
