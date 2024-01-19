@@ -14,7 +14,7 @@ Some common scenarios for asynchronous testing:
   - Modern syntax for handling promises.
 
 
-Let's go take a look at each scenario and how to test it using Jest. 
+Let's take a look at each scenario and how to test it using Jest. 
 
 ## Callback Functions:
 
