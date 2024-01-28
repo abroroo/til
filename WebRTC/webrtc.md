@@ -9,7 +9,7 @@ WebRTC is mostly useful for video streams or phone calls via the web ([used](htt
 There are three most common use cases
 #### 1. Get User Media (Access to Microphone & Camera):
 To initiate a media connection, you'll typically want to capture audio and/or video from the user's device. You can use `navigator.mediaDevices.getUserMedia` for this:
-```
+```javascript
 // Request access to the user's microphone and camera
 navigator.mediaDevices.getUserMedia({ audio: true, video: true })
   .then(stream => {
@@ -36,7 +36,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 Yuo will need RTCPeerConnection as the you set up a direct line between the two browsers. 
 It's the technology that lets you chat or call someone directly over the internet without a middleman. 
 You can use `RTCPeerConnection` to establish a connection with a remote peer:
-```
+```javascript
 const configuration = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
 const peerConnection = new RTCPeerConnection(configuration);
 
@@ -57,7 +57,7 @@ It's like a sending text message or sharing a small file while you're on a video
 
 You create an RTCDataChannel using `peerConnection.createDataChannel`:
 
-```
+```javascript
 const dataChannel = peerConnection.createDataChannel('myDataChannel');
 
 dataChannel.onopen = () => {
