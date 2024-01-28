@@ -15,7 +15,7 @@ For Mac and Windows, it comes with the Docker app that you have installed on you
 Here's an example of a simple Compose file for a nextjs application with postgres database:
 
 *# I've added comments to explain each option*
-```
+```yaml
 # Specifies the Docker Compose version used. This version is required for some features.
 
 version: "3.8"  
