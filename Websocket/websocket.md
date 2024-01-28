@@ -24,7 +24,7 @@ Instead of constantly setting up new connections between the frontend and backen
 You can use npm packages, most common ones are [socket.io](https://www.npmjs.com/package/socket.io) for server side and [socket.io/client](https://www.npmjs.com/package/socket.io-client) for client side. 
 
 In your `pages/api` directory
-```
+```javascript
 // pages/api/socket.js
 
 import { Server } from "socket.io";
@@ -72,7 +72,7 @@ The server sets up a Socket.io instance on its HTTP server.
 
 #### Client side 
 
-```
+```javascript
 import { useEffect } from 'react';
 import io from 'socket.io-client';
 
