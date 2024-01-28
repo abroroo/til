@@ -24,7 +24,7 @@ The keyword ```manifest``` for naming is required. The ```manifest.json``` file 
 You can use this [page](https://www.simicart.com/manifest-generator.html/) to create a custom ```manifest.json``` file with auto-customized icons to various sizes. You will need to upload your icon file.
 
 Sample ```manifest.json``` file: 
-```
+```json
 {
     "theme_color": "#49111C",
     "background_color": "#fff",
@@ -60,7 +60,7 @@ Sample ```manifest.json``` file:
 }
 ```
 **3.** Add the link to manifest.json file in the ```_document.tsx``` or ```_document.js```
-   ```
+   ```html
        <Head>
           <link rel="manifest" href="/manifest.json" />
        </Head>
