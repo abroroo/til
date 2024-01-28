@@ -8,13 +8,13 @@ You obtain the 2D context using the `getContext('2d')` method on the `<canvas>` 
 1. Set Up Canvas Element `<canvas id="myCanvas" width="500" height="500"></canvas>`
 2. Obtaining 2D Context:
    
-   ```
+   ```javascript
    const canvas = document.getElementById('myCanvas');
    const ctx = canvas.getContext('2d');
    ```
 3. Drawing Shapes:
 
-   ```
+   ```javascript
     // Draw a rectangle
       ctx.fillStyle = 'red'; // Set fill color
       ctx.fillRect(50, 50, 100, 100); // (x, y, width, height)
@@ -30,7 +30,7 @@ You obtain the 2D context using the `getContext('2d')` method on the `<canvas>` 
 
 4. You can also draw text, text will be an image
 
-   ```
+   ```javascript
    ctx.font = '30px Arial';
    ctx.fillStyle = 'green';
    ctx.fillText('Hello Canvas!', 200, 200); // (text, x, y)
@@ -38,7 +38,7 @@ You obtain the 2D context using the `getContext('2d')` method on the `<canvas>` 
    ```
 5. Working with images:
 
-   ```
+   ```javascript
     const img = new Image();
     img.src = 'path/to/image.png';
     img.onload = function() {
