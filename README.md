@@ -3,7 +3,7 @@
 
 Collection of things I learned as a developer
 
-A collection of concise write-ups on small things I learn day to day across a variety of languages and technologies. Keeping track of them helps me retain more and makes it easier to share the knowledge with other devs that can benefit from it. 
+Concise write-ups on small things I learn day to day across a variety of languages and technologies. Keeping track of them helps me retain more and makes it easier to share the knowledge with other devs that can benefit from it. 
 
 I love to learn so please let me know if you spot any mistakes or I missed something. Feel free to share anything you find useful.
 
