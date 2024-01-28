@@ -19,12 +19,12 @@ It's the main container or environment where you create, process, and manage aud
 
 1. Creating an AudioContext:
    
-    ```
+    ```javascript
     const audioContext = new AudioContext();
     ```
  2. Loading and Playing Audio:
 
-    ```
+    ```javascript
     // Fetch an audio file or create an AudioBuffer
     fetch('path/to/audio-file.mp3')
     .then(response => response.arrayBuffer())
@@ -38,7 +38,7 @@ It's the main container or environment where you create, process, and manage aud
     ```
 3. Applying Effects and Processing:
 
-   ```
+   ```javascript
     // Create nodes and connect them for audio processing
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
