@@ -5,7 +5,7 @@ First client makes a HTTP 1.1 request with special `UPGRADE: websocket` header i
 
 #### Client 
 
-```
+```yaml
 GET /chat HTTP/1.1
 Host: server.example.com
 Upgrade: websocket
@@ -19,7 +19,7 @@ Client just do GET request with these headers, the headers like `Sec-Websocket-`
 
 #### Server
 
-```
+```yaml
 HTTP/1.1 101 Switching Protocols
 Upgrade: websocket
 Sec-Websocket-Accept: HSmrcw0ksdlsdfs3mfdfg1DLkls...
