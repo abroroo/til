@@ -19,8 +19,9 @@ You basically need these two methods `useScroll` and `useTransform`
 
 
 ```typescript
+   // reference to an element which enterance to the view should trigger animation of two divs on the x-axis
+  const experRef = useRef<HTMLElement>(null)
 
-  const experRef = useRef<HTMLElement>(null)  // reference to container of the two divs
   const { scrollY } = useScroll();
 
 ```
