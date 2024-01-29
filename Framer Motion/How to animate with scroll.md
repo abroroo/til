@@ -45,8 +45,6 @@ We also need to get width and height of the user's device, since we want this ty
 
   const [screenWidth, setScreenWidth] = useState(0);
   const [screenHeight, setScreenHeight] = useState(0);
-  const skillsStart = experRef.current?.offsetTop || 0;
-  const skillsEnd = skillsStart + (experRef.current?.offsetHeight || 0);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -58,6 +56,12 @@ We also need to get width and height of the user's device, since we want this ty
 ```
 
 
+```typescript
+
+  const skillsStart = experRef.current?.offsetTop || 0;
+  const skillsEnd = skillsStart + (experRef.current?.offsetHeight || 0);
+
+```
 
 
 
