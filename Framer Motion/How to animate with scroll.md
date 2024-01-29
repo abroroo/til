@@ -79,7 +79,7 @@ Now lets pass these values to `useTransform` which will give a value that we can
   const div2_X = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
 
 ```
-For example 
+__For example__: 
 
 
 ```javascript
