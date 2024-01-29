@@ -10,6 +10,8 @@ I wanted to share how to do it with framer motion because it's very easy
 
 You basically need these two method in of framer `useScroll` and `useTransform`
 
+> 
+
 ```typescript
 
   const experRef = useRef<HTMLElement>(null)
