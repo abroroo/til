@@ -10,14 +10,20 @@ I wanted to share how to do it with framer motion because it's very easy
 
 You basically need these two methods `useScroll` and `useTransform`
 
-> `useScroll` is used to create scroll-linked animations, like progress indicators and parallax effects.
->
 > `useScroll` returns four motion values:
 >  - `scrollX/Y`: The absolute scroll position, in pixels.
 >  - `scrollXProgress/YProgress`: The scroll position between the defined offsets, as a value between 0 and 1.
 
 
-In typescript it looks something like this: 
+> `useTransform` helps to transform one range of values into another range of values.
+> - `useTransform(valueToBeConverted, fromThisRange, toThisRange)`
+> - Ex: `const visualValue = useTransform(temperature, [0, 100], [0, 1])`
+> - - when `temperature` is 60 `visualValue` is 0.6 
+
+
+
+### Now let's see how we can use these methods
+- _Code Snippets are in Typescript_
 
 First you need to reference to the element, once this element is visibale on the page, it should trigger animation of the two divs we want to move on the x-axis 
 
