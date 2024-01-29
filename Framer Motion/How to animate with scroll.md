@@ -1,4 +1,4 @@
-## How to animate objects with scrolling data of the page 
+# How to animate objects with scrolling data of the page 
 
 How to make two divs move on the x-axis while user scrolls vertically 
 
