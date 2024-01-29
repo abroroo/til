@@ -8,6 +8,50 @@ I did something like this in my portfolio website:
 
 I wanted to share how to do it with framer motion because it's very easy
 
+```typescript
+
+  const experRef = useRef<HTMLElement>(null)
+
+
+  const { scrollY } = useScroll();
+
+```
+
+
+
+
+```typescript
+
+  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
+  const skillsStart = experRef.current?.offsetTop || 0;
+  const skillsEnd = skillsStart + (experRef.current?.offsetHeight || 0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
+    }
+  }, []);
+
+```
+
+
+
+
+
+```typescript
+  const rocketX = useTransform(scrollY, [skillsStart, skillsEnd], [-screenWidth, screenWidth]);
+  const rocketY = useTransform(scrollY, [skillsStart, skillsEnd], [screenHeight, -screenHeight]);
+
+
+  const rocketX2 = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
+  const rocketY2 = useTransform(scrollY, [skillsStart, skillsEnd], [-screenHeight, screenHeight]);
+
+```
+
+
+
 
 
 
