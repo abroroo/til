@@ -39,7 +39,7 @@ Then get vertical scroll data with `useScroll`
 ```
 
 
-We also need to get width and height of the user's device, since we want this type of range as an output of  `useTransform` 
+We also need to get width and height of the user's device, since we want this type of range as an output of  `useTransform`. Rememeber we will use this range of values to animate divs on the x-axis by passing it to the `style={{ x:rocketX}}` of the divs
 
 ```typescript
 
