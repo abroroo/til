@@ -22,6 +22,7 @@ You basically need these two methods `useScroll` and `useTransform`
    // reference to an element which enterance to the view should trigger animation of two divs on the x-axis
   const experRef = useRef<HTMLElement>(null)
 
+// dynamically returns value of vertical scroll in real time Ex: 553 pixels from the top of the window 
   const { scrollY } = useScroll();
 
 ```
