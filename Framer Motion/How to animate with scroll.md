@@ -55,6 +55,8 @@ We also need to get width and height of the user's device, since we want this ty
 
 ```
 
+ - `skillsStart` is calculated as the top offset of the `experRef` element. It represents the distance from the top of the page to the top of the skills section.
+ - `skillsEnd` is calculated by adding the `offsetHeight` of the `experRef` element to `skillsStart`. It represents the distance from the top of the page to the bottom of the skills section.
 
 ```typescript
 
