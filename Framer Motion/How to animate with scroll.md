@@ -92,6 +92,18 @@ For example
       // Calculation: 0.25 * 2400 - 1200
       // Calculation: 600 - 1200
       // Result: -600 (a negative value)
+
+
+
+ div2_X = useTransform(300, [200, 600], [1200, -1200]);
+
+      // Convert scrollY (300) from the range [200, 600] to the range [1200, -1200]
+      // Formula: (scrollY - skillsStart) / (skillsEnd - skillsStart) * (1200 - (-1200)) + 1200
+      // Calculation: (300 - 200) / (600 - 200) * (1200 - (-1200)) + 1200
+      // Calculation: (100 / 400) * 2400 + 1200
+      // Calculation: 0.25 * 2400 + 1200
+      // Calculation: 600 + 1200
+      // Result: 1800 (a positive value)
 ```
 
 Then just pass `divX` and `div2_X` values to `x` property of the divs
