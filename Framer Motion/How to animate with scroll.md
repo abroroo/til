@@ -17,12 +17,14 @@ You basically need these two methods `useScroll` and `useTransform`
 >  - `scrollXProgress/YProgress`: The scroll position between the defined offsets, as a value between 0 and 1.
 
 
+In typescript it looks like this, first you need to reference to the element, once this element is visibale on hte page, this should trigger animation of the two divs we want to move on the x-axis 
+
 
 ```typescript
    // enterance of this element to the view should trigger animation of two divs on the x-axis
   const experRef = useRef<HTMLElement>(null)
 
-// dynamically returns value of vertical scroll in real time Ex: 553 pixels from the top of the page
+   // dynamically returns value of vertical scroll in real time Ex: 553 pixels from the top of the page
   const { scrollY } = useScroll();
 
 ```
