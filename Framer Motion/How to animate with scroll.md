@@ -55,12 +55,14 @@ We also need to get width and height of the user's device, since we want this ty
 
 ```
 
- - `skillsStart` is calculated as the top offset of the `experRef` element. It represents the distance from the top of the page to the top of the `experRef` element.
- - `skillsEnd` is calculated by adding the `offsetHeight` of the `experRef` element to `skillsStart`. It represents the distance from the top of the page to the bottom of the `experRef` element.
+ - `skillsStart` is a value we want to start moving skills divs on the x-axis
+ - `skillsEnd` is a value we want to finish moving skills divs on the x-axis
 
 ```typescript
-
+    // the distance from the top of the page to the top of the `experRef` element.
   const skillsStart = experRef.current?.offsetTop || 0;
+
+   // the distance from the top of the page to the bottom of the `experRef` element.
   const skillsEnd = skillsStart + (experRef.current?.offsetHeight || 0);
 
 ```
