@@ -10,7 +10,9 @@ I love to learn so please let me know if you spot any mistakes or I missed somet
 This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) repo and the concept of `Learning in Public`
 
 ## Topics
-
+#### [Framer Motion](https://github.com/abroroo/til/tree/main/Framer%20Motion)
+* [How to animate objects using scroll data](https://github.com/abroroo/til/blob/main/Framer%20Motion/How%20to%20animate%20with%20scroll.md)
+  
 #### [PWA(Progessive Web App)](https://github.com/abroroo/til/tree/main/PWA)
 * [How to add PWA to React App](https://github.com/abroroo/til/blob/main/PWA/How%20to%20add%20pwa%20to%20React.md)
 
