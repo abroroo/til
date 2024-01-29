@@ -55,6 +55,7 @@ You basically need these two methods `useScroll` and `useTransform`
       
       ```
 
+3.  Let's get values where we want to start and stop animation :
     - `skillsStart` is a value we want to start moving divs on the x-axis
     - `skillsEnd` is a value we want to finish moving divs on the x-axis
 
@@ -68,7 +69,7 @@ You basically need these two methods `useScroll` and `useTransform`
       ```
 
 
-3. Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
+4. Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
 
       
       ```typescript
@@ -79,7 +80,7 @@ You basically need these two methods `useScroll` and `useTransform`
         const div2_X = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
       
       ```
-__For example__: 
+   __For example__: 
 
 
       ```javascript
@@ -106,7 +107,7 @@ __For example__:
             // Result: 1800 (a positive value)
       ```
 
-4. Then just pass `divX` and `div2_X` values to `x` property of the divs
+5. Then just pass `divX` and `div2_X` values to `x` property of the divs
 
 
       ```jsx
