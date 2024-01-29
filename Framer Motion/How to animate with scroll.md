@@ -95,4 +95,4 @@ Then just pass `divX` and `div2_X` values to `x` property of the divs
 ```
 
 
-This will move above given two div on opposite directions on x-axis as user scrolls the page 
+This will move above given two divs to the opposite directions on x-axis as user scrolls the page 
