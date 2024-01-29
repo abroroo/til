@@ -55,8 +55,8 @@ We also need to get width and height of the user's device, since we want this ty
 
 ```
 
- - `skillsStart` is a value we want to start moving skills divs on the x-axis
- - `skillsEnd` is a value we want to finish moving skills divs on the x-axis
+ - `skillsStart` is a value we want to start moving divs on the x-axis
+ - `skillsEnd` is a value we want to finish moving divs on the x-axis
 
 ```typescript
     // the distance from the top of the page to the top of the `experRef` element.
