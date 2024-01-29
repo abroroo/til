@@ -80,11 +80,12 @@ Now lets pass these values to `useTransform` which will give a value that we can
 
 ```
 For example 
-> when `skillsStart = 200`
->  - `skillsEnd = 600`
->  - `screenWidth = 1200`
-Convert `scrollY` (300) from the range [200, 600] to the range [-1200, 1200]
-```
+
+
+```javascript
+ divX = useTransform(300, [200, 600], [-1200, 1200]);
+
+      // Convert `scrollY` (300) from the range [200, 600] to the range [-1200, 1200]
       // Formula: (scrollY - skillsStart) / (skillsEnd - skillsStart) * (1200 - (-1200)) + (-1200)
       // Calculation: (300 - 200) / (600 - 200) * (1200 - (-1200)) + (-1200)
       // Calculation: (100 / 400) * 2400 - 1200
