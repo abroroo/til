@@ -1,4 +1,4 @@
-## How to animate objects in realtion to scoll of the page 
+## How to animate objects in realtion to scroll of the page 
 
 How to make two divs move on the x-axis with user scrolling data in real time
 
