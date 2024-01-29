@@ -39,7 +39,7 @@ Then get vertical scroll data with `useScroll`
 ```
 
 
-
+We also need to get screenWidth and screenHeight values of the user's device, to pass it to `useTransform` since we want this type of range as an output of  `useTransform` 
 
 ```typescript
 
