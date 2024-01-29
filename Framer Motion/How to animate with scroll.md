@@ -20,9 +20,7 @@ You basically need these two methods `useScroll` and `useTransform`
 
 ```typescript
 
-  const experRef = useRef<HTMLElement>(null)
-
-
+  const experRef = useRef<HTMLElement>(null)  // reference to container of the two divs
   const { scrollY } = useScroll();
 
 ```
