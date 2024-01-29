@@ -70,21 +70,27 @@ We also need to get width and height of the user's device, since we want this ty
 
 Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
 
+
+```typescript
+   // get positive value to move div to the right 
+  const divX = useTransform(scrollY, [skillsStart, skillsEnd], [-screenWidth, screenWidth]);
+     
+   // get negative value to move div to the left
+  const div2_X = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
+
+```
 For example 
 > when `skillsStart = 200`
 >  - `skillsEnd = 600`
 >  - `screenWidth = 1200`
->
->  Convert `scrollY` (300) from the range [200, 600] to the range [-1200, 1200]
-- 
-```typescript
-   // get positive value to move div to the right 
-  const divX = useTransform(scrollY, [skillsStart, skillsEnd], [-screenWidth, screenWidth]);
-
-   // get negative value to move div to the left
-  const div2_X = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
-
-
+Convert `scrollY` (300) from the range [200, 600] to the range [-1200, 1200]
+```
+      // Formula: (scrollY - skillsStart) / (skillsEnd - skillsStart) * (1200 - (-1200)) + (-1200)
+      // Calculation: (300 - 200) / (600 - 200) * (1200 - (-1200)) + (-1200)
+      // Calculation: (100 / 400) * 2400 - 1200
+      // Calculation: 0.25 * 2400 - 1200
+      // Calculation: 600 - 1200
+      // Result: -600 (a negative value)
 ```
 
 Then just pass `divX` and `div2_X` values to `x` property of the divs
