@@ -10,7 +10,7 @@ I wanted to share how to do it with framer motion because it's very easy
 
 You basically need these two method in of framer `useScroll` and `useTransform`
 
-> 
+> `useScroll` is used to create scroll-linked animations, like progress indicators and parallax effects.
 
 ```typescript
 
