@@ -11,10 +11,10 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 ## Topics
 #### [Framer Motion](https://github.com/abroroo/til/tree/main/Framer%20Motion)
-* [How to animate objects using scroll data](https://github.com/abroroo/til/blob/main/Framer%20Motion/How%20to%20animate%20with%20scroll.md)
+* [Animate objects using scroll data](https://github.com/abroroo/til/blob/main/Framer%20Motion/How%20to%20animate%20with%20scroll.md)
   
 #### [PWA(Progessive Web App)](https://github.com/abroroo/til/tree/main/PWA)
-* [How to add PWA to React App](https://github.com/abroroo/til/blob/main/PWA/How%20to%20add%20pwa%20to%20React.md)
+* [Add PWA to React App](https://github.com/abroroo/til/blob/main/PWA/How%20to%20add%20pwa%20to%20React.md)
 
 #### [GIT](https://github.com/abroroo/til/tree/main/git)
 * [Submodules](https://github.com/abroroo/til/blob/main/git/Submodules.md)
@@ -31,11 +31,11 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [Docker Compose](https://github.com/abroroo/til/blob/main/Docker/Docker%20Compose.md)
 
 #### [WebSockets](https://github.com/abroroo/til/blob/main/Websocket)
-* [What's WebSockets and use case](https://github.com/abroroo/til/blob/main/Websocket/websocket.md)
+* [WebSockets and its use case](https://github.com/abroroo/til/blob/main/Websocket/websocket.md)
 * [Websockets behind the scenes](https://github.com/abroroo/til/blob/main/Websocket/Websockets%20behind%20the%20scenes.md)
 
 #### [WebRTC](https://github.com/abroroo/til/blob/main/WebRTC)
-* [What's WebRTC and How to Use It](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
+* [WebRTC and How to Use It](https://github.com/abroroo/til/blob/main/WebRTC/webrtc.md)
 
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
 * [Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
