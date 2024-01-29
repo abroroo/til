@@ -6,7 +6,7 @@ It explains it so well, I'll just add my summary of the article with some addito
 
 # You gotta understand some concepts first
 
-When you write JavaScript code and run it in a browser, the code doesn't directly interact with your computer's hardware. Instead, it interacts with the **JavaScript engine**, which converts JS code into hardware readable binary code.
+Well we know when we write JavaScript code and run it in a browser, the code doesn't directly interact with computer's hardware. Instead, it interacts with the **JavaScript engine**, which converts JS code into hardware readable binary code. But what's inside this JS Engine? 
 
  > Some of the popular engines include:
  > - V8 (used in Google Chrome)
