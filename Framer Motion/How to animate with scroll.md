@@ -22,12 +22,12 @@ You basically need these two methods `useScroll` and `useTransform`
 
 
 
-### Now let's see how we can use these methods
+## Now let's see how we can use these methods
 - _Code Snippets are in Typescript_
 
-First you need to reference to the element, once this element is visibale on the page, it should trigger animation of the two divs we want to move on the x-axis 
+1. First you need to reference to the element, once this element is visibale on the page, it should trigger animation of the two divs we want to move on the x-axis 
 
-Then get vertical scroll data with `useScroll`
+   Then get vertical scroll data with `useScroll`
 
 ```typescript
    // enterance of this element to the view should trigger animation of two divs on the x-axis
@@ -39,7 +39,7 @@ Then get vertical scroll data with `useScroll`
 ```
 
 
-We also need to get width and height of the user's device, since we want this type of range as an output of  `useTransform`. Rememeber we will use this range of values to animate divs on the x-axis by passing it to the `style={{ x: valueFromUseTransform }}` of the divs
+2. We also need to get width and height of the user's device, since we want this type of range as an output of  `useTransform`. Rememeber we will use this range of values to animate divs on the x-axis by passing it to the `style={{ x: valueFromUseTransform }}` of the divs
 
 ```typescript
 
@@ -68,7 +68,7 @@ We also need to get width and height of the user's device, since we want this ty
 ```
 
 
-Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
+3. Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
 
 
 ```typescript
@@ -106,7 +106,7 @@ __For example__:
       // Result: 1800 (a positive value)
 ```
 
-Then just pass `divX` and `div2_X` values to `x` property of the divs
+4. Then just pass `divX` and `div2_X` values to `x` property of the divs
 
 
 ```jsx
