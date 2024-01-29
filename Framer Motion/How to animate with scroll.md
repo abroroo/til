@@ -68,29 +68,30 @@ We also need to get width and height of the user's device, since we want this ty
 ```
 
 
+Now lets pass these values to `useTransform` which will give a value that we can use to move divs on the x-axis
 
 ```typescript
-  const rocketX = useTransform(scrollY, [skillsStart, skillsEnd], [-screenWidth, screenWidth]);
-  const rocketY = useTransform(scrollY, [skillsStart, skillsEnd], [screenHeight, -screenHeight]);
+   // positive val
+  const divX = useTransform(scrollY, [skillsStart, skillsEnd], [-screenWidth, screenWidth]);
+ 
+  const div2_X = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
 
-
-  const rocketX2 = useTransform(scrollY, [skillsStart, skillsEnd], [screenWidth, -screenWidth]);
-  const rocketY2 = useTransform(scrollY, [skillsStart, skillsEnd], [-screenHeight, screenHeight]);
 
 ```
 
-
-
-
+Then just pass `divX` and `div2_X` values to `x` property of the divs
 
 
 ```jsx
-<motion.p className='absolute top-2 left-0  bg-[#fff]' style={{ x:rocketX,  rotate: 0 }}>
+<motion.p className='absolute top-2 left-0  bg-[#fff]' style={{ x:divX }}>
   Javascript * Python * NodeJS * PostgreSQL
 </motion.p>
 
-<motion.p className='absolute left-20 top-[96px] bg-[#fff42d]' style={{ x: rocketX2,  rotate: 0, }}>
+<motion.p className='absolute left-20 top-[96px] bg-[#fff42d]' style={{ x: div2_X }}>
   ReactJS * NextJS * Typescript * MongoDB
 </motion.p>
 
 ```
+
+
+This will move above given two div on opposite directions on x-axis as user scrolls the page 
