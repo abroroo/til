@@ -122,4 +122,4 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
    
   ```
 
-  
+  As you can see __`mutate`__ is used to add new user inside asynchronous `handleSubmit` function
