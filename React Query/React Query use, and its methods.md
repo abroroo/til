@@ -68,4 +68,12 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 
 - __`staleTime`__ (optional): You can define a time threshold after which query data becomes stale and requires refetching.
 
- _In real case you most likely use only one of the: `refetch` or  `cacheTime` or `cacheStale` to refetch data, not all of them together as in this example._ 
+  _In real case you most likely use only one of the: `refetch` or  `cacheTime` or `cacheStale` to refetch data, not all of them together as in this example._
+
+
+## How `useMutate` works:
+  Unless you want to edit chached data too, you don't need a Query Key with __`useMutate`__. 
+
+  Here's simple use case: 
+
+  
