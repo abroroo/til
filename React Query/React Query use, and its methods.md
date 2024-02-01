@@ -180,21 +180,24 @@ ps: Here you need to provide Query Key of the data collection you want to edit
 This is how you usually set up React Query for your react app: 
 
 ```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
+import App from './App';
+
 const queryClient = new QueryClient();
 
-function App() {
-  return (
+ReactDOM.render(
+  <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      {/* Your application components */}
       <App />
-      <ReactQueryDevtools /> {/* Optional: Devtools for debugging */}
+      <ReactQueryDevtools initialIsOpen={false} /> {/* Optional: Devtools for debugging */}
     </QueryClientProvider>
-  );
-}
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-export default App;
 
 ```
