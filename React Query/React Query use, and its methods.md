@@ -120,6 +120,6 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
         };
         
    
-     ```
+  ```
 
   
