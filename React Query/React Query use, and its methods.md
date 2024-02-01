@@ -76,8 +76,7 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 
   Here's simple use case: 
 
-     ```javascript
-   
+   ```javascript
         const createNewUser = async (newUser) => {
           const response = await fetch('https://someApiAdress/users', {
             method: 'POST',
