@@ -43,7 +43,9 @@ Here is basic usage to fetch data using `useQuery` :
         <button onClick={handleRefresh}>Refresh</button>
 
         {isLoading && <div>Loading...</div>}
+
         {isError && <div>Error: {error.message}</div>}
+
         {data && (
           <ul>
             {data.map(user => (
