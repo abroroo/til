@@ -53,6 +53,9 @@ Here is basic usgae to fetch data using `useQuery` :
     );
    };
    ```
+
+As you can see it provides with `isLoading`, 'isError`, `error` states and `data` which you can directly use in your UI
+
 -  __`refetch`__ (optional):  fetches fresh data from the API and updates the query's cache.
   
 - __` useQuery('todos', .. `__ todos in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching.
