@@ -128,15 +128,17 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 
 ### `useMutate` has two optional parameters: `retry` and `onMutate`: 
 
+ps: Here you need to provide Query Key of the data collection you want to edit
+
 ```javascript
 
-   const { mutate } = useMutate(createTodoMutation, {
+   const { mutate, isLoading, isError, error } = useMutate(createNewUser, {
      retry: 3, // Retry the mutation up to 3 times before giving up
-     onMutate: async (newTodo) => {
-       const currentTodos = queryClient.getQueryData('todos');
+     onMutate: async (newUser) => {
+       const currentTodos = queryClient.getQueryData('users');  // Query KEY
        // Update UI optimistically
-       queryClient.setQueryData('todos', (old) => [...old, { id: Date.now(), title: newTodo }]);
-       return { currentTodos }; // Save current state for rollback
+       queryClient.setQueryData('users', (old) => [...old, { id: Date.now(), title: newUser }]);
+       return { currentUsers }; // Save current state for rollback
      },
      onError: (error, variables, rollback) => {
        // Rollback the optimistic update if the mutation fails
@@ -155,12 +157,11 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
    };
    
    // Inside the onError callback, you would implement the logic to revert the optimistic update
-   // Here's an example of how you might do it:
    
    onError: (error, variables, rollback) => {
      // Revert UI to its previous state by rolling back the optimistic update
-     const { currentTodos } = variables;
-     queryClient.setQueryData('todos', currentTodos); // Restore previous state
+     const { currentUsers } = variables;
+     queryClient.setQueryData('users', currentUsers); // Restore previous state
    },
    
 
