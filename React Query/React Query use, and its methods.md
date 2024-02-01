@@ -63,3 +63,5 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 - __`cacheTime`__ (optional): You can specify how long query data should remain in the cache.
 
 - __`staleTime`__ (optional): You can define a time threshold after which query data becomes stale and requires refetching.
+
+ _Most likely you refetch data either with `refetch` or  `cacheTime` or 'cacheStale`, not all of them together as in this example._ 
