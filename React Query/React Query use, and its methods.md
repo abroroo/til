@@ -18,7 +18,7 @@ Here is basic usage to fetch data using `useQuery` :
   import { useQuery } from 'react-query';
   
   const fetchUsers = async () => {
-    const response = await fetch('https://someAPIAddress/users');
+    const response = await fetch('https://someApiAddress/users');
     if (!response.ok) {
       throw new Error('Failed to fetch users');
     }
