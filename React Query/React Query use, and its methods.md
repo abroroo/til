@@ -39,7 +39,9 @@ Here is basic usage to fetch data using `useQuery` :
     return (
       <div>
         <h1>Users</h1>
-        <button onClick={handleRefresh}>Refresh</button> // manually refetch data
+
+        <button onClick={handleRefresh}>Refresh</button>
+
         {isLoading && <div>Loading...</div>}
         {isError && <div>Error: {error.message}</div>}
         {data && (
