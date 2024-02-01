@@ -167,4 +167,36 @@ ps: Here you need to provide Query Key of the data collection you want to edit
 
 
 ```
+-We use the __`retry`__ option to specify that the mutation should be retried up to 3 times before giving up.
 
+- We use the __`onMutate`__ option to define an optimistic update. Before the mutation occurs, we save the current state of todos and update the UI optimistically with the new todo.
+
+- __Optimistic Update__: Before sending the mutation request to the server, you update the UI optimistically to reflect the expected outcome of the mutation. This means that you update the UI as if the mutation has already succeeded, even though the server response is pending.
+
+- __Rollback__ (if needed): In case of a failed mutation, you might need to roll back the optimistic update to bring the UI back to its original state before the user action.
+  
+- __`queryClient`__, comes from React Query setup at the root level of your React component tree, such as in your index.js or App.js file.
+
+This is how you usually set up React Query for your react app: 
+
+```javascript
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+
+const queryClient = new QueryClient();
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      {/* Your application components */}
+      <TodosComponent />
+      <CreateUserComponent />
+      {/* Other components */}
+      <ReactQueryDevtools /> {/* Optional: Devtools for debugging */}
+    </QueryClientProvider>
+  );
+}
+
+export default App;
+
+```
