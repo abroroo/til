@@ -189,9 +189,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Your application components */}
-      <TodosComponent />
-      <CreateUserComponent />
-      {/* Other components */}
+      <App />
       <ReactQueryDevtools /> {/* Optional: Devtools for debugging */}
     </QueryClientProvider>
   );
