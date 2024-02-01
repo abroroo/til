@@ -134,13 +134,18 @@ ps: Here you need to provide Query Key of the data collection you want to edit
 
    const { mutate, isLoading, isError, error } = useMutate(createNewUser, {
      retry: 3, // Retry the mutation up to 3 times before giving up
+
      onMutate: async (newUser) => {
        const currentTodos = queryClient.getQueryData('users');  // Query KEY
+
        // Update UI optimistically
        queryClient.setQueryData('users', (old) => [...old, { id: Date.now(), title: newUser }]);
+
        return { currentUsers }; // Save current state for rollback
      },
+
      onError: (error, variables, rollback) => {
+
        // Rollback the optimistic update if the mutation fails
        rollback(); // Revert UI to its previous state
      },
@@ -159,8 +164,10 @@ ps: Here you need to provide Query Key of the data collection you want to edit
    // Inside the onError callback, you would implement the logic to revert the optimistic update
    
    onError: (error, variables, rollback) => {
+
      // Revert UI to its previous state by rolling back the optimistic update
      const { currentUsers } = variables;
+
      queryClient.setQueryData('users', currentUsers); // Restore previous state
    },
    
