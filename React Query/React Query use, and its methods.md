@@ -39,7 +39,7 @@ Here is basic usgae to fetch data using `useQuery` :
     return (
       <div>
         <h1>Users</h1>
-        <button onClick={handleRefresh}>Refresh</button>
+        <button onClick={handleRefresh}>Refresh</button> // manually refetch data
         {isLoading && <div>Loading...</div>}
         {isError && <div>Error: {error.message}</div>}
         {data && (
