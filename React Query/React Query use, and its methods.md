@@ -126,4 +126,44 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
   - When the user submits the form, we call the `mutate` function with the new name data to create the new user.
   - We handle loading, error, and success states using `isLoading`, `isError`, and `error`.
 
-  That's the basics of using __useMutate__! It simplifies data mutation in React applications and provides a convenient way to manage loading, error, and success states during mutation operations.
+### `useMutate` has two optional parameters: `retry` and `onMutate`: 
+
+```javascript
+
+   const { mutate } = useMutate(createTodoMutation, {
+     retry: 3, // Retry the mutation up to 3 times before giving up
+     onMutate: async (newTodo) => {
+       const currentTodos = queryClient.getQueryData('todos');
+       // Update UI optimistically
+       queryClient.setQueryData('todos', (old) => [...old, { id: Date.now(), title: newTodo }]);
+       return { currentTodos }; // Save current state for rollback
+     },
+     onError: (error, variables, rollback) => {
+       // Rollback the optimistic update if the mutation fails
+       rollback(); // Revert UI to its previous state
+     },
+   });
+   
+   const handleSubmit = async (event) => {
+     event.preventDefault();
+     try {
+       await mutate(newTodo);
+       setNewTodo('');
+     } catch (error) {
+       console.error('Error creating todo:', error);
+     }
+   };
+   
+   // Inside the onError callback, you would implement the logic to revert the optimistic update
+   // Here's an example of how you might do it:
+   
+   onError: (error, variables, rollback) => {
+     // Revert UI to its previous state by rolling back the optimistic update
+     const { currentTodos } = variables;
+     queryClient.setQueryData('todos', currentTodos); // Restore previous state
+   },
+   
+
+
+```
+
