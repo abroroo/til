@@ -54,7 +54,7 @@ Here is basic usgae to fetch data using `useQuery` :
    };
    ```
 
-As you can see it provides with `isLoading`, 'isError`, `error` states and `data` which you can directly use in your UI
+As you can see it provides with `isLoading`, `isError`, `error` states and `data` which you can directly use in your UI
 
 -  __`refetch`__ (optional):  fetches fresh data from the API and updates the query's cache.
   
