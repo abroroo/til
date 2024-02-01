@@ -76,4 +76,51 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 
   Here's simple use case: 
 
+     ```
+   
+   const createNewUser = async (newUser) => {
+     const response = await fetch('https://someApiAdress/users', {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json',
+       },
+       body: JSON.stringify(newUser),
+     });
+     if (!response.ok) {
+       throw new Error('Failed to create new user');
+     }
+     return response.json();
+   };
+   
+   const UserForm = () => {
+     const [newUser, setNewUser] = useState('');
+     const { mutate, isLoading, isError, error } = useMutate(createNewUser);
+   
+     const handleSubmit = async (event) => {
+       event.preventDefault();
+       try {
+         await mutate(newUser); // Call the mutate function with the new user
+         setNewUser(''); // Clear the input field after successful mutation
+       } catch (error) {
+         console.error('Error creating todo:', error);
+       }
+     };
+   
+     return (
+       <form onSubmit={handleSubmit}>
+         <input
+           type="text"
+           value={newUser}
+           onChange={(event) => setNewUser(event.target.value)}
+           placeholder="Enter Your Name"
+         />
+         <button type="submit" disabled={isLoading}>Add User</button>
+         {isError && <div>Error: {error.message}</div>}
+       </form>
+     );
+   };
+   
+   
+     ```
+
   
