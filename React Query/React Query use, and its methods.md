@@ -25,7 +25,7 @@ Here is basic usgae to fetch data using `useQuery` :
     return response.json();
   };
   
-  const TodosComponent = () => {
+  const UsersComponent = () => {
     const { data, isLoading, isError, error, refetch } = useQuery('users', fetchUsers, {
       cacheTime: 300000, // Cache data for 5 minutes (300,000 milliseconds)
       staleTime: 60000, // Mark data as stale after 1 minute (60,000 milliseconds)
