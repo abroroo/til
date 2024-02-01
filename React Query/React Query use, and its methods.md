@@ -5,7 +5,7 @@ Basically speaking __React Query__ helps with data fetching and mutation operati
 React Query can be used in various types of data fetching : _RESTful APIs, GraphQL, Authentication and Authorization, Websockets and etc._
 
 
-## Simply, you just need to know two main methods methods `useQuery` and `useMutation`: 
+## You just need to know two methods `useQuery` and `useMutation`: 
 
 In a RESTful API context, these methods used for 
  - __`useQuery`__ : `GET` requests
