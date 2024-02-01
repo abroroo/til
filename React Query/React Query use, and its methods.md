@@ -31,29 +31,27 @@ Here is basic usgae to fetch data using `useQuery` :
       staleTime: 60000, // Mark data as stale after 1 minute (60,000 milliseconds)
     });
   
-    // Render UI...
-  };
 
    const handleRefresh = () => {
     refetch(); // Manually trigger a refetch
-  };
+   };
 
-  return (
-    <div>
-      <h1>Todos</h1>
-      <button onClick={handleRefresh}>Refresh</button>
-      {isLoading && <div>Loading...</div>}
-      {isError && <div>Error: {error.message}</div>}
-      {data && (
-        <ul>
-          {data.map(todo => (
-            <li key={todo.id}>{todo.title}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-  
+    return (
+      <div>
+        <h1>Todos</h1>
+        <button onClick={handleRefresh}>Refresh</button>
+        {isLoading && <div>Loading...</div>}
+        {isError && <div>Error: {error.message}</div>}
+        {data && (
+          <ul>
+            {data.map(todo => (
+              <li key={todo.id}>{todo.title}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+   };
    ```
 
 - ` useQuery('todos', .. ` todos in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching. 
