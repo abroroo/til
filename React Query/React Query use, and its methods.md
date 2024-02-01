@@ -12,7 +12,7 @@ In a RESTful API context, these methods used for
  - __`useMutate`__ : `POST`, `PUT`, `DELETE` `PATCH` requests
 
 
-Here is basic usage to fetch data using `useQuery` :
+### Here is basic usage to fetch data using `useQuery` :
 
    ```javascript
   import { useQuery } from 'react-query';
@@ -177,7 +177,7 @@ ps: Here you need to provide Query Key of the data collection you want to edit
   
 - __`queryClient`__, comes from React Query setup at the root level of your React component tree, such as in your index.js or App.js file.
 
-This is how you usually set up React Query for your react app: 
+## This is how you usually set up React Query for your react app: 
 
 ```javascript
 import React from 'react';
