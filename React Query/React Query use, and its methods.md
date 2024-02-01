@@ -33,7 +33,26 @@ Here is basic usgae to fetch data using `useQuery` :
   
     // Render UI...
   };
-  
+
+   const handleRefresh = () => {
+    refetch(); // Manually trigger a refetch
+  };
+
+  return (
+    <div>
+      <h1>Todos</h1>
+      <button onClick={handleRefresh}>Refresh</button>
+      {isLoading && <div>Loading...</div>}
+      {isError && <div>Error: {error.message}</div>}
+      {data && (
+        <ul>
+          {data.map(todo => (
+            <li key={todo.id}>{todo.title}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
   
    ```
 
