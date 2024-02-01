@@ -37,4 +37,4 @@ Here is basic usgae to fetch data using `useQuery` :
   
    ```
 
-` useQuery('todos', .. ` todos in here is a Query key, you need come up with unique key for the data ur fetching, so that react query can label it for future mutations or ceching. 
+` useQuery('todos', .. ` todos in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching. 
