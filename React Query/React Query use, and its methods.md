@@ -58,7 +58,7 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
 
 -  __`refetch`__ (optional):  fetches fresh data from the API and updates the query's cache.
   
-- __` useQuery('todos', .. `__ todos in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching.
+- __` useQuery('users', .. `__ 'users' in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching.
   
 - __`cacheTime`__ (optional): You can specify how long query data should remain in the cache.
 
