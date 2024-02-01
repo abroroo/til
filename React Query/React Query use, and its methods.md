@@ -1,11 +1,11 @@
-#  How `useQuery` and `useMutation` works?
+#  How React Query works with RESTful APIs?
 
 Basically speaking __React Query__ helps with data fetching and mutation operations in React applications. It simplifies data fetching by __handling loading, error, and success states automatically__, and it provides caching and re-fetching capabilities too.
 
 React Query can be used in various types of data fetching : _RESTful APIs, GraphQL, Authentication and Authorization, Websockets and etc._
 
 
-### Simplified way to think about it is that React Query has two main methods:
+## Simply, you just need to know two main methods methods `useQuery` and `useMutation`: 
 
 In a RESTful API context, these methods used for 
  - __`useQuery`__ : `GET` requests
