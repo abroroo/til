@@ -30,6 +30,9 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 #### [PWA(Progessive Web App)](https://github.com/abroroo/til/tree/main/PWA)
 * [Add PWA to React App](https://github.com/abroroo/til/blob/main/PWA/How%20to%20add%20pwa%20to%20React.md)
 
+#### [React Query](https://github.com/abroroo/til/tree/main/React%20Query)
+* [React Query with RESTful APIs](https://github.com/abroroo/til/blob/main/React%20Query/React%20Query%20use,%20and%20its%20methods.md)
+  
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
 * [Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
 
