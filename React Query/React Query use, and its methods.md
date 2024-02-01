@@ -123,7 +123,7 @@ As you can see it provides with `isLoading`, `isError`, `error` states and `data
   ```
 
   
-  - When the user submits the form, we call the `mutate` function with the new todo data to create the new user.
+  - When the user submits the form, we call the `mutate` function with the new name data to create the new user.
   - We handle loading, error, and success states using `isLoading`, `isError`, and `error`.
 
   That's the basics of using __useMutate__! It simplifies data mutation in React applications and provides a convenient way to manage loading, error, and success states during mutation operations.
