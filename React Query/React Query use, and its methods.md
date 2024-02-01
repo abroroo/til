@@ -12,7 +12,7 @@ In a RESTful API context, these methods used for
  - __`useMutate`__ : `POST`, `PUT`, `DELETE` `PATCH` requests
 
 
-Here is basic usgae to fetch data using `useQuery` :
+Here is basic usage to fetch data using `useQuery` :
 
    ```javascript
   import { useQuery } from 'react-query';
