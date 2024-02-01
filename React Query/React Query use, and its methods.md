@@ -17,16 +17,16 @@ Here is basic usgae to fetch data using `useQuery` :
    ```javascript
   import { useQuery } from 'react-query';
   
-  const fetchTodos = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const fetchUsers = async () => {
+    const response = await fetch('https://someFetchAddress/users');
     if (!response.ok) {
-      throw new Error('Failed to fetch todos');
+      throw new Error('Failed to fetch users');
     }
     return response.json();
   };
   
   const TodosComponent = () => {
-    const { data, isLoading, isError, error, refetch } = useQuery('todos', fetchTodos, {
+    const { data, isLoading, isError, error, refetch } = useQuery('users', fetchUsers, {
       cacheTime: 300000, // Cache data for 5 minutes (300,000 milliseconds)
       staleTime: 60000, // Mark data as stale after 1 minute (60,000 milliseconds)
     });
@@ -38,14 +38,14 @@ Here is basic usgae to fetch data using `useQuery` :
 
     return (
       <div>
-        <h1>Todos</h1>
+        <h1>Users</h1>
         <button onClick={handleRefresh}>Refresh</button>
         {isLoading && <div>Loading...</div>}
         {isError && <div>Error: {error.message}</div>}
         {data && (
           <ul>
-            {data.map(todo => (
-              <li key={todo.id}>{todo.title}</li>
+            {data.map(user => (
+              <li key={user.id}>{user.name}</li>
             ))}
           </ul>
         )}
