@@ -26,7 +26,7 @@ Here is basic usgae to fetch data using `useQuery` :
   };
   
   const TodosComponent = () => {
-    const { data, isLoading, isError, error } = useQuery('todos', fetchTodos, {
+    const { data, isLoading, isError, error, refetch } = useQuery('todos', fetchTodos, {
       cacheTime: 300000, // Cache data for 5 minutes (300,000 milliseconds)
       staleTime: 60000, // Mark data as stale after 1 minute (60,000 milliseconds)
     });
@@ -38,6 +38,6 @@ Here is basic usgae to fetch data using `useQuery` :
    ```
 
 - ` useQuery('todos', .. ` todos in here is a Query key, you need to come up with unique key for the data ur fetching, so that React Query can label it for future mutations or caching. 
-- __Cache Time__ (optional): You can specify how long query data should remain in the cache (cacheTime option).
+- __Cache Time__ (optional): You can specify how long query data should remain in the cache.
 
- - __Stale Time__ (optional): You can define a time threshold after which query data becomes stale and requires refetching (staleTime option).
+- __Stale Time__ (optional): You can define a time threshold after which query data becomes stale and requires refetching.
