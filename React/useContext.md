@@ -2,7 +2,7 @@ I found mysef googling a lot the same stuff like how to use `useContext` React h
 
 So I decided to put it here. It is a simple code snippet that I can come back to whenever I need to brush up on this.
 
-## How useContex works:
+## How useContext works:
 Pass data through the component tree without having to pass props manually at every level. 
 It allows to share values like authentication state, theme, or localization preferences across components without explicitly passing them through props.
 
