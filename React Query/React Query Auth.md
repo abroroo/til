@@ -20,3 +20,85 @@ It works smoothly with React Query, giving easy hooks to handle user stuff witho
 - __`useLogoutMutation`__: Provides a mutation function specifically for logging out the user.
 
 - __`useRefreshMutation`__: (Optional) Offers a mutation function for refreshing access tokens if needed.
+
+
+### How to use it: 
+
+__1. Authentication with `useAuth` hook__:
+
+  ```javascript
+  function Login() {
+    const { login, status } = useAuth();
+  
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const username = event.target.username.value;
+      const password = event.target.password.value;
+      await login({ username, password });
+    };
+  
+    return (
+      <form onSubmit={handleSubmit}>
+        {/* Login form fields */}
+        <button type="submit">Login</button>
+        {status === 'loading' && <p>Logging in...</p>}
+        {status === 'error' && <p>Login failed!</p>}
+      </form>
+    );
+  }
+  
+  
+  ```
+
+__2. Authorization with `useIsAuthorized` hook:__
+
+  ```javascript
+  function ProtectedContent() {
+    const isAuthorized = useIsAuthorized();
+  
+    if (!isAuthorized) return <p>Unauthorized</p>;
+  
+    // Fetch and display protected data
+    const { data } = useQuery('protectedData', fetchData);
+  
+    return (
+      <div>
+        {/* Display protected data here */}
+      </div>
+    );
+  }
+  
+  
+  ```
+
+__3. Data fetching with `useQuery` of React Query for Authentication:__
+
+  ```javascript
+  const { data, isLoading, error } = useQuery('userData', fetchUserData);
+  
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+  
+  return (
+    <div>
+      {/* Display user data here */}
+    </div>
+  );
+  
+  
+  ```
+
+__4. Logout with `useLogout` hook:__
+
+  ```javascript
+  function LogoutButton() {
+    const logout = useLogout();
+  
+    const handleClick = () => {
+      logout();
+    };
+  
+    return <button onClick={handleClick}>Logout</button>;
+  }
+  
+  ```
