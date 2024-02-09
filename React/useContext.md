@@ -1,6 +1,6 @@
-I've been having some problems keeping in mind how the `useContext` React hook works.
+I found mysef googling a lot the same stuff like how to use `useContext` React hook.
 
-So here is a simple code snippet that I can come back to whenever I need to brush up on this hook.
+So I decided to put it here. It is a simple code snippet that I can come back to whenever I need to brush up on this.
 
 ## How useContext works:
 Pass data through the component tree without having to pass props manually at every level. 
