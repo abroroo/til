@@ -1,9 +1,12 @@
 ## React Query Auth:
-React Query Auth is a library that integrates seamlessly with React Query to simplify authentication and authorization in React applications. 
+__React Query Auth__ is a library that integrates seamlessly with React Query to simplify authentication and authorization in React applications. 
 
 It works smoothly with React Query, giving easy hooks to handle user stuff without any fuss. It's the simple solution for hassle-free authentication! 
 
-### Key Hooks:
+See the [docs](https://github.com/alan2207/react-query-auth)
+
+
+### Its key Hooks:
 
 - __`useAuth`__: Handles login, signup, logout, user data, and authentication state.
   
@@ -22,7 +25,7 @@ It works smoothly with React Query, giving easy hooks to handle user stuff witho
 - __`useRefreshMutation`__: (Optional) Offers a mutation function for refreshing access tokens if needed.
 
 
-### How to use it: 
+### How to use these hooks: 
 
 __1. Authentication with `useAuth` hook__:
 
