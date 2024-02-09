@@ -1,9 +1,9 @@
 ## React Query Auth:
 __React Query Auth__ is a library that integrates seamlessly with React Query to simplify authentication and authorization in React applications. 
 
-It works smoothly with React Query, giving easy hooks to handle user stuff without any fuss. It's the simple solution for hassle-free authentication! 
+It has hooks that handle hashing and seeding behind the scenes. 
 
-See the [docs](https://github.com/alan2207/react-query-auth)
+The hassle-free authentication! See the [docs](https://github.com/alan2207/react-query-auth)
 
 
 ### Its key Hooks:
