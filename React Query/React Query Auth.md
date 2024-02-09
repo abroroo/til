@@ -102,3 +102,5 @@ __4. Logout with `useLogout` hook:__
   }
   
   ```
+
+With this you can reduce boilerplate code by handling authentication state
