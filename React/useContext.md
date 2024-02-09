@@ -1,4 +1,4 @@
-I found mysef googling a lot the same stuff like how to use `useContext` React hook.
+I found mysef Googling the same stuff like how to use `useContext` React hook a lot.
 
 So I decided to put it here. It is a simple code snippet that I can come back to whenever I need to brush up on this.
 
