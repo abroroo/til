@@ -39,7 +39,7 @@ __1. Authentication with `useAuth` hook__:
   
     return (
       <form onSubmit={handleSubmit}>
-        {/* Login form fields */}
+        {/* Login form  */}
         <button type="submit">Login</button>
         {status === 'loading' && <p>Logging in...</p>}
         {status === 'error' && <p>Login failed!</p>}
@@ -63,7 +63,7 @@ __2. Authorization with `useIsAuthorized` hook:__
   
     return (
       <div>
-        {/* Display protected data here */}
+        {/* Something private */}
       </div>
     );
   }
@@ -81,7 +81,7 @@ __3. Data fetching with `useQuery` of React Query for Authentication:__
   
   return (
     <div>
-      {/* Display user data here */}
+      {/* User Profile maybe  */}
     </div>
   );
   
