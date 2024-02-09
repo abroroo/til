@@ -32,6 +32,10 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 #### [React Query](https://github.com/abroroo/til/tree/main/React%20Query)
 * [React Query with RESTful APIs](https://github.com/abroroo/til/blob/main/React%20Query/React%20Query%20use,%20and%20its%20methods.md)
+* [Authentication & Authorization with React Query](https://github.com/abroroo/til/blob/main/React%20Query/React%20Query%20Auth.md)
+
+#### [React](https://github.com/abroroo/til/tree/main/React)
+* [My notes on useContext hook ](https://github.com/abroroo/til/blob/main/React/useContext.md)
   
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
 * [Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
