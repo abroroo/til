@@ -1,6 +1,6 @@
 # How Selectors work in Recoil:
 
-[Selectors](https://recoiljs.org/docs/basic-tutorial/selectors) concept which by far is just like reducers in Redux 
+[Selectors](https://recoiljs.org/docs/basic-tutorial/selectors) in Recoil are kinda like reducers in Redux, but simpler
 
 Selectors in Recoil are primarily used to compute derived state based on the current state of atoms. They are pure functions that take the current state as input and return a new value based on that state.
 
