@@ -20,13 +20,16 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
 Example of a todo list application
 
 ```javascript
-import { atom, selector } from 'recoil';
+import { atom } from 'recoil';
 
 // Atom for storing list of todos
 export const todoListState = atom({
   key: 'todoListState',
-  default: [],
-  completed: false
+  default: [
+    { id: 1, text: 'Example todo 1', completed: false },
+    { id: 2, text: 'Example todo 2', completed: true },
+    // Add more todo items here...
+  ],
 });
 
 // Selector to compute completed todos count
@@ -40,5 +43,24 @@ export const completedTodosCountSelector = selector({
 
 ```
   - We define an atom __todoListState__ to store the list of todos.
-  - We define a selector __completedTodosCountSelector__ to compute the count of completed todos based on the current state of todoListState.
-The get function inside the selector retrieves the current value of todoListState using get(todoListState), filters the todos to get completed ones, and returns the count of completed todos.
+  - We define a selector __completedTodosCountSelector__ to compute the count of completed todos based on the current state of __todoListState__.
+  - The __`get`__ function inside the selector retrieves the current value of __todoListState__ using __`get(todoListState)`__, filters the todos to get completed ones, and returns the count of completed todos.
+
+### Usage:
+
+```javascript
+import { useRecoilValue } from 'recoil';
+import { completedTodosCountSelector } from './selectors';
+
+const CompletedTodosCount = () => {
+  const completedCount = useRecoilValue(completedTodosCountSelector);
+
+  return (
+    <div>
+      <p>Completed Todos Count: {completedCount}</p>
+    </div>
+  );
+};
+
+```
+  - We use the __`useRecoilValue`__ hook to subscribe to the value of __completedTodosCountSelector__ and render the count of completed todos in the UI. Whenever the list of todos changes, Recoil automatically re-evaluates the selector and updates the UI accordingly.
