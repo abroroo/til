@@ -4,11 +4,11 @@
 
 Selectors in Recoil are primarily used to compute derived state based on the current state of atoms. They're basically just functions that take the current state as input and give you back a new value based on that.
 
-## Key Concepts:
+## Key Ideas:
 
  - __Derived State__:
 
-   Selectors compute derived state based on the values of one or more atoms. This derived state can represent complex data transformations, filtering, sorting, or any other computation based on the current state of the application.
+   Selectors calculate new state by looking at what's in the atoms. This can be anything from doing math with numbers to filtering or sorting lists.
 
 - __Dependency Tracking__:
 
