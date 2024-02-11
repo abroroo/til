@@ -34,3 +34,5 @@ store.subscribe(() => {
 });
 
 ```
+
+I'll more add more about Redux..., I'm currently reading redux-toolkit docs
