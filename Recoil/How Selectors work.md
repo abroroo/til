@@ -16,7 +16,7 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
 
 - __Immutability__:
 
-    Selectors are pure functions, meaning they don't mutate state or have side effects. They take the current state as input and return a new value based on that state. This ensures that selectors are predictable and easy to reason about.
+    Selectors are pure functions, meaning they don't mutate state or have side effects. They take the current state as input and return a new value based on that state. They don't change state or cause any trouble. 
 
 
 ## Code Example:
