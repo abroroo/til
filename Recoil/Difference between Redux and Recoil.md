@@ -1,0 +1,1 @@
+[Redux](https://redux.js.org/introduction/core-concepts) and [Recoil](https://recoiljs.org/docs/introduction/core-concepts) are most common state management tools used in (React/Angular/Vue) apps, for me Recoil's approach to state managment seems a lot easier to work with, __here is why:__ 
