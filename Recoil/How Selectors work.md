@@ -5,6 +5,7 @@
 Selectors in Recoil are primarily used to compute derived state based on the current state of atoms. They are pure functions that take the current state as input and return a new value based on that state.
 
 ## Key Concepts:
+
  - __Derived State__:
 
    Selectors compute derived state based on the values of one or more atoms. This derived state can represent complex data transformations, filtering, sorting, or any other computation based on the current state of the application.
@@ -19,6 +20,7 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
 
 
 ## Code Example:
+
 Example of a todo list application
 
 ```javascript
@@ -48,7 +50,8 @@ export const completedTodosCountSelector = selector({
   - We define a selector __completedTodosCountSelector__ to compute the count of completed todos based on the current state of __todoListState__.
   - The __`get`__ function inside the selector retrieves the current value of __todoListState__ using __`get(todoListState)`__, filters the todos to get completed ones, and returns the count of completed todos.
 
-### Usage:
+## Usage:
+
 
 ```javascript
 import { useRecoilValue } from 'recoil';
