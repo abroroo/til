@@ -50,7 +50,7 @@ export const completedTodosCountSelector = selector({
   - Then, we make a selector called __completedTodosCountSelector__ to count how many todos are done.
   - Inside the selector, the __`get`__ function grabs the current list of todos and figures out how many are completed.
 
-## Usage:
+## How to Use:
 
 
 ```javascript
