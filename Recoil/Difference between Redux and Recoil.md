@@ -17,9 +17,9 @@ Recoil provides hooks like `useRecoilState()` and `useRecoilValue()` to interact
 
 ## IMO: Recoil seems simpler to use for a couple of reasons:
 
-1. __Automatic updates and minimal boilerplate code:__ Recoil keeps track of changes and updates things as needed, saving you from writing a bunch of extra code.
-
-2. __More Flexible and Easier:__ Recoil's setup is simpler and more flexible. Each atom and selector handles its own bit of data, making it easier to understand and manage.
+1. __Automatic updates and minimal boilerplate code:__ Recoil manages state updates by automatically re-evaluating selectors and components when atoms' values change.
+   
+2. __More Flexible and Easier:__ Each atom and selector manages its own piece of state, making it easier to understand and manage.
 
 
 
