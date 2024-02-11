@@ -48,7 +48,7 @@ export const completedTodosCountSelector = selector({
 ```
   - We set up an atom called __todoListState__ to hold all our todos.
   - Then, we make a selector called __completedTodosCountSelector__ to count how many todos are done.
-  - The __`get`__ function inside the selector retrieves the current value of __todoListState__ using __`get(todoListState)`__, filters the todos to get completed ones, and returns the count of completed todos.
+  - Inside the selector, the __`get`__ function grabs the current list of todos and figures out how many are completed.
 
 ## Usage:
 
