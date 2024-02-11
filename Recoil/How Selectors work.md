@@ -12,7 +12,7 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
 
 - __Dependency Tracking__:
 
-    Recoil automatically tracks dependencies between atoms and selectors. If a selector depends on an atom, Recoil will ensure that the selector is re-evaluated whenever the atom's value changes. This ensures that derived state stays in sync with the underlying atoms.
+    Recoil automatically tracks dependencies between atoms and selectors. If a selector depends on an atom, Recoil will ensure that the selector is re-evaluated whenever the atom's value changes. This way, everything stays in sync.
 
 - __Immutability__:
 
