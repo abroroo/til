@@ -36,6 +36,10 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 #### [React](https://github.com/abroroo/til/tree/main/React)
 * [My notes on useContext hook ](https://github.com/abroroo/til/blob/main/React/useContext.md)
+
+#### [Recoil](https://github.com/abroroo/til/tree/main/Recoil)
+* [Recoil better than Redux](https://github.com/abroroo/til/blob/main/Recoil/Difference%20between%20Redux%20and%20Recoil.md)
+* [Recoil Selectors](https://github.com/abroroo/til/blob/main/Recoil/How%20Selectors%20work.md)
   
 #### [Web Audio API](https://github.com/abroroo/til/blob/main/WebAudioAPI)
 * [Use Web Audio API ](https://github.com/abroroo/til/blob/main/WebAudioAPI/webaAdioAPIintro.md)
