@@ -2,7 +2,7 @@
 
 [Redux](https://redux.js.org/introduction/core-concepts) and [Recoil](https://recoiljs.org/docs/introduction/core-concepts) are two common tools for managing state in UI frameworks. Although they do similar jobs, they work differently.
 
-Redux has a central store where all application state lives. In contrast, Recoil doesn't have a central store. Instead, it manages state in a more decentralized manner using atoms and selectors.
+Redux has a central store where all application state lives(single source of truth for application state). In contrast, Recoil doesn't have a central store. Instead, it manages state in a more decentralized manner using atoms and selectors.
 
 ### __In Recoil:__
 
