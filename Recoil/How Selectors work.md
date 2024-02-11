@@ -1,11 +1,13 @@
+# How Selectors work in Recoil:
+
 [Selectors](https://recoiljs.org/docs/basic-tutorial/selectors) concept which by far is just like reducers in Redux 
 
 Selectors in Recoil are primarily used to compute derived state based on the current state of atoms. They are pure functions that take the current state as input and return a new value based on that state.
 
-### Key Concepts:
+## Key Concepts:
  - __Derived State__:
 
-    Selectors compute derived state based on the values of one or more atoms. This derived state can represent complex data transformations, filtering, sorting, or any other computation based on the current state of the application.
+   Selectors compute derived state based on the values of one or more atoms. This derived state can represent complex data transformations, filtering, sorting, or any other computation based on the current state of the application.
 
 - __Dependency Tracking__:
 
@@ -16,7 +18,7 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
     Selectors are pure functions, meaning they don't mutate state or have side effects. They take the current state as input and return a new value based on that state. This ensures that selectors are predictable and easy to reason about.
 
 
-### Code Example:
+## Code Example:
 Example of a todo list application
 
 ```javascript
