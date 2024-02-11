@@ -19,9 +19,9 @@ Selectors in Recoil are primarily used to compute derived state based on the cur
     Selectors are pure functions, meaning they don't mutate state or have side effects. They take the current state as input and return a new value based on that state. They don't change state or cause any trouble. 
 
 
-## Code Example:
+## Example Code:
 
-Example of a todo list application
+Check out this todo list example:
 
 ```javascript
 import { atom } from 'recoil';
