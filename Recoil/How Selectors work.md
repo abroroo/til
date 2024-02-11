@@ -68,4 +68,4 @@ const CompletedTodosCount = () => {
 };
 
 ```
-  - We use the __`useRecoilValue`__ hook to subscribe to the value of __completedTodosCountSelector__ and render the count of completed todos in the UI. Whenever the list of todos changes, Recoil automatically re-evaluates the selector and updates the UI accordingly.
+  - We use __`useRecoilValue`__ to watch __completedTodosCountSelector__ and show the count of completed todos. When the list changes, Recoil updates the count automatically.
