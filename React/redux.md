@@ -35,4 +35,4 @@ store.subscribe(() => {
 
 ```
 
-I'll more add more about Redux..., I'm currently reading redux-toolkit docs
+I'll more add more about Redux..., I'm currently reading redux-toolkit [docs](https://redux-toolkit.js.org/usage/migrating-to-modern-redux)
