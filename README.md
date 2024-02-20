@@ -14,6 +14,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 * [Intro To Canvas](https://github.com/abroroo/til/blob/main/Canvas/CanvasIntro.md)
 
 #### [Cypress](https://github.com/abroroo/til/tree/main/Cypress)
+* [Test dynamically populated children](https://github.com/abroroo/til/blob/main/Cypress/Test%20dynamically%20populated%20children.md)
 
 #### [Docker](https://github.com/abroroo/til/tree/main/Docker)
 * [What's docker](https://github.com/abroroo/til/blob/main/Docker/What%20is%20Docker%2C%20and%20how%20to%20use%20it.md)
