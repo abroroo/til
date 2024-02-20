@@ -33,7 +33,7 @@ export default DynamicChildrenComponent;
 
 ```
 
-## How to Test it with Cypress:
+# How to Test it with Cypress:
 
 ```javascript
 const childrenData = [
