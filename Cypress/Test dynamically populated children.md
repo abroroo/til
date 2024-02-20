@@ -44,11 +44,8 @@ const childrenData = [
   { index: 2, text: 'chair' },
   { index: 3, text: 'cell phone' }
 ];
-```
 
-### Then you can use that object and iterate over the div to test it with your stored test object 
-
-```javascript
+// Iterate over the test data and validate each child
 childrenData.forEach(({ index, text }) => {
   cy.get('[data-test="label-container"] > :nth-child(' + (index + 1) + ')')
     .should('contain.text', text);
