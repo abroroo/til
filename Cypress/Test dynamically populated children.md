@@ -1,7 +1,7 @@
 # Case: Dynamic Population of Div on Button Click
 When dealing with a div that starts empty but is populated based on certain conditions or user interactions, an effective testing approach is to organize your test data and use it to validate the behavior of your code.
 
-### For example: you have a div that is populated on button click 
+## Example Scenario:
 
 ```javascript
 import React, { useState } from "react";
