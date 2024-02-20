@@ -35,6 +35,8 @@ export default DynamicChildrenComponent;
 
 # How to Test it with Cypress:
 
+To test this behavior with Cypress, you can organize your test data into an array of objects representing the expected children. Then, iterate over this array to validate each child in the div.
+
 ```javascript
 const childrenData = [
   { index: 0, text: 'apple' },
