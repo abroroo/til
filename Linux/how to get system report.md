@@ -16,7 +16,7 @@ memory_usage=$(vm_stat | awk '/active/ {print (($3 + $5) / 1024) * 4 / 1024}')
 disk_usage=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')
 
 echo "System Monitoring Report:"
-echo "CPU Usage: ${cpu_usage}%"
+echo "${cpu_usage}%"
 echo "Memory Usage: ${memory_usage} MB"
 echo "Disk Usage: ${disk_usage}%"
 
