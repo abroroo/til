@@ -33,7 +33,7 @@ export default DynamicChildrenComponent;
 
 ```
 
-# How to test it with cypress: seperate test case in an object or array of objects 
+## How to Test it with Cypress:
 
 ```javascript
 const childrenData = [
