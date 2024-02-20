@@ -3,6 +3,8 @@ When dealing with a div that starts empty but is populated based on certain cond
 
 ## Example Scenario:
 
+Consider a scenario where you have a div that is populated with items when a button is clicked.
+
 ```javascript
 import React, { useState } from "react";
 
