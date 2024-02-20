@@ -6,17 +6,18 @@ So here is a simple bash script that will output your CPU load, Memory and disc 
 #!/bin/bash
 
 # Gets CPU usage
-cpu_usage=$(top -l 1 | grep "CPU usage" | sed -E 's/.*user, ([0-9]+\.[0-9]+)% idle.*/\1/')
+cpu_usage=$(top -l 1 | awk '/CPU usage/ {print $7}' | cut -d '%' -f 1)
 
-# Gets Memory Usage
-memory_usage=$(vm_stat | awk 'NR==2 {print (($3 + $5) / 1024) * 4 / (1024 * 1024) * 100 }')
+# Gets Memory usage
+memory_usage=$(vm_stat | awk '/active/ {print (($3 + $5) / 1024) * 4 / 1024}')
 
-# Gets disk space usage
-disk_usage=$(df -h | awk '$NF=="/" {print $5}' | sed 's/%//')
+# Gets Disk usage
+disk_usage=$(df -h / | awk 'NR==2 {print $5}' | tr -d '%')
 
 echo "System Monitoring Report:"
 echo "CPU Usage: ${cpu_usage}%"
-echo "Memory Usage: ${memory_usage}%"
+echo "Memory Usage: ${memory_usage} MB"
 echo "Disk Usage: ${disk_usage}%"
+
 
 ```
