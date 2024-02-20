@@ -1,6 +1,7 @@
-Some times when i run apps, my laptop used to get very slow in its processes and it would just make it uncomfortbale to run Activity Report on my mac. 
 
-So here is a simple bash script that will output your CPU load, Memory and disc space usage. 
+Sometimes, when I have several applications running on my laptop, it noticeably slows down, making it difficult to navigate. 
+
+To help me manage this, I've developed a straightforward bash script that offers an overview of CPU load, memory usage, and disk space utilization on my Mac.
 
 ```bash
 #!/bin/bash
