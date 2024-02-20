@@ -1,6 +1,5 @@
-# Case
-When you have a div that is initially empty but gets polulated under some condition or on some button click
-easy way to do testing in such cases is to store your test data in the object then use that object to test the actual code. 
+# Case: Dynamic Population of Div on Button Click
+When dealing with a div that starts empty but is populated based on certain conditions or user interactions, an effective testing approach is to organize your test data and use it to validate the behavior of your code.
 
 ### For example: you have a div that is populated on button click 
 
