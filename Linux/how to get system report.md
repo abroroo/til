@@ -1,7 +1,7 @@
 
 Sometimes, when I have several applications running on my laptop, it noticeably slows down, making it difficult to navigate. 
 
-To help me manage this, here is a simple bash script for an overview of CPU load, Memory usage, and disk space usage.
+To help me manage this, here is a simple bash script for an overview of CPU load, Memory usage, and Disk space usage.
 
 ```bash
 #!/bin/bash
