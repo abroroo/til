@@ -1,7 +1,7 @@
 
 Sometimes, when I have several applications running on my laptop, it noticeably slows down, making it difficult to navigate. 
 
-To help me manage this, I've developed a straightforward bash script that offers an overview of CPU load, memory usage, and disk space utilization on my Mac.
+To help me manage this, so here is a straightforward bash script for an overview of CPU load, memory usage, and disk space utilization on my Mac.
 
 ```bash
 #!/bin/bash
