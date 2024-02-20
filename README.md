@@ -1,7 +1,7 @@
 # TIL 
 > Today I Learned 
 
-Collection of things I learned as a developer
+Collection of things I learned as a developer 
 
 Concise write-ups on small things I learn day to day across a variety of languages and technologies. Keeping track of them helps me retain more and makes it easier to share the knowledge with other devs that can benefit from it. 
 
