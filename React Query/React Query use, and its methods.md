@@ -136,7 +136,7 @@ ps: Here you need to provide Query Key of the data collection you want to edit
      retry: 3, // Retry the mutation up to 3 times before giving up
 
      onMutate: async (newUser) => {
-       const currentTodos = queryClient.getQueryData('users');  // Query KEY
+       const currentUsers = queryClient.getQueryData('users');  // Query KEY
 
        // Update UI optimistically
        queryClient.setQueryData('users', (old) => [...old, { id: Date.now(), title: newUser }]);
