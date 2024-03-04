@@ -10,7 +10,7 @@ const MyComponent = React.memo(({ prop1, prop2 }) => {
 
 ```
 
-2. Optimize __`useEffect()`__ Hooks: Provide an empty dependency array [] as the second argument to `useEffect()` to ensure that the effect runs only once, similar to `componentDidMount()` in class components.
+2. Optimize __`useEffect()`__: If you only want an effect to run once, just pass an empty dependency array [] as the second argument to __`useEffect()`__. It's like saying, "Hey, only do this once, okay?"
 
 ```javascript
 useEffect(() => {
