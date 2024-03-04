@@ -20,7 +20,7 @@ useEffect(() => {
 
 ```
 
-3. Avoid Inline Function Declarations: Defie functions outside of the render method to prevent them from being recreated on each render.
+3. Avoid Inline Function Declarations: Define functions outside of the render method to prevent them from being recreated on each render.
 
 ```javascript
 const handleClick = () => {
