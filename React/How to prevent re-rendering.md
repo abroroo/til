@@ -26,7 +26,7 @@ const handleClick = useCallback(() => {
 ```
 
 
-2. Optimize __`useEffect()`__: If you only want an effect to run once, just pass an empty dependency array [] as the second argument to __`useEffect()`__. It's like saying, "Hey, only do this once, okay?"
+4. Optimize __`useEffect()`__: If you only want an effect to run once, just pass an empty dependency array [] as the second argument to __`useEffect()`__. It's like saying, "Hey, only do this once, okay?"
 
 ```javascript
 useEffect(() => {
