@@ -45,5 +45,5 @@ const MyComponent = () => {
     return <button onClick={handleClick}>Click me</button>;
 };
 
-```
+``` 
 
