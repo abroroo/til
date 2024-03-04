@@ -16,7 +16,7 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 
 ```
-3. Lock Down Event Handlers: Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.
+3. Lock Down Event Handlers: Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.  
 
 ```javascript
 const handleClick = useCallback(() => {
