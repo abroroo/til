@@ -9,6 +9,22 @@ const MyComponent = React.memo(({ prop1, prop2 }) => {
 
 
 ```
+2. Use __`useMemo()`__ to calculate only when needed or once. It caches the result of a calculation and only recalculates when the inputs change.
+
+```javascript
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+
+```
+3. Lock Down Event Handlers: Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.
+
+```javascript
+const handleClick = useCallback(() => {
+    // Handle click logic
+}, []); // Empty dependency array
+
+```
+
 
 2. Optimize __`useEffect()`__: If you only want an effect to run once, just pass an empty dependency array [] as the second argument to __`useEffect()`__. It's like saying, "Hey, only do this once, okay?"
 
@@ -32,18 +48,4 @@ const MyComponent = () => {
 };
 
 ```
-4. Lock Down Event Handlers: Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.
 
-```javascript
-const handleClick = useCallback(() => {
-    // Handle click logic
-}, []); // Empty dependency array
-
-```
-5. Use __`useMemo()`__ to calculate only when needed or once. It caches the result of a calculation and only recalculates when the inputs change.
-
-```javascript
-const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
-
-
-```
