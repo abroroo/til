@@ -14,7 +14,6 @@ const MyComponent = React.memo(({ prop1, prop2 }) => {
 ```javascript
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
-
 ```
 3. Lock Down Event Handlers: Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.  
 
