@@ -36,7 +36,7 @@ useEffect(() => {
 
 ```
 
-5. No More Inline Functions: Don't declare functions inside the render method unless you want them recreated each time. Move them outside to keep them steady.
+5. No More Inline Functions: Don't declare functions inside the render method unless you want them recreated each time. Move them outside to keep them steady. 
 
 ```javascript
 const handleClick = () => {
