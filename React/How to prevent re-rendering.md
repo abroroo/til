@@ -32,4 +32,4 @@ const MyComponent = () => {
 };
 
 ```
-4. Use useCallback(): Memoize event handlers or any callback functions using useCallback() to prevent them from being recreated on each render.
+4. Use __`useCallback()`__: Memoize event handlers or any callback functions using __`useCallback()`__ to prevent them from being recreated on each render.
