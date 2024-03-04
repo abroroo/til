@@ -1,0 +1,1 @@
+# How to prevent re-rendering in React? 
