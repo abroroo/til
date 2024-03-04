@@ -9,7 +9,7 @@ const MyComponent = React.memo(({ prop1, prop2 }) => {
 
 
 ```
-2. Use __`useMemo()`__ to calculate only when needed or once. It caches the result of a calculation and only recalculates when the inputs change.  
+2. Use __`useMemo()`__ to calculate only when needed or once. It caches the result of a calculation and only recalculates when the inputs change.   
  
 ```javascript
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
