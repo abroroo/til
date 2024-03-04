@@ -33,3 +33,10 @@ const MyComponent = () => {
 
 ```
 4. Use __`useCallback()`__: Memoize event handlers or any callback functions using __`useCallback()`__ to prevent them from being recreated on each render.
+
+```javascript
+const handleClick = useCallback(() => {
+    // Handle click logic
+}, []); // Empty dependency array
+
+```
