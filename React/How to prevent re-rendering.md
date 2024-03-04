@@ -41,3 +41,9 @@ const handleClick = useCallback(() => {
 
 ```
 5. Use __`useMemo()`__ to calculate only when needed or once. `useMemo()` is a hook used to memoize the result of a computation. It takes a function and an array of dependencies, and it returns a memoized value. The function is only re-executed if one of the dependencies has changed. It's useful for optimizing expensive calculations.
+
+```javascript
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+
+```
