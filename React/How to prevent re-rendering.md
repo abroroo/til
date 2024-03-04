@@ -15,7 +15,7 @@ const MyComponent = React.memo(({ prop1, prop2 }) => {
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 ```
-3. Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.  In React, when you define a function inside a component, like const handleClick = () => { // Handle click logic }, it gets recreated on each render. This means that every time your component rerenders, a new function with a new reference is created, even if the function's logic remains the same. `useCallback()` helps to prevent that. 
+3. Use __`useCallback()`__ to lock in event handlers or any callback functions. It ensures they don't get recreated on every render.  In React, when you define a function inside a component, like const `handleClick = () => { // Handle click logic }`, it gets recreated on each render. This means that every time your component rerenders, a new function with a new reference is created, even if the function's logic remains the same. `useCallback()` helps to prevent that. 
 
 ```javascript
 const handleClick = useCallback(() => {
