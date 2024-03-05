@@ -13,3 +13,10 @@ var x = 10;
 console.log(y); // ReferenceError: y is not defined
 y = 20;
 ```
+In the first example, x variable is intrepreted as 
+```javascript
+var x;
+console.log(x); // undefined
+x = 10;
+```
+and this is called hoisting, Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase before the code execution
