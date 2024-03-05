@@ -16,7 +16,17 @@ __`var`__:
        }
        console.log(x); // 10
      }
-     
+
+     //above gets compiled as :
+
+     function example() {
+       var x; // Declaration is hoisted
+       if (true) {
+         x = 10; // Initialization remains here
+       }
+       console.log(x); // 10
+     }
+
      ```
 __`let`__:
 
