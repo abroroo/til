@@ -53,4 +53,4 @@ const sayHello = () => {
 ```
 In this case, if you try to call `sayHello()` before it's defined, you'll encounter a TypeError because sayHello is not yet a function.
 
-Arrow functions are typically used as expressions and are assigned to variables or passed as arguments to other functions. Since variable declarations are hoisted but not their assignments, if you try to use an arrow function before its declaration, you'll encounter an error.
+__Why?__ Arrow functions are typically used as expressions and are assigned to variables or passed as arguments to other functions. Since variable declarations are hoisted but not their assignments, if you try to use an arrow function before its declaration, you'll encounter an error.
