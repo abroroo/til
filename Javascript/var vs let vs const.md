@@ -24,3 +24,11 @@ __`let`__:
  - Variables declared with let are hoisted to the top of their block but are not initialized.
  - They cannot be re-declared within the same block scope, but their values can be updated.
  - Example:
+    ```javascript
+    function example() {
+      if (true) {
+        let y = 20;
+      }
+      console.log(y); // ReferenceError: y is not defined
+    }
+    ```
