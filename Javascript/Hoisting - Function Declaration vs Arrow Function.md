@@ -1,6 +1,6 @@
 Javascript has some bahavior called [Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) 
 
-Consider this two examples 
+Consider these two examples 
 
 1. 
 ```javascript
