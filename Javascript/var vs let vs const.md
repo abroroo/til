@@ -41,6 +41,8 @@ __`let`__:
       }
       console.log(y); // ReferenceError: y is not defined
     }
+
+    // it gets compiled as it is
     ```
 __`const`__:
 
