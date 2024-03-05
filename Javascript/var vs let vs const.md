@@ -38,9 +38,9 @@ __`const`__:
  - Variables declared with const must be initialized during declaration, and their value cannot be changed once initialized.
  - Like let, variables declared with const are not hoisted to the top of their block.
  - Example:
-```javascript
-function example() {
-  const z = 30;
-  z = 40; // TypeError: Assignment to constant variable.
-}
-```
+    ```javascript
+    function example() {
+      const z = 30;
+      z = 40; // TypeError: Assignment to constant variable.
+    }
+    ```
