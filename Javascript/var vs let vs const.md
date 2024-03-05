@@ -18,3 +18,9 @@ __`var`__:
      }
      
      ```
+__`let`__:
+
+let declarations are block-scoped, meaning they are only accessible within the block they are declared in (like if, for, or while blocks).
+Variables declared with let are hoisted to the top of their block but are not initialized.
+They cannot be re-declared within the same block scope, but their values can be updated.
+Example:
