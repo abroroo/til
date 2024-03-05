@@ -44,6 +44,8 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 #### [React](https://github.com/abroroo/til/tree/main/React)
 * [My notes on useContext hook ](https://github.com/abroroo/til/blob/main/React/useContext.md)
+* [Using useReducer](https://github.com/abroroo/til/blob/main/React/useReducer.md)
+* [Prevent re-rendering in React](https://github.com/abroroo/til/blob/main/React/How%20to%20prevent%20re-rendering.md)
 
 #### [Recoil](https://github.com/abroroo/til/tree/main/Recoil)
 * [Recoil and Redux](https://github.com/abroroo/til/blob/main/Recoil/Difference%20between%20Redux%20and%20Recoil.md)
