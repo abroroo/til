@@ -28,7 +28,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 #### [JavaScript](https://github.com/abroroo/til/tree/main/Javascript)
 * [Hoisting in function declaration](https://github.com/abroroo/til/blob/main/Javascript/Hoisting%20-%20Function%20Declaration%20vs%20Arrow%20Function.md)
-* [Hositing in variables let, var, const](https://github.com/abroroo/til/blob/main/Javascript/var%20vs%20let%20vs%20const.md)
+* [Hoisting in variables let, var, const](https://github.com/abroroo/til/blob/main/Javascript/var%20vs%20let%20vs%20const.md)
 * [How JS Engine works](https://github.com/abroroo/til/blob/main/Javascript/JavaScript%20Engine.md)
 * [JS Runtime behind the scenes](https://github.com/abroroo/til/blob/main/Javascript/Javascript%20Runtime.md)
 
