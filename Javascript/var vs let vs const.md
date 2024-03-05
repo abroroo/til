@@ -1,4 +1,4 @@
-I've been wondering of hoisting is only gets applied to variables ddeclared with `var` and not to `let` or `const`. But it turns out, hoisting is applied to all types of variable declaration in javascript, the only difference is that : 
+I've been wondering if hoisting is only gets applied to variables ddeclared with `var` and not to `let` or `const`. But it turns out, hoisting is applied to all types of variable declaration in javascript, the only difference is that : 
 
 While `va`r declarations are hoisted and initialized with `undefined`, `let` and `const` declarations are __hoisted but not initialized__, leading to a `ReferenceError` if accessed before declaration.
 
