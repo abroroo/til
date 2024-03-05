@@ -13,7 +13,7 @@ var x = 10;
 console.log(y); // ReferenceError: y is not defined
 y = 20;
 ```
-In the first example, x variable is intrepreted as 
+First example is compiled as:
 ```javascript
 var x;
 console.log(x); // undefined
