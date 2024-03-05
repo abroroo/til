@@ -42,7 +42,7 @@ __`let`__:
       console.log(y); // ReferenceError: y is not defined
     }
 
-    // no hoisting
+    // gets compiled as it is 
     ```
 __`const`__:
 
