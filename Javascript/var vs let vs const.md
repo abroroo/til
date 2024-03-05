@@ -32,3 +32,9 @@ __`let`__:
       console.log(y); // ReferenceError: y is not defined
     }
     ```
+__`const`__:
+
+ - `const` declarations are also block-scoped.
+ - Variables declared with const must be initialized during declaration, and their value cannot be changed once initialized.
+ - Like let, variables declared with const are not hoisted to the top of their block.
+ - Example:
