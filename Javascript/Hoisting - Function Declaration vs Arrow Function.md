@@ -26,7 +26,7 @@ The reason you get a `ReferenceError` in the second example is that the variable
 
 # Now how does that affect functions? 
 
-Well Javascript aplies hoisting only to function declaration using `function` keyword, it doesn't apply hoisting to an arrow function `const someFunc => {}`. 
+Well Javascript applies hoisting only to function declaration using `function` keyword, it __doesn't apply hoisting to an arrow function__ `const someFunc => {}`. 
 
 When you declare a function using the function keyword, the entire function declaration is hoisted to the top of its containing scope. This means that you can call the function before it appears in the code, and JavaScript will still recognize and execute it.
 
