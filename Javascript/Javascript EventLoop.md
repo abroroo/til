@@ -16,11 +16,9 @@
     |      +---------------+                            |            
     |      |Microtask Queue|                            |  
     |      +---------------+                            |            
-    |      |  promise.then |                            |            
-    |      |  queueMicro...|                            |  
+    |      |  promise.then |                            |                                          
     |      |  queueMicro...|                            |                             
-    |      |   async/await |                            |
-    |      |  queueMicro...|                            |  
+    |      |   async/await |                            |                       
     |      +---------------+                            |  
     |                |                                  |      
     |                | (After call stack is empty)      |    
