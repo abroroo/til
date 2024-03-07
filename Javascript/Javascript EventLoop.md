@@ -18,7 +18,7 @@
     |      +---------------+                            |            
     |      |  promise.then |                            |                                          
     |      |  queueMicro...|                            |                             
-    |      |   async/await |                            |                       
+    |      |  async/await  |                            |                       
     |      +---------------+                            |  
     |                |                                  |      
     |                | (After call stack is empty)      |    
