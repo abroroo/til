@@ -1,41 +1,42 @@
 ```
-+---------------+
-|   Web APIs    |
-+---------------+
-| setTimeout()  |
-| XMLHttpReq... |
-| addEventListener|
-+---------------+
-          |
-          | (async op completed)
-          V
-+---------------+
-| Callback Queue|
-+---------------+
-|  setTimeout() |
-|   callback    |
-|   eventHandler|
-+---------------+
-          |
-          | (After microtasks)
-          V
-+---------------+
-|Microtask Queue|
-+---------------+
-|  promise.then |
-|  queueMicro...|
-|   async/await |
-+---------------+
-          |
-          | (After call stack is empty)
-          V
-+---------------+
-|   Call Stack  |
-+---------------+
-|   foo()       |
-|   bar()       |
-| promiseChain()|
-+---------------+
+    +---------------------------------------------------+
+    |                   Event Loop                      |         
+    + --------------------------------------------------+
+    |                                                   |
+    |      +---------------+                            |                                +---------------+                            
+    |      | Callback Queue|                            |                                |   Web APIs    |
+    |      +---------------+                            |                                +---------------+ 
+    |      |  setTimeout() |                            |       (async op completed)     | setTimeout()  |
+    |      |   callback    | < - - - - - - - - - - - - - - - - - - - - - - - - - - - - - | XMLHttpReq... |
+    |      |   eventHandler|                            |                                | addEventListener|
+    |      +---------------+                            |                                +---------------+   
+    |                |                                  |      
+    |                | (After microtasks is empty)      |     
+    |                V                                  |      
+    |      +---------------+                            |            
+    |      |Microtask Queue|                            |  
+    |      +---------------+                            |            
+    |      |  promise.then |                            |            
+    |      |  queueMicro...|                            |  
+    |      |  queueMicro...|                            |                             
+    |      |   async/await |                            |
+    |      |  queueMicro...|                            |  
+    |      +---------------+                            |  
+    |                |                                  |      
+    |                | (After call stack is empty)      |    
+    |                V                                  |      
+    |      +---------------+                            |  
+    |      |   Call Stack  |  <-- Executes the code     |            
+    |      +---------------+                            |  
+    |      |   foo()       |                            |  
+    |      |   bar()       |                            |  
+    |      | promiseChain()|                            |  
+    |      +---------------+                            |  
+    |                                                   | 
+    |                                                   |
+    +---------------------------------------------------+     
+
+
 ```
 (Color legend:
 Red: Web APIs
