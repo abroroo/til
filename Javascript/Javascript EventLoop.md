@@ -1,10 +1,10 @@
 # Event Loop:
 The event loop is a continuous process that monitors both the call stack and the callback queue. It follows these steps:
 
-     - If the call stack is empty, the event loop checks the microtasks queue.
-     - If the microtasks queue is not empty, the event loop dequeues the first callback function and pushes it to the call stack for execution.
-     - If the call stack is not empty, the event loop waits for the current function to complete and continue checking the call stack and microtasks queue.
-     - If the microtasks queue is empty, the the event loop dequeues the first callback function in the callback queue and pushes it to the call stack for execution.
+- If the __call stack__ is empty, the event loop first checks the __microtasks__ queue.
+- If the __microtasks queue is not empty__, the event loop dequeues the first callback function and pushes it to the call stack for execution.
+- If the __call stack is not empty__, the event loop __waits for__ the current function to complete __and continue__ checking the __call stack and microtasks queue__.
+- If the __microtasks queue is empty__, the the event loop dequeues the first callback function in the __callback queue__ and pushes it to the call stack for execution.
 
 ```
     +---------------------------------------------------+
@@ -45,5 +45,6 @@ The event loop is a continuous process that monitors both the call stack and the
 
 ```
 
-Web APIs: Web APIs, such as setTimeout, XMLHttpRequest, and event listeners, are provided by the browser environment. When you use these APIs, they handle the asynchronous operations and push the corresponding callback functions into the callback queue once their tasks are completed.
+## Web APIs: 
+Web APIs, such as __setTimeout__, __XMLHttpRequest__, and __event listeners__, are provided by the browser environment. When you use these APIs, they handle the asynchronous operations and push the corresponding callback functions into the callback queue once their tasks are completed.
 
