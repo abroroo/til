@@ -1,3 +1,10 @@
+# Event Loop:
+The event loop is a continuous process that monitors both the call stack and the callback queue. It follows these steps:
+     - If the call stack is empty, the event loop checks the microtasks queue.
+     - If the microtasks queue is not empty, the event loop dequeues the first callback function and pushes it to the call stack for execution.
+     - If the call stack is not empty, the event loop waits for the current function to complete and continue checking the call stack and microtasks queue.
+     - If the microtasks queue is empty, the the event loop dequeues the first callback function in the callback queue and pushes it to the call stack for execution.
+
 ```
     +---------------------------------------------------+
     |                   Event Loop                      |         
