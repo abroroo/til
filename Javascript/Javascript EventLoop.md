@@ -3,13 +3,13 @@
     |                   Event Loop                      |         
     + --------------------------------------------------+
     |                                                   |
-    |      +---------------+                            |                                +---------------+                            
-    |      | Callback Queue|                            |                                |   Web APIs    |
-    |      +---------------+                            |                                +---------------+ 
-    |      |  setTimeout() |                            |       (async op completed)     | setTimeout()  |
-    |      |   callback    | < - - - - - - - - - - - - - - - - - - - - - - - - - - - - - | XMLHttpReq... |
+    |      +---------------+                            |                                +-----------------+                            
+    |      | Callback Queue|                            |                                |   Web APIs      |
+    |      +---------------+                            |                                +-----------------+ 
+    |      |  setTimeout() |                            |       (async op completed)     | setTimeout()    |
+    |      |   callback    | < - - - - - - - - - - - - - - - - - - - - - - - - - - - - - | XMLHttpReq...   |
     |      |   eventHandler|                            |                                | addEventListener|
-    |      +---------------+                            |                                +---------------+   
+    |      +---------------+                            |                                +-----------------+   
     |                |                                  |      
     |                | (After microtasks is empty)      |     
     |                V                                  |      
