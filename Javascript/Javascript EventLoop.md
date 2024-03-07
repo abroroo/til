@@ -1,5 +1,6 @@
 # Event Loop:
 The event loop is a continuous process that monitors both the call stack and the callback queue. It follows these steps:
+
      - If the call stack is empty, the event loop checks the microtasks queue.
      - If the microtasks queue is not empty, the event loop dequeues the first callback function and pushes it to the call stack for execution.
      - If the call stack is not empty, the event loop waits for the current function to complete and continue checking the call stack and microtasks queue.
@@ -43,8 +44,6 @@ The event loop is a continuous process that monitors both the call stack and the
 
 
 ```
-(Color legend:
-Red: Web APIs
-Green: Callback Queue
-Blue: Microtask Queue
-Black: Call Stack)
+
+Web APIs: Web APIs, such as setTimeout, XMLHttpRequest, and event listeners, are provided by the browser environment. When you use these APIs, they handle the asynchronous operations and push the corresponding callback functions into the callback queue once their tasks are completed.
+
