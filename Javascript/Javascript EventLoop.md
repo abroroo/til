@@ -1,3 +1,4 @@
+```
 +---------------+
 |   Web APIs    |
 +---------------+
@@ -35,7 +36,7 @@
 |   bar()       |
 | promiseChain()|
 +---------------+
-
+```
 (Color legend:
 Red: Web APIs
 Green: Callback Queue
