@@ -3,6 +3,9 @@ A [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/
 
 Web workers have their own event loop, separate from the main JavaScript event loop. This means that they have their own call stack, microtask queue, and callback queue, allowing them to operate independently without interfering with the main thread's event loop.
 
+- They operate in a separate thread and have no access to the main thread's resources like the DOM, Window object, or other Web APIs.
+- Communication between the main thread and the worker is done via a messaging system using the __`postMessage`__ and __`onmessage`__ events.
+
 # How to use Web Worker in React: 
 
  1. Create a new file for the Web Worker, let's call it worker.js. This file will contain the logic that you want to run in a separate thread:
