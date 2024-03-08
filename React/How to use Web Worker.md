@@ -1,7 +1,7 @@
 # What's Web Worker: 
 A [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) is a browser feature where you can run, some computation or additional scripts, separately from the main execution thread where the web page is running.
 
-Web workers have their own event loop, separate from the main JavaScript event loop. This means that they have their own call stack, microtask queue, and callback queue, allowing them to operate independently without interfering with the main thread's event loop.     
+Web workers have their own event loop, separate from the main JavaScript event loop. This means that they have their own call stack, microtask queue, and callback queue, allowing them to operate independently without interfering with the main thread's event loop.      
 
 - They operate in a separate thread and have no access to the main thread's resources like the DOM, Window object, or other Web APIs.
 - Communication between the main thread and the worker is done via a messaging system using the __`postMessage`__ and __`onmessage`__ events.
