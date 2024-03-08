@@ -1,6 +1,6 @@
-# Event Loop:
+# Javascript Event Loop:
 The event loop is a continuous process that monitors both the call stack and the callback queue. It follows these steps:
-
+### How it works: 
 - If the __call stack__ is empty, the event loop first checks the __microtasks__ queue.
 - If the __microtasks queue is not empty__, the event loop dequeues the first callback function and pushes it to the call stack for execution.
 - If the __call stack is not empty__, the event loop __waits for__ the current function to complete __and continue__ checking the __call stack and microtasks queue__.
