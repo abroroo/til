@@ -5,3 +5,25 @@ Web workers have their own event loop, separate from the main JavaScript event l
 
 # How to use Web Worker in React: 
 
+ - First, create a new file for the Web Worker, let's call it worker.js. This file will contain the logic that you want to run in a separate thread:
+```javascript
+  // worker.js
+self.addEventListener('message', (event) => {
+  // Receive data from the main thread
+  const data = event.data;
+
+  // Perform some computationally intensive task
+  const result = computeIntensiveTask(data);
+
+  // Send the result back to the main thread
+  self.postMessage(result);
+});
+
+function computeIntensiveTask(data) {
+  // Perform some long-running or computationally intensive task
+  // ...
+  // Return the result
+  return result;
+}
+
+   ```
