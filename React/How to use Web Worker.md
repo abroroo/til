@@ -27,3 +27,9 @@ function computeIntensiveTask(data) {
 }
 
    ```
+In your React component, you can create and use the Web Worker like this:
+
+```javascript
+
+
+```
