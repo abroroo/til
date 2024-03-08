@@ -74,3 +74,4 @@ const MyComponent = () => {
 export default MyComponent;
 
 ```
+When you click the button, the data is sent to the worker thread, which performs the computationally intensive task and sends the result back to the main thread. The result is then updated in the component's state and displayed.
