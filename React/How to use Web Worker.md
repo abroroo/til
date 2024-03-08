@@ -30,6 +30,44 @@ function computeIntensiveTask(data) {
 In your React component, you can create and use the Web Worker like this:
 
 ```javascript
+import React, { useState, useEffect } from 'react';
 
+const MyComponent = () => {
+  const [result, setResult] = useState(null);
+  const [worker, setWorker] = useState(null);
+
+  useEffect(() => {
+    // Create a new Web Worker instance
+    const newWorker = new Worker('./worker.js');
+
+    // Set up event listeners for communication
+    newWorker.onmessage = (event) => {
+      // Receive the result from the worker
+      setResult(event.data);
+    };
+
+    // Store the worker instance in state
+    setWorker(newWorker);
+
+    // Clean up the worker when the component unmounts
+    return () => {
+      newWorker.terminate();
+    };
+  }, []);
+
+  const handleClick = () => {
+    // Send data to the worker
+    worker.postMessage('some data');
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Start Intensive Task</button>
+      <p>Result: {result}</p>
+    </div>
+  );
+};
+
+export default MyComponent;
 
 ```
