@@ -1,7 +1,8 @@
-I am sure you've used or heard of `bind`, `call`, and `apply` built in JS methods. 
+I am sure you've used or heard of `bind`, `call`, and `apply` built in Javascript. 
 
 Here I just tried to consicely write about each, so I can refer to it whenever I need to. 
 
+### When to use: 
 There methods are useful when you want to reuse a function in different contexts or with different sets of arguments, without having to modify the function itself.
 
 1. __`bind`__: The `bind` method creates a new function that, when called, has its `this` value set to the provided value.
