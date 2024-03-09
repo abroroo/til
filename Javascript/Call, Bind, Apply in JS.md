@@ -18,5 +18,16 @@ Here I just tried to consicely write about each, so I can refer to it whenever I
    ```
    In the example above, `bind` creates a new function `boundGreet` that, when called, will have its this value set to `{ name: 'Jane' }`. This is useful when you want to ensure that a function is called with a specific context (`this` value).
 
-2. 
+2. __`call`__: The `call` method calls a function with a given this value and arguments provided individually.
+
+   ```javascript
+   const person = {
+     name: 'John',
+     greet: function(greeting, punctuation) {
+       console.log(`${greeting}, my name is ${this.name}${punctuation}`);
+     }
+   }
    
+   person.greet.call({ name: 'Jane' }, 'Hi', '!'); // Output: Hi, my name is Jane!
+   ```
+   In this example, `call` is used to invoke the `greet` function with `{ name: 'Jane' }` as the this value, and `'Hi'` and `'!'` as the arguments.
