@@ -16,3 +16,7 @@ Here I just tried to consicely write about each, so I can refer to it whenever I
     const boundGreet = person.greet.bind({ name: 'Jane' });
     boundGreet(); // Output: Hello, my name is Jane
    ```
+   In the example above, `bind` creates a new function `boundGreet` that, when called, will have its this value set to `{ name: 'Jane' }`. This is useful when you want to ensure that a function is called with a specific context (`this` value).
+
+2. 
+   
