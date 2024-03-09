@@ -1,4 +1,4 @@
-I am sure you've used or heard of `bind`, `call`, and `apply` built in Javascript. 
+I am sure you've used or heard of `bind`, `call`, and `apply` methods built in to Javascript. 
 
 Here I just tried to consicely write about each, so I can refer to it whenever I need to. 
 
