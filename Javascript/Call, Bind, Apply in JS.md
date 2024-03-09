@@ -31,3 +31,18 @@ Here I just tried to consicely write about each, so I can refer to it whenever I
    person.greet.call({ name: 'Jane' }, 'Hi', '!'); // Output: Hi, my name is Jane!
    ```
    In this example, `call` is used to invoke the `greet` function with `{ name: 'Jane' }` as the this value, and `'Hi'` and `'!'` as the arguments.
+
+3. __`apply`__: The `apply` method is similar to `call`, but it __takes the arguments as an array instead of individual values__.
+
+   ```javascript
+   const person = {
+     name: 'John',
+     greet: function(greeting, punctuation) {
+       console.log(`${greeting}, my name is ${this.name}${punctuation}`);
+     }
+   }
+   
+   person.greet.apply({ name: 'Jane' }, ['Hello', '?']); // Output: Hello, my name is Jane?
+   ```
+   Here, `apply` invokes the `greet` function with `{ name: 'Jane' }` as the `this` value, and the arguments `['Hello', '?']` are passed as an array.
+   
