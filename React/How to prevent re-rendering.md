@@ -1,6 +1,6 @@
 # How to prevent re-rendering in React?  (put them in cache)   
 
-1. When you don't want a component to keep rerendering unnecessarily, you can use __`React.memo()`__. It basically remembers the component and stops it from rerendering unless its props change. 
+1. When you don't want a component to keep rerendering unnecessarily, you can use __`React.memo()`__. It basically remembers the component and stops it from rerendering unless its props change.  
  
 ```javascript
 const MyComponent = React.memo(({ prop1, prop2 }) => {
