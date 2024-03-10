@@ -1,3 +1,5 @@
+> I'm saving this sample snippet for myself, so that I can refer to it whenever I need quick look up.
+
 ## Cookie-based Authentication:
 
  - __Cookie-based authentication__ is a specific implementation of __session-based authentication__ where the session ID is stored in a cookie on the client side.
