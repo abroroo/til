@@ -1,3 +1,5 @@
+> I'm saving this sample snippet for myself, so that I can refer to it whenever I need quick look up.
+
 ## Session-Based Authentication:
 
  - Session-based authentication involves the use of server-side sessions to manage user authentication.
