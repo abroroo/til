@@ -83,3 +83,9 @@
 
 
    ```
+In this example:
+
+ - We're using the __`express-session`__ middleware to manage sessions in Express.js. Sessions are stored in memory by default, but you can configure other session stores like Redis for production use.
+ - When a user logs in (__`/api/login`__), we store the user's ID in the session (__`req.session.userId`__).
+ - For a restricted endpoint (__`/api/restricted`__), we check if the user is authenticated by verifying that their user ID is stored in the session. If authenticated, access is granted.
+ - We also provide a logout endpoint (__`/api/logout`__) to destroy the session and log out the user.
