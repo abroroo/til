@@ -1,6 +1,12 @@
 I'm saving this sample snippet for myself, so that I can refer to it whenever I need quick look up. 
 
-## Handle authentication and generate JWT token:
+## JWT (JSON Web Token) Authentication:
+
+ - JWT authentication involves the use of JSON Web Tokens (JWTs) to authenticate users.
+ - When a user logs in, the server generates a JWT containing user claims (such as user ID, username, and expiration time).
+ - This token is then sent to the client and stored, typically in __`localStorage`__ or memory.
+ - The client includes this token in subsequent requests to the server to authenticate the user.
+ - JWTs are stateless, meaning the server does not need to store session data, which can make them suitable for scalable and distributed systems.
 
 It is a simplified example. In a real-world scenario, you would typically integrate this with a database for user management, use secure password hashing, and handle error cases more robustly. 
 
