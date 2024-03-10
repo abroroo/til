@@ -69,3 +69,10 @@
 
 
    ```
+
+  In this example:
+
+ - We're using the __`cookie-parser`__ middleware to parse cookies sent by the client.
+ - When a user logs in (__`/api/login`__), we generate a session ID and set it as a cookie named __`sessionId`__. We use the __`httpOnly`__ flag to ensure that the cookie is accessible only through HTTP requests and not by client-side JavaScript.
+ - For a restricted endpoint (__`/api/restricted`__), we check if the session ID is present in the cookie. If it's present and valid, we grant access to the restricted endpoint. 
+   Otherwise, we return a 401 Unauthorized error.
