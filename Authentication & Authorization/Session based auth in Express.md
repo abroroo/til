@@ -1,12 +1,9 @@
 > I'm saving this sample snippet for myself, so that I can refer to it whenever I need quick look up.
 
 ## Session-Based Authentication:
-
- - Session-based authentication involves the use of server-side sessions to manage user authentication.
- - When a user logs in, the server creates a session for the user and stores session data on the server.
- - In session-based authentication, the session ID can be transmitted to the client in various ways, including __cookies__, __URL parameters__, or __custom headers__.
- - The client includes the session ID in subsequent requests, and the server uses it to look up the corresponding session data and authenticate the user.
- - Sessions are typically stored in memory or a distributed cache like Redis on the server side.
+ - Authentication data is saved on the server side, typically in the form of a session object.
+ - A session ID, which is generated and linked to a user's account upon login, is stored on the user's browser as a cookie.
+ - The session ID is sent to the server with each subsequent request, allowing the server to look up the user's authentication details and maintain their authenticated state.
 
 Example using URL parameters: 
 
