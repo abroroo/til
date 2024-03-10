@@ -12,19 +12,14 @@
 # Session Workflow
 
 1. __Login__:  The user enters their credentials (username and password) on the login page.
-
 2. __Authentication__: The server receives the credentials and verifies them against a user database (often using hashing algorithms for password security).
-
 3. __Session Creation__: If valid, the server creates a session on its side. This session can be stored in memory, database, or a file system. The session typically contains:
-
    - Session ID: A unique identifier for the session.
    - User Data: Essential user information like user ID, username, roles, etc.
    - Creation Time: Timestamp of session creation.
    - Expiration Time: Timeout period for the session (inactivity triggers session termination).
 4. __Session ID Transfer__:  The server generates a session ID (often a random string) and transmits it to the client (user's browser)  typically  through a:
-
 5. __Cookie__: A small piece of data stored on the user's device by the browser. It holds the session ID and is included in subsequent requests to the server.
-
 6. __Subsequent Requests and Verification__:
 
    - Secured Requests: With each subsequent request to the application, the user's browser automatically sends the cookie containing the session ID back to the server.
