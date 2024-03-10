@@ -1,6 +1,6 @@
 ## Cookie-based Authentication:
 
- - __Cookie-based authentication__ is a specific implementation of session-based authentication where the session ID is stored in a cookie on the client side.
+ - __Cookie-based authentication__ is a specific implementation of __session-based authentication__ where the session ID is stored in a cookie on the client side.
  - When a user logs in, the server creates a session and sets a cookie containing the session ID in the HTTP response.
  - The browser automatically includes the cookie in subsequent requests to the same domain.
  - The server reads the session ID from the cookie and uses it to retrieve the user's session data and authenticate them.
