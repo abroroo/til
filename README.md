@@ -13,7 +13,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 #### [Authentication & Authorization](https://github.com/abroroo/til/tree/main/Authentication%20%26%20Authorization)
 * [JWT Auth](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/JWT%20based%20auth%20in%20Express.md)
 * [Cookie Auth](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/Cookie%20based%20auth%20in%20Express.md)
-* [JWT vs Session, Cookie vs Session](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/JWT%20vs%20Session-based.md)
+* [JWT vs Session: cookie vs session](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/JWT%20vs%20Session-based.md)
 #### [Canvas](https://github.com/abroroo/til/blob/main/Canvas)
 * [Intro To Canvas](https://github.com/abroroo/til/blob/main/Canvas/CanvasIntro.md)
 
