@@ -1,5 +1,5 @@
 # TIL  
-> Today I Learned 
+> Today I Learned  
 
 Collection of things I learned as a developer 
 
