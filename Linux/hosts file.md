@@ -6,6 +6,8 @@ However, it is very convenient when it comes to use it as website shortcuts.
 
 For example , you can just add `ip addresses` of your favorite websites with a shortcut name 
 
+> A Linux computer keeps a similar short-list of addresses it’s expected to need in a file called /etc/hosts.
+
 ```
 
 123.4545.656.7  g # for www.google.com
