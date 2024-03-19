@@ -20,9 +20,9 @@ and now you can just enter `g` or `re` to your browser it will redirect to websi
 
 You can also use `hosts` file as adblocker or to avoid pirate sites, there is a regularly updated `hosts` file online, which you can use for free [someonewhocares.org](https://someonewhocares.org/hosts/)
 
-How it works: when router recognizes the domain name that is on the list of hosts file, it will redirect it to origin. 
+__How it works:__ when router recognizes the domain name that is on the list of hosts file, it will redirect it to origin. 
 
-If you want to use the hosts file too from that website, it’s super simple:
+If you want to use the hosts file from that website, it’s super simple:
 ```bash
 $ wget someonewhocares.org/hosts/hosts
 $ sudo cat hosts >> /etc/hosts
