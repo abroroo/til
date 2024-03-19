@@ -9,15 +9,13 @@ For example , you can just add `ip addresses` of your favorite websites with a s
 > A Linux computer keeps a similar short-list of addresses it’s expected to need in a file called /etc/hosts.
 
 ```
-
 123.4545.656.7  g # for www.google.com
 123.4.66.234.56 re # www.reddit.com 
-
 ```
 and now you can just enter `g` or `re` to your browser it will redirect to websites your have configured in the hosts file. 
 
 
-There is also []()
+There is also website with regularly updated ip addresses and other stuff for host file, which you can also use as an adblocker [someonewhocares.org](https://someonewhocares.org/hosts/)
 
 If you want to use the hosts file too, it’s super simple:
 ```bash
