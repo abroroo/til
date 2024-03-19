@@ -6,7 +6,7 @@ Now since there are billions users on internet, it became obsolete.
 
 However, it is very convenient when it comes to use it as shortcuts for your favorite websites.
 
-For example , you can just add `ip addresses` of your favorite websites with a shortcut text
+For example, you can just add `ip addresses` of your favorite websites with a shortcut text to your computer's `hosts` file
 
 > A Linux/Mac computer keeps `hosts` file in `/etc/hosts` directory.
 
