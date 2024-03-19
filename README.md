@@ -40,6 +40,7 @@ This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) rep
 
 #### [Linux](https://github.com/abroroo/til/tree/main/Linux)  
 * [Script for System Report](https://github.com/abroroo/til/blob/main/Linux/how%20to%20get%20system%20report.md)
+* [`Hosts` file for Network Shortcuts](https://github.com/abroroo/til/blob/main/Linux/hosts%20file.md)
   
 #### [PWA(Progessive Web App)](https://github.com/abroroo/til/tree/main/PWA)
 * [Add PWA to React App](https://github.com/abroroo/til/blob/main/PWA/How%20to%20add%20pwa%20to%20React.md)
