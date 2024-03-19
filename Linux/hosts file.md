@@ -2,7 +2,7 @@
 
 Before creation of DNS(Domain Name System) ,when internet had around 500-5000 users, computers used `hosts` file to store names for different ip addresses. 
 
-Now since there are billions users on internet, it became obsolete.     
+Now since there are billions users on internet, it became obsolete.       
 
 However, it is very convenient when it comes to use it as shortcuts for your favorite websites.
 
