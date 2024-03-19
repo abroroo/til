@@ -1,6 +1,6 @@
 # What is `hosts` file?
 
-Before creation of DNS(Domain Name System) ,when internet had around 500-5000 users, computers used `hosts` file to store names for different ip addresses. 
+Before creation of DNS(Domain Name System) ,when internet had around 5000-10000 users, computers used `hosts` file to store names for different ip addresses. 
 
 Now since there are billions users on internet, it became obsolete.            
 
