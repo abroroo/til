@@ -4,9 +4,9 @@ Before creation of DNS(Domain Name System) ,when internet had around 500-5000 us
 
 Now since there are billions users on internet, it became obsolete. 
 
-However, it is very convenient when it comes to use it as website shortcuts.
+However, it is very convenient when it comes to use it as shortcuts for your favorite websites.
 
-For example , you can just add `ip addresses` of your favorite websites with a shortcut name 
+For example , you can just add `ip addresses` of your favorite websites with a shortcut text
 
 > A Linux computer keeps a similar short-list of addresses it’s expected to need in a file called /etc/hosts.
 
