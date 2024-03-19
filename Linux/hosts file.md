@@ -15,3 +15,13 @@ For example , you can just add `ip addresses` of your favorite websites with a s
 
 ```
 and now you can just enter `g` or `re` to your browser it will redirect to websites your have configured in the hosts file. 
+
+
+There is also []()
+
+If you want to use the hosts file too, it’s super simple:
+```bash
+$ wget someonewhocares.org/hosts/hosts
+$ sudo cat hosts >> /etc/hosts
+$ rm hosts
+```
