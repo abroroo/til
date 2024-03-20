@@ -2,7 +2,7 @@
 
 Before creation of DNS(Domain Name System) ,when internet had around 5000-10000 users, computers used `hosts` file to store names for different ip addresses. 
 
-Now since there are billions users on internet, it became obsolete.            
+Now since there are billions users on internet, it became obsolete. But computers still keep `hosts` file. Mac/Linux system it is in `/etc/hosts` directory.           
 
 However, it is very convenient when it comes to __use it as a list of shortcuts for your favorite websites__.
 
