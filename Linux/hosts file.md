@@ -9,6 +9,7 @@ However, it is very convenient when it comes to __use it as a list of shortcuts 
 For example, you can just add `ip addresses` of your favorite websites with a shortcut text to your computer's `hosts` file
 
 > A Linux/Mac computer keeps `hosts` file in `/etc/hosts` directory.
+> Windows : `C:\Windows\System32\Drivers\Etc\hosts`
 
 ```
 123.4545.656.7  g # for www.google.com
