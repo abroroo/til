@@ -13,8 +13,8 @@ For example, you can just add `ip addresses` of your favorite websites with a sh
 > Windows : `C:\Windows\System32\Drivers\Etc\hosts`
 
 ```
-123.4545.656.7  g # for www.google.com
-123.4.66.234.56 re # www.reddit.com 
+142.251.46.228  g    # for www.google.com
+151.101.1.140  re    # www.reddit.com 
 ```
 and now you can just enter `g` or `re` to your browser it will redirect to websites your have configured in the hosts file. 
 
