@@ -9,7 +9,7 @@ Please let me know if you spot any mistakes or if I missed something. Feel free 
 
 This repo is inspired by the [@/drecali/til](https://github.com/drecali/til) repo and the concept of `Learning in Public`
 
-## Topics
+## Topics 
 #### [Authentication & Authorization](https://github.com/abroroo/til/tree/main/Authentication%20%26%20Authorization)
 * [JWT Auth](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/JWT%20based%20auth%20in%20Express.md)
 * [Cookie Auth](https://github.com/abroroo/til/blob/main/Authentication%20%26%20Authorization/Cookie%20based%20auth%20in%20Express.md)
