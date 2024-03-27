@@ -24,7 +24,7 @@ You can also use `hosts` file as adblocker or to avoid pirate sites, there is a 
 
 __How it works:__ when router recognizes the domain name that is on the list of hosts file, it will redirect it to origin. 
 
-If you want to use the hosts file from that website, hers's bash command:
+If you want to use the hosts file from that website, here is the bash command:
 ```bash
 $ wget someonewhocares.org/hosts/hosts
 $ sudo cat hosts >> /etc/hosts
