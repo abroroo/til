@@ -2,7 +2,7 @@
 
 Another way to look at this is by keeping **actions, calculations, and data separate from each other. This is called layering**. By putting actions into their own layers, we can limit how much they mess with other parts of the system.
 
-Think of it like making a pizza, as Toni does in his example. You have your base (data), the sauce and toppings (calculations), and the baking process (actions). If you keep each part separate until it's time to combine them, everything works better and tastes great!
+Think of it like making a pizza, as Toni does in the example. You have your ingedients (data), make sauce and toppings (calculations), and the make the dough and bake it (actions). You keep each part separate and combine them to the next layer only if it is finished. 
 
 By layering these parts:
 - **Data (Base)**: Keep it consistent and accessible.
