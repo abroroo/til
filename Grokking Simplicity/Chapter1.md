@@ -6,7 +6,7 @@ I'm reading a book that I find really useful, so I'm going to save my notes here
 
 ## Chapter 1
 
-Functional programming breaks down code into three main types: actions, calculations, and data. The goal is to reduce unexpected changes and make the code stronger.
+Functional programming breaks down code into three main types: actions, calculations, and data. The goal is to reduce unexpected changes and make the code less dependent.
 
 1. **Actions**: Functions that can give different results depending on when or how often you call them.
 2. **Calculations**: Functions that always give the same result for the same input, no matter when you run them.
