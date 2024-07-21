@@ -1,4 +1,3 @@
-Sure, here’s a shorter and simpler version:
 
 # Chapter 4
 
