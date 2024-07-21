@@ -1,6 +1,6 @@
 # Grokking Simplicity 
 
-This is a book I've found useful toread, so as i read thorugh the chapters, i'll save my notes in here 
+This is a book I've found useful to read, so as I read thorugh the chapters, I'll save my notes in here 
 
 ## Part 1
 
