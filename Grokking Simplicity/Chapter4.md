@@ -17,4 +17,4 @@ Sure, here’s a shorter and simpler version:
 
 
 
-Make your functions simple by having them just take input and return output, turning actions into straightforward calculations.
+Make your functions simple by having them just take input and return output, turning actions into calculations.
