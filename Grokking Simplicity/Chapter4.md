@@ -19,7 +19,7 @@
 Make your functions simple by having them just take input and return output, turning actions into calculations.
 
 
-Aplication at work:
+## Aplication at work:
 
 There is a hook that filters out allowed routes for a user based on `accessibleRoutes` list it gets from the server. 
 
