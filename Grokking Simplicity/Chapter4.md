@@ -17,3 +17,76 @@
 
 
 Make your functions simple by having them just take input and return output, turning actions into calculations.
+
+
+Aplication at work:
+
+There is a hook that filters out allowed routes for a user based on `accessibleRoutes` list it gets from the server. 
+
+```typescript
+export const useTenantNav = () => {
+  const { accessibleRoutePathList } = useTenant();
+  const rawNavConfig = navConfig[0] || {};
+  const { items: navList } = rawNavConfig;
+
+  const filteredParentItems = navList.filter((navItem) => {
+    const { path } = navItem;
+    return isMatchRoute(accessibleRoutePathList, path, true);
+  });
+  const newItems = filteredParentItems
+    .map((items) => {
+      const { children } = items;
+      const newChildren = children?.filter((child) => {
+        const { path } = child;
+        return isMatchRoute(accessibleRoutePathList, path);
+      });
+      return { ...items, children: newChildren };
+    })
+    .filter((i) => i?.children?.length !== 0);
+
+  return [{ ...rawNavConfig, items: newItems }];
+};
+
+```
+
+
+So I've tried  to apply functional programming principles, trying to trun above action into smaller actions or calculations as possible. 
+
+so filtering parent routes becomes : 
+
+```typescript
+const getParentRoutes = (navList: NavList[], accessibleRoutes: string[]): NavList[] => {
+  //Filters out main menu items you can access
+  return navList.filter((navItem) => {
+    const { path } = navItem;
+    return isMatchRoute(accessibleRoutes, path, true);
+  });
+};
+
+```
+
+filtering out sub  routes become:
+
+```typescript
+const getAccessibleSubRoutes = (item: NavItem, accessibleRoutes: string[]): NavChildren[] => {
+  //Filters out sub-items within a menu item that you can access.
+  const { children } = item;
+  const newChildren = children?.filter((child: any) => {
+    const { path } = child;
+    return isMatchRoute(accessibleRoutes, path);
+  });
+  return { ...item, children: newChildren };
+};
+
+```
+
+and finaling generating list of allowed routes :
+
+```typescript
+const getAccessibleRoutes = (children: NavChildren[], accessibleRoutes: string[]): NavList[] => {
+  //Ensures each menu item has only the accessible sub-items and removes those with none.
+  return children
+    .map((item) => getAccessibleSubRoutes(item, accessibleRoutes))
+    .filter((item) => item?.children?.length !== 0);
+};
+```
