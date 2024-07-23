@@ -52,6 +52,22 @@ export const useTenantNav = () => {
 
 So I've tried  to apply functional programming principles, trying to trun above action into smaller actions or calculations as possible. 
 
+**Above hook becomes this:**
+
+```typescript
+export const useTenantNav = () => {
+  const { accessibleRoutePathList } = useTenant();
+  const rawNavConfig = navConfig[0] || {};
+  const { items: navList } = rawNavConfig;
+
+  const filteredParentPages = getParentRoutes(navList, accessibleRoutePathList);
+
+  const allowedRoutes = getAccessibleRoutes(filteredParentPages, accessibleRoutePathList);
+
+  return [{ ...rawNavConfig, items: allowedRoutes }];
+};
+```
+
 so filtering parent routes becomes : 
 
 ```typescript
