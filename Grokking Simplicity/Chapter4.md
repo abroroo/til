@@ -56,7 +56,7 @@ so filtering parent routes becomes :
 
 ```typescript
 const getParentRoutes = (navList: NavList[], accessibleRoutes: string[]): NavList[] => {
-  //Filters out main menu items you can access
+  //Filter out main menu items that user can access
   return navList.filter((navItem) => {
     const { path } = navItem;
     return isMatchRoute(accessibleRoutes, path, true);
@@ -69,7 +69,7 @@ filtering out sub  routes become:
 
 ```typescript
 const getAccessibleSubRoutes = (item: NavItem, accessibleRoutes: string[]): NavChildren[] => {
-  //Filters out sub-items within a menu item that you can access.
+  //Filter out sub-items within a menu item that user can access.
   const { children } = item;
   const newChildren = children?.filter((child: any) => {
     const { path } = child;
