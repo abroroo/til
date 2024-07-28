@@ -33,4 +33,7 @@ With COW:
 ![image](https://github.com/user-attachments/assets/2bd80468-c4ea-4881-86a1-a63f2f9759c2)
 
 - You can convert actions into calculation just by copying an input data and modifying that copied data and return copied data leaving original data immutable. Which overall makes it a read operation, because the original data hasn't been modified.
-- One the clean code pattern is to calcualtion function to copy the input and then modify , instead of creatinga copy in the parent function and then passing that newly created copy as input to the calculation . 
+- One the clean code pattern is to calcualtion function to copy the input and then modify , instead of creatinga copy in the parent function and then passing that newly created copy as input to the calculation.
+
+![image](https://github.com/user-attachments/assets/0de44c95-d8e1-415c-88cc-5f05af16e88e)
+ 
