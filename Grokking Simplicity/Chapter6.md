@@ -27,3 +27,6 @@ With COW:
 - **Memory Efficiency**: Saves memory by sharing unchanged parts of data structures.
 - **Performance**: Improves performance by avoiding unnecessary copying.
 
+
+
+You can convert actions into calculation just by copying an input data and modifying that copied data and return copied data leaving original data immutable. Which overall makes it a read operation, because the original data hasn't been modified. 
