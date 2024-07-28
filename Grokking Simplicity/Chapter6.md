@@ -36,4 +36,8 @@ With COW:
 - One the clean code pattern is to calcualtion function to copy the input and then modify , instead of creatinga copy in the parent function and then passing that newly created copy as input to the calculation.
 
 ![image](https://github.com/user-attachments/assets/0de44c95-d8e1-415c-88cc-5f05af16e88e)
+
+
+### Immutable data:
+![image](https://github.com/user-attachments/assets/d3b61d8c-85e8-4ff4-a33b-f7c70e910d46)
  
