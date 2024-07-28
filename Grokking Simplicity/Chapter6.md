@@ -29,4 +29,7 @@ With COW:
 
 
 
+
+![image](https://github.com/user-attachments/assets/2bd80468-c4ea-4881-86a1-a63f2f9759c2)
+
 You can convert actions into calculation just by copying an input data and modifying that copied data and return copied data leaving original data immutable. Which overall makes it a read operation, because the original data hasn't been modified. 
