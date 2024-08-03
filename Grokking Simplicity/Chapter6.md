@@ -17,12 +17,14 @@ Imagine you have a list [1, 2, 3] and you want to create a new list by changing 
 - **Original List**: [1, 2, 3]
 - **New List**: [1, 2, 4]
 
-![image](https://github.com/user-attachments/assets/1c88cfd3-d4c8-4795-97fd-c73930f62844)
 
 With COW:
 1. **Initial Copy**: The new list points to the same elements as the original list: [1, 2, 3]. No data is copied yet.
 2. **Modification**: When you change the last element, only the part of the list that is modified (the last element) is copied.
 3. **Result**: The new list [1, 2, 4] shares the first two elements with the original list, and only the last element is a new copy.
+
+![image](https://github.com/user-attachments/assets/1c88cfd3-d4c8-4795-97fd-c73930f62844)
+
 
 ### Benefits:
 
