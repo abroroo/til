@@ -7,3 +7,6 @@ To address this, the chapter introduces **deep copying** (or defensive copying).
 
 However, deep copying is resource-intensive as it duplicates all data structures, unlike shallow copying, which only copies references. Therefore, use deep copying selectively, only when dealing with unknown sources or functions to safeguard your code’s immutability.
 
+![image](https://github.com/user-attachments/assets/ab86d406-6dee-4885-9b5e-576e82fed953)
+
+
