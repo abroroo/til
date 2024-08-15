@@ -13,18 +13,29 @@ In this chapter, the concept of "first-class functions" is introduced. The idea 
 
 Sometimes, you might find different functions that are almost identical except for their names. These functions have what's called "implicit arguments." Instead of having multiple similar functions, you can create one general function and pass in the varying parts as explicit arguments. This makes your code more reusable and easier to manage.
 
-.
+
 
 
 ![image](https://github.com/user-attachments/assets/74c99c38-ca2f-4b6d-9229-9015e49ddd78)
 
 
 **Can be simplified as:**  
-Imagine having several functions with slightly different names but the same core logic. Instead of keeping them all, you can refactor them into a single function that takes an extra argument to handle those differences.
 
-.
 
 
 ![image](https://github.com/user-attachments/assets/207f27ca-94a0-450d-88c2-576f1c942545)
 
     
+
+
+## Replace body with a callback function
+
+- *Identify the before, body and after sections.*
+  
+  ![image](https://github.com/user-attachments/assets/cfdf5332-3314-4f78-a8c5-abb78cf8a819)
+
+- *Extract the whole thing into a function*
+  
+  ![image](https://github.com/user-attachments/assets/2b76306a-9ce4-4830-a58f-cdcf10b74beb)
+
+  
