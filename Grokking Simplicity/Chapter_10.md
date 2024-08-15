@@ -36,6 +36,7 @@ Sometimes, you might find different functions that are almost identical except f
 
 - *Extract the whole thing into a function*
   
-  ![image](https://github.com/user-attachments/assets/2b76306a-9ce4-4830-a58f-cdcf10b74beb)
+  ![image](https://github.com/user-attachments/assets/55eaf407-74ca-40f9-b034-6174712eefc7)
+
 
   
