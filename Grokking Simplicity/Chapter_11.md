@@ -4,6 +4,7 @@ This chapter shows how HOC(Higher Order Functions) can be used to provide some f
 
 ![image](https://github.com/user-attachments/assets/4c7d8ccd-46ab-4d91-99b0-c23ff3fb7b45)
 
+![image](https://github.com/user-attachments/assets/e0747461-ae7e-4b4d-bedb-309177effc1b)
 
 
 
