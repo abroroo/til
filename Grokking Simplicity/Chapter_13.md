@@ -1,6 +1,6 @@
 # Chapter 13: Clarifying Chains
 
-**Clarifying chains** is a refactoring technique that involves identifying logical steps within a function and either wrapping them in separate functions or naming their callbacks.
+So, **Clarifying chains** is a refactoring technique that involves identifying logical steps within a function and either wrapping them in separate functions or naming their callbacks.
 
 ![image](https://github.com/user-attachments/assets/fba11e9c-57dd-40cb-b5a9-c002ed247bfd)
 
