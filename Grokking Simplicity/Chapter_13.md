@@ -21,3 +21,7 @@ So, there is another refactoring technique (**Clarifying chains**) that involves
 - **Naming the Callbacks**: This approach can be clearer because it shows that the main function is using methods like `map()` and `reduce()`, giving a better understanding of the implementation.
 - **Naming the Steps**: While this method might make the code more abstract, it could hide the quick understanding of how the function works at a glance.
 
+# Tips when chaining functions
+
+![image](https://github.com/user-attachments/assets/dbd5b80f-337a-4583-9e85-da5a44a4f91f)
+
