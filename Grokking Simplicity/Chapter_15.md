@@ -47,7 +47,7 @@ addToX(2);
 
 ```
 
-![image](https://github.com/user-attachments/assets/775ad344-31d8-471d-a923-067b1483a6d9)
+![image](https://github.com/user-attachments/assets/f12ae6e0-199b-43ce-9d7f-bc77d4bb2df5)
 
 
 
