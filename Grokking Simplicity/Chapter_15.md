@@ -1,6 +1,13 @@
-# Chapter 15 : Timelines
+# Chapter 15 : 
 
 The code can be put into a diagrom of timelines to see how each function(action types only) gets called. 
+
+_**Timelines are importatnt when functions read or modify global variables, which may lead to wrong result because of sharing same gloabal variable.**_ 
+
+![image](https://github.com/user-attachments/assets/30e3c8a8-3ae4-43ee-8a99-573a542f98ed)
+
+
+## Timelines
 
 This is how **Syncronyous** code timeline: 
 
