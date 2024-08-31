@@ -68,6 +68,12 @@ Async:
 ![image](https://github.com/user-attachments/assets/f2e5d3a8-b674-4eda-949d-7449aab21ff6)
 
 
+# [Javascript Async] Principle
+
+![image](https://github.com/user-attachments/assets/75e552b5-2013-42b4-b763-081ab7e4f6c2)
+
+We can’t return values from asynchronous calls. Asynchronous calls return immediately, but the value won’t be generated until later, when the callback is called. You can’t get a value out in the normal way, as you would with synchronous functions. The way to get a value out in asynchronous calls is with a call-
+back. You pass a callback as an argument, and you call that call-back with the value you need. This is standard JavaScript asynchronous programming.
 
 
 
