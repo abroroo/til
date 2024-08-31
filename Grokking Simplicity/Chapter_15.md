@@ -18,3 +18,12 @@ This is how **Asynchronuous** code timeline would look like:
 
 In a sequential program, instructions usually execute one after the other, in a single straight line.
 However, if two sequences of code (like two threads) are running concurrently, the instructions from these sequences might get "interleaved," meaning that a few instructions from one sequence might execute, then a few from another, and so on.
+
+**For example** 
+
+![image](https://github.com/user-attachments/assets/3d1e6341-4caf-45dd-ac00-b73dd1e1ad5a)
+![image](https://github.com/user-attachments/assets/4f5485f3-bf4e-4a71-ba97-7b1da462025e)
+![image](https://github.com/user-attachments/assets/27c29ad1-f0c3-4df0-8566-f5594091f3d8)
+
+
+
