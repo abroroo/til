@@ -25,5 +25,7 @@ However, if two sequences of code (like two threads) are running concurrently, t
 ![image](https://github.com/user-attachments/assets/4f5485f3-bf4e-4a71-ba97-7b1da462025e)
 ![image](https://github.com/user-attachments/assets/27c29ad1-f0c3-4df0-8566-f5594091f3d8)
 
+However, in some circumstances, we can prevent inter-leaving. For example, in JavaScript’s threading model, synchronous actions don’t interleave.
+
 
 
