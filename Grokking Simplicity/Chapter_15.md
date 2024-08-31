@@ -50,6 +50,19 @@ addToX(2);
 ![image](https://github.com/user-attachments/assets/f12ae6e0-199b-43ce-9d7f-bc77d4bb2df5)
 
 
+## Javascript (Sync) vs (Async) 
+
+Sync: 
+
+![image](https://github.com/user-attachments/assets/01351ba6-5f65-4a12-843d-925e773db2bc)
+
+Async: 
+
+![image](https://github.com/user-attachments/assets/f2e5d3a8-b674-4eda-949d-7449aab21ff6)
+
+
+
+
 
 
 
