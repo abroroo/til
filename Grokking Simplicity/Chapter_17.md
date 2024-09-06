@@ -27,7 +27,17 @@ when the last function calls it, it will call a callback:
 
 A `JustOnce()` primitive that lets function to be called only once, same data structure as `Cut()`
 
-![image](https://github.com/user-attachments/assets/937476fd-1f07-4e96-88c1-299a7952fb8e)
+<img width="250px" height="300px" src="https://github.com/user-attachments/assets/937476fd-1f07-4e96-88c1-299a7952fb8e" />
 
 
-![image](https://github.com/user-attachments/assets/2bbbde37-5a2e-46b0-9c87-2c989945e4ee)
+<img width="800px" height="400px" src="https://github.com/user-attachments/assets/2bbbde37-5a2e-46b0-9c87-2c989945e4ee" />
+
+
+
+
+
+# Cues when drawing timelines for a code
+
+<img width="800px" height="1000px" src="https://github.com/user-attachments/assets/52b8c32f-dd76-4d5f-a8e6-5943bc56c4dc" />
+
+
