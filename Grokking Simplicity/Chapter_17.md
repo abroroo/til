@@ -46,5 +46,17 @@ A `JustOnce()` primitive that lets function to be called only once, same data st
 
 ![image](https://github.com/user-attachments/assets/c799ec38-694a-4c2d-91c8-4662a4920c26)
 
+When it is said that "you have the whole language available to manipulate time" in the context of **first-class values**, it means that time-related values (such as timestamps, durations, or events) are treated just like any other data type in the programming language, such as numbers, strings, or functions. 
 
+### First-Class Values and Manipulation
+In programming, a **first-class value** is something that:
+- Can be **stored in variables** or data structures.
+- Can be **passed as an argument** to a function.
+- Can be **returned from a function**.
+- Can be **created and manipulated dynamically**.
+
+When time is a first-class value, it can be:
+- **Stored** in variables or objects (e.g., timestamps, durations).
+- **Passed** to and **returned** from functions.
+- **Manipulated** using the language’s built-in operations (like adding/subtracting time, comparing times, or scheduling actions based on time).
 
