@@ -21,3 +21,13 @@ when the last function calls it, it will call a callback:
 2. Every time `done()` is called, the counter (`num_finished`) inside `Cut()` is incremented. Once it reaches `2` (because we passed `2` as the first argument), the final callback is executed.
 
 3. So, when `done()` is called after `cost_ajax` finishes, and `done()` is called again after `shipping_ajax` finishes, only **then** will the `callback(total)` be triggered.
+
+
+## Example 2
+
+A `JustOnce()` primitive that lets function to be called only once, same data structure as `Cut()`
+
+![image](https://github.com/user-attachments/assets/937476fd-1f07-4e96-88c1-299a7952fb8e)
+
+
+![image](https://github.com/user-attachments/assets/2bbbde37-5a2e-46b0-9c87-2c989945e4ee)
