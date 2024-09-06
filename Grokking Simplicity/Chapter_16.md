@@ -1,6 +1,9 @@
 # Chapter 16
 
-This is chapter is mostly about implemnting a queue data structure, and why it is beneficial in making sure actions happend in synchornious way withoout interleaving each other.
+This is chapter is mostly about implemnting a queue data structure (a.k.a as a concurrency primitive), and why it is beneficial in making sure actions happend in synchornious way withoout interleaving each other.
+
+<img width="250px" height="250px" src="https://github.com/user-attachments/assets/e1914c8e-e379-4541-bcd1-474e21621d95" />
+
 
 ## Here is the implementation 
 
