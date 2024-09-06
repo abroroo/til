@@ -41,3 +41,10 @@ A `JustOnce()` primitive that lets function to be called only once, same data st
 <img width="800px" height="1000px" src="https://github.com/user-attachments/assets/52b8c32f-dd76-4d5f-a8e6-5943bc56c4dc" />
 
 
+
+![image](https://github.com/user-attachments/assets/eba02587-d7b1-4a71-8fc4-0cb58b4970ad)
+
+![image](https://github.com/user-attachments/assets/c799ec38-694a-4c2d-91c8-4662a4920c26)
+
+
+
