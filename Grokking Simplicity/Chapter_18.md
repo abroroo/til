@@ -19,3 +19,24 @@ You can create a primitive like `ValueCell`, where the central state (that many 
 ![image](https://github.com/user-attachments/assets/dc004774-74e7-4ac7-b18d-e9b4e821e13a)
 
 
+
+## Onion Architecture
+
+**Onion Architecture** is a software design pattern that emphasizes keeping the core business logic (domain) independent from external concerns (like UI, databases, frameworks). 
+
+### Key Concepts:
+1. **Layers**: The architecture is structured in layers, forming a shape like an onion.
+   - **Core/Domain Layer**: The innermost layer contains business logic, domain models, and rules. It has no dependencies on other layers.
+   - **Application Layer**: Contains services and use cases that orchestrate domain models.
+   - **Interface/Infrastructure Layer**: Handles external systems (databases, APIs, UI). This is the outermost layer, dependent on the core, but not vice versa.
+
+
+### Example:
+- The core contains your business rules (like a `Customer` entity and its operations).
+- The outer layer could use an API or database to interact with the `Customer`, but the business rules don’t depend on how or where the data is stored.
+
+![image](https://github.com/user-attachments/assets/6ecb1675-86f3-421a-b49f-8753da8868e8)
+
+
+![image](https://github.com/user-attachments/assets/3407870c-6973-4450-ac77-6c7ba13d71ee)
+
