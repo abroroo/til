@@ -37,6 +37,9 @@ You can create a primitive like `ValueCell`, where the central state (that many 
 
 ![image](https://github.com/user-attachments/assets/6ecb1675-86f3-421a-b49f-8753da8868e8)
 
+![image](https://github.com/user-attachments/assets/3d708171-d593-4e1e-9a19-a370e11c72c1)
+
+
 
 ![image](https://github.com/user-attachments/assets/3407870c-6973-4450-ac77-6c7ba13d71ee)
 
