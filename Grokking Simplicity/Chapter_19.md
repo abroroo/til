@@ -9,3 +9,6 @@ This chapter is all about reviewing all of the ideas learned in this book so far
 
 ![image](https://github.com/user-attachments/assets/5fdb29b6-bf27-4113-9db8-7daa7d46ddc7)
 
+
+![image](https://github.com/user-attachments/assets/ede796e3-9d61-4f0f-b2aa-70beefbf902e)
+
