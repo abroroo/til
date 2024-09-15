@@ -13,7 +13,7 @@ When ther are multiple ways to do something, Strategy pattern allows to switch b
 
 ---
 
-** Example: Form Validation Strategies**
+**Example: Form Validation Strategies**
 
 *Let's say we have input fields that need different validation methods.*
 
