@@ -13,7 +13,47 @@ When ther are multiple ways to do something, Strategy pattern allows to switch b
 
 ---
 
-**Example: Form Validation Strategies**
+**You can use the Strategy Pattern in functional programming.**
+
+In functional programming, functions are first-class citizens—you can pass them around just like any other variable. This makes implementing the Strategy Pattern straightforward because you can use functions as interchangeable algorithms.
+
+---
+
+**Example in: Form Validation**
+
+*Let's apply this to form validation.*
+
+**1. Define Validation Strategies**
+
+```javascript
+const isEmail = (value) => /\S+@\S+\.\S+/.test(value);
+const isPasswordStrong = (value) => value.length >= 6;
+const isUsernameValid = (value) => /^[a-zA-Z0-9]+$/.test(value);
+```
+
+**2. Context Function**
+
+```javascript
+const validate = (value, validationStrategy) => validationStrategy(value);
+```
+
+**3. Using the Validation Strategies**
+
+```javascript
+console.log(validate('user@example.com', isEmail));       // true
+console.log(validate('pass123', isPasswordStrong));       // true
+console.log(validate('user_name', isUsernameValid));      // false
+```
+
+---
+
+**Conclusion**
+
+In functional programming, using the Strategy Pattern is natural and efficient. By passing functions as arguments, you can easily swap out algorithms or behaviors at runtime. This keeps your code clean, flexible, and easy to maintain.
+
+---
+
+**Class Example: Form Validation Strategies**
 
 *Let's say we have input fields that need different validation methods.*
 
