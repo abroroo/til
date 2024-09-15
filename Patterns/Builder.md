@@ -3,9 +3,19 @@
 
 **What is the Builder Pattern?**
 
-The Builder Pattern lets you create complex objects step by step using functions instead of classes. Each function adds or modifies a part of the object and returns a new object. This approach keeps your code immutable and avoids side effects.
+Builder Pattern helps to create complex objects step by step using functions instead of defining the object intially. Each function adds or modifies a part of the object and returns a new object. 
 
-**Example: Building a Complex Button Functionally**
+---
+
+**Key Points**
+
+- **Immutable Objects:** Each function returns a new object, original stays unchanged.
+- **No Classes Needed:** Simpler code without extra classes.
+- **Composable Functions:** Easy to add or remove steps.
+
+---
+
+**Exaple: Cutomized Button**
 
 *Let's create a button component that can have various optional features.*
 
@@ -103,21 +113,8 @@ renderButton(saveButton);
 // Icon: save-icon
 ```
 
----
-
-**Key Points**
-
-- **Immutable Objects:** Each function returns a new object, original stays unchanged.
-- **No Classes Needed:** Simpler code without extra classes.
-- **Composable Functions:** Easy to add or remove steps.
 
 ---
 
-**When to Use Functional Builders in Frontend**
 
-- **React Components:** Building props objects in a clean way.
-- **State Management:** Updating state immutably in Redux or similar libraries.
-- **Configuration Objects:** Creating settings or options for libraries.
-
----
 
