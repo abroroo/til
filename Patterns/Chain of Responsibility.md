@@ -6,7 +6,6 @@ The Chain of Responsibility Pattern is like passing a request along a line of ha
 
 **Think of it this way:** You have a complaint, and you talk to customer service. If they can't help, they pass you to a manager, and so on, until someone resolves your issue.
 
----
 
 ### **Why Use the Chain of Responsibility Pattern?**
 
