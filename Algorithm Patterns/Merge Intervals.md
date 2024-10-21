@@ -1,7 +1,11 @@
 # Merge Intervals Pattern 🧩
 
 ### What’s It About?
-The **Merge Intervals Pattern** is all about combining overlapping intervals into one and leaving only the **non-overlapping** ones. It comes in handy when you're working with time ranges, data ranges, or anything that involves intervals.
+The **Merge Intervals Pattern** is all about squishing overlapping intervals together so that you end up with only **non-overlapping** ones. This is super helpful when you’re dealing with **time ranges** or any kind of data that has **start** and **end** points.
+
+### Why is this useful?
+Think of it like scheduling meetings. You have different meeting times, but some of them overlap. Instead of dealing with messy overlaps, you want to merge them into one clean time block. Once merged, you can see exactly when you’re free and when you’re busy—**no gaps or overlaps**.
+
 
 ### How to Approach It:
 
