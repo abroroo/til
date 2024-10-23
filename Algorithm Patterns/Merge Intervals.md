@@ -5,7 +5,6 @@ The **Merge Intervals Pattern** is all about squishing overlapping intervals tog
 ### Why is this useful?
 It is like scheduling meetings. When we have different meeting times, but some of them overlap. Instead of dealing with messy overlaps, we want to merge them into one clean time block. Once merged, we can see exactly when we’re free and when we’re busy—**no gaps or overlaps**.
 
-![image](https://github.com/user-attachments/assets/093be168-d297-42e7-a87f-8923c5d2d1ac)
 
 ### How to Approach It:
 
@@ -97,4 +96,6 @@ Merged intervals: [[1, 5], [7, 9]]
 ### Complexity:
 - **Time Complexity**: `O(n log n)` because of sorting, then `O(n)` for merging.
 - **Space Complexity**: `O(n)` to store the merged intervals.
+
+![image](https://github.com/user-attachments/assets/093be168-d297-42e7-a87f-8923c5d2d1ac)
 
