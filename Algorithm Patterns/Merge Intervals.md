@@ -1,6 +1,5 @@
 # Merge Intervals Pattern 🧩
 
-### What’s It About?
 The **Merge Intervals Pattern** is all about squishing overlapping intervals together so that we end up with only **non-overlapping** ones. This is helpful when dealing with **time ranges** or any kind of data that has **start** and **end** points.
 
 ### Why is this useful?
