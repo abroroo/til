@@ -131,3 +131,6 @@ A **Min Heap** is ideal because it efficiently tracks the **earliest end time** 
 
 This makes Min Heap perfect for managing resources that need the **earliest availability**, like meeting rooms, CPU scheduling, or task prioritization.
 
+![image](https://github.com/user-attachments/assets/2c1e0781-e8e5-4d15-9693-a207c187f7e2)
+
+
