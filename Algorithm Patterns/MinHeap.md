@@ -113,4 +113,19 @@ In array form, each element’s position is mapped directly to the tree structur
 - **Heapify Up**: Used after **insertion** to move the new element up until the Min Heap property is satisfied.
 - **Heapify Down**: Used after **deletion** to move the root element down, restoring the Min Heap property by swapping with the smaller child when necessary.
 - **Array Representation**: Keep elements in an array and use indexing formulas to access children and parent nodes directly.
+- 
+
+## Real world usage: 
+
+Imagine you're managing meeting rooms for an office, with each meeting having a start and end time. You want to find the minimum number of rooms needed to avoid overlaps.
+
+### How Min Heap Helps
+
+A **Min Heap** is ideal because it efficiently tracks the **earliest end time** among ongoing meetings, allowing us to quickly find and free up the first available room as new meetings start.
+
+1. **Quick Access to Earliest End Time**: The root of a Min Heap always holds the smallest end time, so we instantly know if a room is free.
+2. **Efficient Add and Remove**: Min Heap operations (insert and remove) are fast at **O(log N)**, making the process optimal even with many meetings.
+3. **Space Efficiency**: The heap only stores current end times, resulting in **O(N) space complexity**, where `N` is the number of meetings.
+
+This makes Min Heap perfect for managing resources that need the **earliest availability**, like meeting rooms, CPU scheduling, or task prioritization.
 
