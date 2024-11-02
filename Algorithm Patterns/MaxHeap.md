@@ -1,4 +1,4 @@
-### Max Heap Tree Example
+### Max Heap Tree (a.k.a Priority Queue)
 
 **Max Heap is a tree where each parent node is greater than or equal to its children.**
 
