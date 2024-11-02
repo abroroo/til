@@ -1,9 +1,11 @@
 
 ### Min Heap Tree Example
 
+**Min Heap is a tree where each parent node is smaller than or equal to its children.**
+
 Consider a Min Heap represented as an array: **[3, 5, 8, 10, 15, 12, 18]**
 
-This Min Heap follows the rule that each parent node is smaller than or equal to its children. Here's how it looks as a binary tree:
+ Here's how it looks as a binary tree:
 
 ```
            3
