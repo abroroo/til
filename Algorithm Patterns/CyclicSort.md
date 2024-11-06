@@ -1,7 +1,6 @@
 ### Cyclic Sort
 
-**What It Is**:
-Cyclic Sort is a simple, in-place sorting method for arrays where the numbers fall within a specific range, like `0` to `n` or `1` to `n`. It runs in `O(n)` time and doesn’t need extra space.
+Cyclic Sort is a in-place sorting method for arrays where the numbers fall within a specific range, like `0` to `n` or `1` to `n`. It runs in `O(n)` time and doesn’t need extra space.
 
 **How It Works**:
 1. Start from the first index.
@@ -16,8 +15,12 @@ def cyclic_sort(nums):
     i = 0
     while i < len(nums):
         correct_index = nums[i] - 1  # or nums[i] for 0-based arrays
-        if nums[i] != nums[correct_index]:  # Swap if not in the right spot
-            nums[i], nums[correct_index] = nums[correct_index], nums[i]
+
+      # swap conditon for 0 to n  
+         # ex: if nums[i] != nums[correct_index] and nums[i] < len(nums)
+
+        if nums[i] != nums[correct_index]:  # swap condition for range 1 to n
+            nums[i], nums[correct_index] = nums[correct_index], nums[i]  # Swap if not in the right spot
         else:
             i += 1  # Move on if it's correct
     return nums
