@@ -88,7 +88,6 @@ We could also create a util function for nested arrays:
 
     // Now, you can call it with any action:
     processNestedArray(data, sum);
-    ```
 
 
 ```
