@@ -67,11 +67,11 @@ We could also create a util function for nested arrays:
 
 ```js
 
-let total = 0; 
-
-function sum(num) {
-    total += num; 
-}
+    let total = 0; 
+    
+    function sum(num) {
+        total += num; 
+    }
 
 
 
