@@ -26,5 +26,47 @@ Use abstraction barrier on deeply nested data to reduce cognitive load.
 
 Working with recursive functions can get complicated, especially when dealing with multiple arguments. In such cases, it's helpful to simplify things by replacing explicit arguments with reusable functions.
 
+Example: 
+
+ Imagine a recursive function that processes nested arrays:
+    
+  ```js
+    function sumNested(arr) {
+        let total = 0;
+        for (let element of arr) {
+            if (Array.isArray(element)) {
+                total += sumNested(element); // Recursive call
+            } else {
+                total += element;
+            }
+        }
+        return total;
+    }
+  ```
+
+
+  Instead of repeatedly handling the complexity of checking if an element is an array and summing it, you could create an abstraction barrier:
+    
+  ```javascript
+    
+    function processElement(element, recursiveFunction) {
+        return Array.isArray(element) ? recursiveFunction(element) : element;
+    }
+
+    function sumNested(arr) {
+        let total = 0;
+        for (let element of arr) {
+            total += processElement(element, sumNested); // Abstraction barrier
+        }
+        return total;
+    }
+    
+  ```
+
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/55d15f7e-21db-4076-8b84-b6d8acef405f)
 
