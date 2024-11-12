@@ -67,13 +67,11 @@ We could also create a util function for nested arrays:
 
 ```js
 
-    function sumNested(arr) {
-        let total = 0;
-        for (let element of arr) {
-            total += element
-        }
-        return total;
-    }
+let total = 0; 
+
+function sum(num) {
+    total += num; 
+}
 
 
 
@@ -89,7 +87,7 @@ We could also create a util function for nested arrays:
 
 
     // Now, you can call it with any action:
-    processNestedArray(data, sumNested);
+    processNestedArray(data, sum);
     ```
 
 
