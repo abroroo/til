@@ -5,6 +5,8 @@ This chapter dives into how we can update nested objects using recursion.
 
 When working with nested data, recursive functions are more effective, whereas loops are better suited for flat data like arrays.
 
+
+
 ## Three Key Rules for Writing Recursive Functions:
 
 1. **Always have a base case**: This is where the recursion stops.
@@ -18,6 +20,9 @@ When working with nested data, recursive functions are more effective, whereas l
 
 
 ## Abstraction Barrier in Recursive Functions
+
+### Functional tools for nested data
+Use abstraction barrier on deeply nested data to reduce cognitive load.
 
 Working with recursive functions can get complicated, especially when dealing with multiple arguments. In such cases, it's helpful to simplify things by replacing explicit arguments with reusable functions.
 
