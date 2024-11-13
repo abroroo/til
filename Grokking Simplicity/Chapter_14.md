@@ -41,6 +41,9 @@ Example:
             }
         }
         return total;
+
+
+[4,5[5,6[6,7],6]7]]
     }
   ```
 
@@ -78,7 +81,7 @@ We could also create a util function for nested arrays:
     function processNestedArray(data, action) {
         for (let element of data) {
             if (Array.isArray(element)) {
-                processNestedData(element, action);
+                processNestedArray(element, action);
             } else {
                 action(element);
             }
