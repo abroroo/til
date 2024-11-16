@@ -69,3 +69,8 @@ After reversing, it becomes:
 ```
 
 The `head` now points to `4`, and each node's `next` points in the opposite direction compared to the original list.
+
+
+![image](https://github.com/user-attachments/assets/1943a012-9940-49c1-8450-fc82f8665998)
+
+
