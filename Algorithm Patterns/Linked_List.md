@@ -1,6 +1,10 @@
 ## Linked List
 A **linked list** is a data structure that consists of a sequence of elements, where each element (called a **node**) points to the next one in the sequence. 
 
+```
+[Head | Node 1] -> [Node 2] -> [Node 3] -> [Node 4] -> [Tail | Node 5] -> None
+```
+
 Unlike arrays, linked lists don't store elements in contiguous memory locations, which means: 
 > In an **array**, elements are stored next to each other in a block of memory, so if you want to add more items than the array can hold, you might need to create a new, larger array and copy everything over. This takes time and space.
 
