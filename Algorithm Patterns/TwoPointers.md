@@ -1,11 +1,11 @@
 ### Two Pointers (Works only with Sorted Lists)
 
-- A **technique** where you use **two pointers** to work on a problem by starting at **different positions** in a sorted array (or list).
+- A **technique** where we use **two pointers** to work on a problem by starting at **different positions** in a sorted array (or list).
 - Typically:
   - **One pointer starts at the beginning** of the list.
   - **The other pointer starts at the end**, and they "move" toward each other based on the logic.
     
-Imagine you’re searching for two numbers in a sorted list that add up to a target sum:
+Imagine we’re searching for two numbers in a sorted list that add up to a target sum:
 
 ```plaintext
 List: [1, 2, 3, 4, 5, 6, 7]
@@ -16,7 +16,7 @@ List: [1, 2, 3, 4, 5, 6, 7]
 - Right pointer starts at 7.
 ```
 
-1. Check if the sum of `left` and `right` equals the target.
+1. We first check if the sum of `left` and `right` equals the target.
 2. If the sum is **too small**, move the left pointer forward to increase it.
 3. If the sum is **too big**, move the right pointer backward to decrease it.
 
