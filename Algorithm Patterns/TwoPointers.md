@@ -20,6 +20,8 @@ List: [1, 2, 3, 4, 5, 6, 7]
 2. If the sum is **too small**, move the left pointer forward to increase it.
 3. If the sum is **too big**, move the right pointer backward to decrease it.
 
+![image](https://github.com/user-attachments/assets/15b585ac-5df4-4782-8102-4c128f67c444)
+
 ---
 
 #### When Is It Useful?
