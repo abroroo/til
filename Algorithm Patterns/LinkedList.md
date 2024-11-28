@@ -35,6 +35,8 @@ Here's a step-by-step way to think about it:
 3. **Update the Head**:
    - Set `head` to `prev` because `prev` is now the first node of the reversed list.
 
+![image](https://github.com/user-attachments/assets/6f1d4cd2-19a3-4f10-b1d9-91e1d0e71b8d)
+
 ### Simple Python Code:
 Here's how you can reverse a linked list in Python:
 
