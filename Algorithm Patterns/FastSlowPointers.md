@@ -1,9 +1,9 @@
 ### Fast and Slow Pointers
 
-- A **technique** where two "pointers" (think of them like markers) move at **different speeds** through a data structure, like a linked list or array.
+- A **technique** where two "pointers" (we can think of them like markers) move at **different speeds** through a data structure, like a linked list or array.
 - The **slow pointer** moves **one step at a time**, while the **fast pointer** moves **two steps at a time**.
 
-Imagine a linked list like a racetrack:
+If we imagine a linked list like a racetrack:
 
 ```plaintext
 Start --> A --> B --> C --> D --> E --> End
