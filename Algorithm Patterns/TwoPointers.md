@@ -4,10 +4,7 @@
 - Typically:
   - **One pointer starts at the beginning** of the list.
   - **The other pointer starts at the end**, and they "move" toward each other based on the logic.
-
----
-
-#### Visualization:
+    
 Imagine you’re searching for two numbers in a sorted list that add up to a target sum:
 
 ```plaintext
