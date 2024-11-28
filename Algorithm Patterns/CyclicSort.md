@@ -9,6 +9,8 @@ Cyclic Sort is a in-place sorting method for arrays where the numbers fall withi
    - If it’s in the right spot or is a duplicate, just move to the next number.
 3. Repeat until the whole array is sorted.
 
+![image](https://github.com/user-attachments/assets/e95edea6-f2bb-4ec5-a9fd-3626ff0478e5)
+
 **Code**:
 ```python
 def cyclic_sort(nums):
