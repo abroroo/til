@@ -15,6 +15,8 @@ Start --> A --> B --> C --> D --> E --> End
 
 If there’s a cycle, the fast pointer will eventually "lap" the slow one, like cars on a circular track.
 
+![image](https://github.com/user-attachments/assets/852a12af-e6e5-4759-97e5-88e46bfe65da)
+
 ---
 
 #### When Is It Useful?
