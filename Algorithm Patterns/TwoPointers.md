@@ -1,4 +1,4 @@
-### Two Pointers Pattern (For Sorted Lists)
+### Two Pointers (Works only with Sorted Lists)
 
 - A **technique** where you use **two pointers** to work on a problem by starting at **different positions** in a sorted array (or list).
 - Typically:
