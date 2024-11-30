@@ -72,3 +72,44 @@ All combinations of these items:
 - ...and so on!
 
 
+
+---
+
+Problem Combination Sum: 
+
+Given an array of distinct integers candidates and a target integer target, return all unique combinations of candidates where the chosen numbers sum to target.
+You may use the same number from candidates as many times as needed.
+The solution set must not contain duplicate combinations.
+
+```python
+
+
+def combination_sum(candidates, target):
+    def backtrack(start, current, total):
+        # Base case: If the sum equals the target, add the combination
+        if total == target:
+            result.append(list(current))
+            return
+        # If the sum exceeds the target, stop exploring this path
+        if total > target:
+            return
+        
+        # Explore further combinations
+        for i in range(start, len(candidates)):
+            # Add the current number and recurse
+            current.append(candidates[i])
+            backtrack(i, current, total + candidates[i])  # Note: `i` allows reuse of the same number
+            # Backtrack by removing the last number
+            current.pop()
+    
+    result = []
+    backtrack(0, [], 0)
+    return result
+
+# Example usage
+candidates = [2, 3, 6, 7]
+target = 7
+print("Combinations:", combination_sum(candidates, target))
+
+
+```
