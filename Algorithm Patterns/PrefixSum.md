@@ -1,6 +1,7 @@
 ## Prefix Sum 
 
-The prefix sum pattern is a way to **pre-calculate totals** in a list, so when we need to find the sum of a section, we can get the answer super fast without doing all the adding each time.
+The prefix sum pattern is a way to **pre-calculate running totals or counts in a list**, so we can quickly answer questions like sums, counts, or patterns over a range of indices without recalculating everything every time.
+
 - Instead of recalculating sums or counts repeatedly, we use a precomputed array where:
   - `prefix_sum[i]` represents the sum of elements from the start of the array up to index `i`.
 
