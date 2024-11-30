@@ -65,8 +65,6 @@ Use the prefix sum pattern when:
 3. **The problem hints at optimizing repetitive operations**:
    - When recalculating values for overlapping ranges feels inefficient.
 
----
-
 #### **Common Coding Problem Scenarios**
 1. **Subarray Sum Problems:**
    - Example: Find the sum of elements in multiple subarrays efficiently.
@@ -74,8 +72,6 @@ Use the prefix sum pattern when:
    - Example: Count the number of `1`s in multiple ranges of a binary array.
 3. **Range-based Modifications or Queries:**
    - Example: Calculate the total change in a range of values based on a set of operations.
-
----
 
 ### **Why is Prefix Sum Useful?**
 It reduces the time complexity of range-based queries from **O(n)** to **O(1)** after an **O(n)** preprocessing step. This makes it highly efficient for problems involving repeated queries.
