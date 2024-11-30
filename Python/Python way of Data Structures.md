@@ -1,7 +1,3 @@
-Here’s the concise version:
-
----
-
 **`()` → Tuple**  
 - Immutable sequence of items.  
 - Example: `(1, 2, 3)`
