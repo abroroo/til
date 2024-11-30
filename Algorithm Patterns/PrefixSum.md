@@ -1,4 +1,4 @@
-## **Prefix Sum **
+## Prefix Sum 
 
 The prefix sum pattern is a way to **precompute cumulative sums or counts** in an array so that we can answer range-based queries efficiently.
 
