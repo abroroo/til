@@ -75,3 +75,17 @@ Use the prefix sum pattern when:
 
 ### **Why is Prefix Sum Useful?**
 It reduces the time complexity of range-based queries from **O(n)** to **O(1)** after an **O(n)** preprocessing step. This makes it highly efficient for problems involving repeated queries.
+
+## Example Problem: 
+
+### **Problem Description: Items in Containers**
+
+You are given a string `s` consisting of two types of characters:
+- `'*'` represents an item.
+- `'|'` represents the boundaries of a container.
+
+You are also given two lists:
+- `startIndices`: The starting positions (1-based) of multiple queries.
+- `endIndices`: The ending positions (1-based) of multiple queries.
+
+For each query, determine the number of items (`'*'`) contained between the nearest pair of boundaries (`'|'`) within the specified range `[start, end]`.
