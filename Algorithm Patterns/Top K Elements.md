@@ -1,8 +1,8 @@
-### Top K Elements
+## Top K Elements
 
 The **Top K Elements Pattern** is a method to find the **K largest, smallest, or most frequent elements** in a dataset. It’s efficient because we focus on only part of the dataset rather than sorting everything.
 
-### What Does "Top K" Mean?
+#### What Does "Top K" Mean?
 
 Think of "Top K" as solving problems like:
 - Finding the **3 largest numbers** in a list.
@@ -11,7 +11,7 @@ Think of "Top K" as solving problems like:
 This pattern saves time by avoiding sorting the entire dataset when we only care about K elements.
 
 
-### What Is a Heap?
+#### What Is a Heap?
 
 A **Heap** is a special data structure used to manage "Top K" elements:
 - A **Min-Heap** keeps the smallest element at the top.
