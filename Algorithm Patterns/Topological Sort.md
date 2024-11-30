@@ -39,7 +39,7 @@ We’ll use this pattern in scenarios like:
 #### Example Problem: Task Scheduling
 
 ##### Problem:
-You have 6 tasks (`0` to `5`) and these dependencies:
+We have 6 tasks (`0` to `5`) and these dependencies:
 ```
 0 → 1, 0 → 2, 1 → 3, 1 → 4, 2 → 4, 3 → 5, 4 → 5
 ```
@@ -145,12 +145,4 @@ For the above example:
 ```
 Topological Sort Order: [0, 1, 2, 3, 4, 5]
 ```
-
----
-
-### Real-Life Example:
-Imagine planning a house construction:
-- You need to lay the foundation before building walls.
-- You need to finish walls before adding the roof.
-- Topological Sort ensures you don’t try to install the roof before the foundation!
 
