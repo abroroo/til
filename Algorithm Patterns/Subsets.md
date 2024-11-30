@@ -1,6 +1,6 @@
 ## Subsets
 
-Imagine you have a small group of items, like `[1, 5, 3]`, and you want to figure out all the different combinations you can make with them. The **Subsets Pattern** is a method to do this systematically and easily.
+Imagine we have a small group of items, like `[1, 5, 3]`, and we want to figure out all the different combinations we can make with them. The **Subsets Pattern** is a method to do this systematically and easily.
 
 ### What Are Subsets?
 A **subset** is just a smaller collection of elements from a set. It can have:
@@ -26,7 +26,7 @@ We build them step by step, like this:
 ---
 
 ### Python Code for Subsets
-Here’s how you can write this process in Python:
+Here’s how we can write this process in Python:
 
 ```python
 def find_subsets(nums):
@@ -54,7 +54,7 @@ print(result)
 ---
 
 ### Why Is the Subsets Pattern Useful?
-You’ll use this pattern in problems that:
+We’ll use this pattern in problems that:
 - Ask for all combinations of a set (like a shopping list or team selections).
 - Mention **subsets**, **power sets**, or **combinations** in the problem description.
 
