@@ -110,7 +110,7 @@ def numberOfItems(s, startIndices, endIndices):
     # Precompute nearest right pipe for each index by iterating from right to left (Prefix Sum)
     nearest_right_pipe = [-1] * n
     last_pipe = -1
-    for i in range(n - 1, -1, -1):
+    for i in range(n - 1, -1, -1): # range(start, stop, step)
         if s[i] == '|':
             last_pipe = i
         nearest_right_pipe[i] = last_pipe
