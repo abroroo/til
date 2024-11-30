@@ -5,7 +5,6 @@ The prefix sum pattern is a way to **pre-calculate running totals or counts in a
 - Instead of recalculating sums or counts repeatedly, we use a precomputed array where:
   - `prefix_sum[i]` represents the sum of elements from the start of the array up to index `i`.
 
----
 
 #### **How Does It Work?**
 1. **Precompute the Prefix Sum Array:**
@@ -28,7 +27,7 @@ The prefix sum pattern is a way to **pre-calculate running totals or counts in a
 
 ```python
 def compute_prefix_sum(arr):
-    prefix_sum = [0] * len(arr)
+    prefix_sum = [0] * len(arr) # Cretes an array elngth of arr with 0 values // Ex: [0,0,0,0,0]
     prefix_sum[0] = arr[0]  # First element stays the same
 
     for i in range(1, len(arr)):
