@@ -99,7 +99,7 @@ def numberOfItems(s, startIndices, endIndices):
     for i in range(n):
         star_count[i + 1] = star_count[i] + (1 if s[i] == '*' else 0)
     
-    # Precompute nearest left pipe for each index (Prefix Sum)
+    # Precompute nearest left pipe for each index by iterating from left to right (Prefix Sum)
     nearest_left_pipe = [-1] * n
     last_pipe = -1
     for i in range(n):
@@ -107,7 +107,7 @@ def numberOfItems(s, startIndices, endIndices):
             last_pipe = i
         nearest_left_pipe[i] = last_pipe
     
-    # Precompute nearest right pipe for each index (Prefix Sum)
+    # Precompute nearest right pipe for each index by iterating from right to left (Prefix Sum)
     nearest_right_pipe = [-1] * n
     last_pipe = -1
     for i in range(n - 1, -1, -1):
