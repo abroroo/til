@@ -89,3 +89,47 @@ You are also given two lists:
 - `endIndices`: The ending positions (1-based) of multiple queries.
 
 For each query, determine the number of items (`'*'`) contained between the nearest pair of boundaries (`'|'`) within the specified range `[start, end]`.
+
+```python
+def numberOfItems(s, startIndices, endIndices):
+    n = len(s)
+    
+    # Precompute cumulative star counts (Prefix Sum)
+    star_count = [0] * (n + 1)
+    for i in range(n):
+        star_count[i + 1] = star_count[i] + (1 if s[i] == '*' else 0)
+    
+    # Precompute nearest left pipe for each index (Prefix Sum)
+    nearest_left_pipe = [-1] * n
+    last_pipe = -1
+    for i in range(n):
+        if s[i] == '|':
+            last_pipe = i
+        nearest_left_pipe[i] = last_pipe
+    
+    # Precompute nearest right pipe for each index (Prefix Sum)
+    nearest_right_pipe = [-1] * n
+    last_pipe = -1
+    for i in range(n - 1, -1, -1):
+        if s[i] == '|':
+            last_pipe = i
+        nearest_right_pipe[i] = last_pipe
+    
+    # Process each query
+    result = []
+    for i in range(len(startIndices)):
+        start = startIndices[i] - 1
+        end = endIndices[i] - 1
+        
+        left = nearest_right_pipe[start]
+        right = nearest_left_pipe[end]
+        
+        if left != -1 and right != -1 and left < right:
+            result.append(star_count[right + 1] - star_count[left])
+        else:
+            result.append(0)
+    
+    return result
+
+
+```
