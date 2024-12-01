@@ -84,30 +84,27 @@ Instead of sorting everything upfront, we can merge incrementally. This method k
 
 #### Code:
 ```python
-def merge_k_sorted_lists_efficient(lists):
-    # Step 1: Track the current index for each list
-    pointers = [0] * len(lists)
+def merge_k_sorted_lists(lists):
+    pointers = [0] * len(lists)  # Track the current index for each list
     merged_list = []
 
     while True:
-        smallest = float('inf')
-        smallest_list_index = -1
+        smallest, smallest_list = None, None
 
-        # Step 2: Find the smallest current element among the lists
-        for i in range(len(lists)):
-            if pointers[i] < len(lists[i]) and lists[i][pointers[i]] < smallest:
-                smallest = lists[i][pointers[i]]
-                smallest_list_index = i
+        # Find the smallest current element among the lists
+        for i, lst in enumerate(lists):
+            if pointers[i] < len(lst):  # Check if there are elements left in the list
+                if smallest is None or lst[pointers[i]] < smallest:
+                    smallest = lst[pointers[i]]
+                    smallest_list = i
 
-        # If we couldn't find a smallest element, we're done
-        if smallest_list_index == -1:
+        # If no smallest element was found, all lists are fully merged
+        if smallest_list is None:
             break
 
-        # Step 3: Add the smallest element to the merged list
+        # Add the smallest element to the result and move the pointer
         merged_list.append(smallest)
-
-        # Step 4: Move the pointer in the list we took the smallest element from
-        pointers[smallest_list_index] += 1
+        pointers[smallest_list] += 1
 
     return merged_list
 
@@ -116,8 +113,9 @@ list1 = [1, 4, 7]
 list2 = [2, 5, 8]
 list3 = [3, 6, 9]
 
-result = merge_k_sorted_lists_efficient([list1, list2, list3])
-print("Merged list:", result)
+result = merge_k_sorted_lists([list1, list2, list3])
+print("Merged list:", result)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 ```
 
 #### How It Works:
