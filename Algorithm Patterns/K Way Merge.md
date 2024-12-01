@@ -45,9 +45,9 @@ We keep track of the smallest elements from all lists:
 
 ---
 
-#### Code:
+#### Brute Force Approach:
 ```python
-def merge_k_sorted_lists(lists):
+def merge_lists(lists):
     # Step 1: Flatten the lists into a single list
     all_elements = []
     for lst in lists:
@@ -63,7 +63,7 @@ list1 = [1, 4, 7]
 list2 = [2, 5, 8]
 list3 = [3, 6, 9]
 
-result = merge_k_sorted_lists([list1, list2, list3])
+result = merge_lists([list1, list2, list3])
 print("Merged list:", result)
 ```
 
