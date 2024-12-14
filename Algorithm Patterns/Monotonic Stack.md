@@ -18,11 +18,12 @@ This way, the stack always maintains an increasing order.
 #### Code Template for Monotonically Increasing Stack
 
 ```python
-create an empty stack
-for each element in the array:
-    while stack is not empty AND top of stack is more than the current element:
-        pop the stack
-    push the current element to stack
+stack = []
+for element in array:
+    while stack and stack[-1] > element:
+        stack.pop()
+    stack.append(element)
+
 
 ```
 
