@@ -1,14 +1,14 @@
 # Monotonic Stacks
 
-A Monotonic Stack is a special kind of stack, which maintains its elements in a specific order. 
-Unlike a traditional stack, where elements are placed on top of one another based on when they arrive, a Monotonic Stack ensures that the elements inside the stack remain in an increasing or decreasing order. 
-This is achieved by enforcing specific push and pop rules, depending on whether we want an increasing or decreasing monotonic stack.
+A Monotonic Stack is a stack data structure that keeps its elements in a specific order—either increasing or decreasing. The order is maintained by applying specific rules during the push and pop operations. This makes Monotonic Stacks useful for solving problems like finding the next greater or smaller element in an array efficiently.
 
 
 ## Types of Monotonic Stacks
 
 ### Monotonically Increasing Stack
-A Monotonically Increasing Stack is a stack where elements are arranged in an ascending order from the bottom to the top. 
+This stack maintains elements in ascending order from bottom to top.
+
+#### Explained
 Here, every new element that's pushed onto the stack is greater than or equal to the element below it. 
 If a new element is smaller, we pop the elements from the top of the stack until we find an element smaller than or equal to the new element, or the stack is empty. 
 This way, the stack always maintains an increasing order.
@@ -27,7 +27,9 @@ for each element in the array:
 ```
 
 ### Monotonically Decreasing Stack
-Conversely, a Monotonically Decreasing Stack is a stack where elements are arranged in a descending order from the bottom to the top. 
+This stack maintains elements in descending order from bottom to top.
+
+#### Explained
 When a new element arrives, if it's larger than the element on the top, we keep popping the elements from the stack until we find an element that's larger than or equal to the new element, or the stack is empty. 
 This ensures that the stack always maintains a decreasing order.
 
