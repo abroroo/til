@@ -39,11 +39,11 @@ This ensures that the stack always maintains a decreasing order.
 #### Code Template for Monotonically Decreasing Stack
 
 ```python
-create an empty stack
-for each element in the array:
-    while stack is not empty AND top of stack is less than the current element:
-        pop the stack
-    push the current element to stack
+stack = []
+for element in array:
+    while stack and stack[-1] < element:
+        stack.pop()
+    stack.append(element)
 
 ```
 
