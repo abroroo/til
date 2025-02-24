@@ -1,4 +1,4 @@
-## Keeping Filters After Refresh with URL 
+## Keeping Persistnat Filters on lists with URL 
 
 I've read a interseting article about using page URL to have persistant filters on the lists. I use lists often at my work, so this method of keeping lists persitent seems really a good approach. I'd recommend to read the [article](https://buildui.com/posts/how-to-control-a-react-component-with-the-url).
 
