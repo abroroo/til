@@ -1,6 +1,6 @@
 ### Keeping Persistent Filters on Lists with URL  
 
-I've read an interesting article about using the page URL to maintain persistent filters on lists. I use lists often at work, so this method of keeping filters persistent seems like a really good approach. I'd recommend reading the [article](https://buildui.com/posts/how-to-control-a-react-component-with-the-url).  
+I've read an interesting article about using the page URL to maintain persistent filters on lists. I use lists often at work, so this method of keeping filters persistent grabbed my attention. I'd recommend reading the [article](https://buildui.com/posts/how-to-control-a-react-component-with-the-url).  
 
 Here’s my take on it:  
 
