@@ -14,6 +14,9 @@ By using the URL to store the current state, our app becomes more reliable and u
 
 This helps to get rid of react states, reducing re-rendering dependency of React page. 
 
+![image](https://github.com/user-attachments/assets/3813032f-f7cf-47b5-9fd8-cc92db0739c9)
+
+
 #### For example 
 
 This code below which uses `search` state:
