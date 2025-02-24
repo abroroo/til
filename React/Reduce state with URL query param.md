@@ -14,5 +14,80 @@ By using the URL to store the current state, our app becomes more reliable and u
 
 This helps to get rid of react states, reducing re-rendering dependency of React page. 
 
-For example: 
+#### For example 
+
+This code below which uses `search` state:
+
+```typescript
+
+export default function Page() {
+  let [search, setSearch] = useState(''); 
+  let { data } = useQuery({ 
+    queryKey: ['people', search],
+    queryFn: async () => {
+      let res = await fetch(`/api/people?search=${search}`); 
+      let data = await res.json();
+
+      return data;
+    }, 
+  });
+
+  return (
+    <>
+...
+        <Input
+          value={search} 
+          onChange={(e) => setSearch(e.target.value)} 
+          placeholder="Find someone..."
+        />
+ 
+... // show data.map(item)
+          
+    </>
+  );
+}
+
+```
+
+can be replaced with simple variable:
+
+```typescript
+
+export default function Home() {
+  let searchParams = useSearchParams();
+  let search = searchParams.get('search') ?? '';
+  
+  let { data } = useQuery({
+    queryKey: ['people', search],
+    queryFn: async () => {
+      let res = await fetch(`/api/people?search=${search}`);
+      let data = await res.json();
+
+      return data as Response;
+    },
+   
+  });
+
+  return (
+    <>
+      {/* ... */}
+      
+      <Input
+        value={search}
+        onChange={(e) => {
+          let search = e.target.value;
+          
+          if (search) {
+            router.push(`${pathname}?search=${search}`);
+          }
+        }}
+        placeholder="Find someone..."
+      />
+    </>
+  );
+}
+
+```
+
+With this way of storing `search` text in the URL, we can get rid of react state. Now even on refresh page will still render filtered list. Also iti s good use cass s for backward and forward button of the browser. So if onClick to list itme you get redirected to item detail, apress back backward button you still get filtered list with last search string. 
 
