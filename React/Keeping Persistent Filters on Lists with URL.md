@@ -95,3 +95,58 @@ Now, the search text stays in the URL, so even after a refresh, we see the same 
 
 It's also useful for the browser's **back and forward buttons**. If we click on a list item and navigate to its details, pressing the **back button** will return us to the filtered list with the last search still applied.
 
+
+## Issue
+
+However, with this approach there is one issue. Updating the URL causes a re-render. If filters change frequently (e.g., typing search terms), this might lead to unnecessary renders. Since search is in the query keu of `useQuery` on every user typed char it will cause rre-render fetching new data, which in fact makes theapge laggy. In that case , we can combine state with URL param, so that we use state for input value but also use URL param to keep filters on refresh, and make fetch request with debounce only when url cahnges. 
+
+### Example: URL + State Hybrid Approach
+
+**State**: Improves UX (avoids lag while typing).
+
+**URL**: Keeps filters persistent (refresh/share support).
+
+**Debounce Effect**: Reduces unnecessary URL updates & re-renders.
+
+
+```typescript
+export default function Home() {
+  let searchParams = useSearchParams();
+  let router = useRouter();
+  
+  let searchFromURL = searchParams.get('search') ?? '';  
+  let [search, setSearch] = useState(searchFromURL); // Local state for smooth UI updates
+  
+  let { data } = useQuery({
+    queryKey: ['people', searchFromURL], // Fetch based on URL, not local state
+    queryFn: async () => {
+      let res = await fetch(`/api/people?search=${searchFromURL}`);
+      return res.json();
+    },
+  });
+
+  function handleSearch(e) {
+    let newSearch = e.target.value;
+    setSearch(newSearch); // Update local state instantly for better UX
+
+    // Update URL only after a short delay (debounce effect)
+    setTimeout(() => {
+      router.push(`${pathname}?search=${newSearch}`);
+    }, 500);
+  }
+
+  return (
+    <>
+      <Input
+        value={search}
+        onChange={handleSearch} // Use state for smooth typing experience
+        placeholder="Find someone..."
+      />
+      {/* Render filtered list */}
+    </>
+  );
+}
+
+
+```
+This is best for real-time search where we don’t want to update the URL on every keystroke but still want filters to persist.
