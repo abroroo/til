@@ -1,14 +1,14 @@
-## Keeping Persistnat Filters on lists with URL 
+### Keeping Persistent Filters on Lists with URL  
 
-I've read a interseting article about using page URL to have persistant filters on the lists. I use lists often at my work, so this method of keeping lists persitent seems really a good approach. I'd recommend to read the [article](https://buildui.com/posts/how-to-control-a-react-component-with-the-url).
+I've read an interesting article about using the page URL to maintain persistent filters on lists. I use lists often at work, so this method of keeping filters persistent seems like a really good approach. I'd recommend reading the [article](https://buildui.com/posts/how-to-control-a-react-component-with-the-url).  
 
-Here is a my take on it:
+Here’s my take on it:  
 
-When have a list with filters, and you want to keep active filters even if user refreshes the page or shares the link.
+When we have a list with filters, we want to keep active filters even if the user refreshes the page or shares the link.  
 
-In React, we often do it using "state." But if the page reloads, this state resets, and we forget which filters were applied.
+In React, we often do this using **state**, but if the page reloads, the state resets, and we lose the applied filters.  
 
-To fix this, we can use the URL (the web address) to remember the state.
+To fix this, we can use the **URL** (the web address) to store the filters and make them persistent.
 
 #### Here's how we can do it:
 
