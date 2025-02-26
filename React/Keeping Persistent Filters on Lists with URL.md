@@ -115,7 +115,7 @@ export default function Home() {
   let router = useRouter();
   
   let searchFromURL = searchParams.get('search') ?? '';  
-  let [search, setSearch] = useState(searchFromURL); // Local state for smooth UI updates
+  let [search, setSearch] = useState(searchFromURL); 
   
   let { data } = useQuery({
     queryKey: ['people', searchFromURL], // Fetch based on URL, not local state
@@ -127,9 +127,9 @@ export default function Home() {
 
   function handleSearch(e) {
     let newSearch = e.target.value;
-    setSearch(newSearch); // Update local state instantly for better UX
+    setSearch(newSearch); 
 
-    // Update URL only after a short delay (debounce effect)
+    
     setTimeout(() => {
       router.push(`${pathname}?search=${newSearch}`);
     }, 500);
@@ -139,7 +139,7 @@ export default function Home() {
     <>
       <Input
         value={search}
-        onChange={handleSearch} // Use state for smooth typing experience
+        onChange={handleSearch} 
         placeholder="Find someone..."
       />
       {/* Render filtered list */}
