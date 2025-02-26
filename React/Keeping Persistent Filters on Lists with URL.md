@@ -98,7 +98,9 @@ It's also useful for the browser's **back and forward buttons**. If we click on 
 
 ## Issue
 
-However, with this approach there is one issue. Updating the URL causes a re-render. If filters change frequently (e.g., typing search terms), this might lead to unnecessary renders. Since search is in the query keu of `useQuery` on every user typed char it will cause rre-render fetching new data, which in fact makes theapge laggy. In that case , we can combine state with URL param, so that we use state for input value but also use URL param to keep filters on refresh, and make fetch request with debounce only when url cahnges. 
+However, with this approach, there is one issue: updating the URL causes a re-render. If filters change frequently (e.g., typing search terms), this might lead to unnecessary renders. Since the search term is part of the query key in `useQuery`, every typed character triggers a re-fetch, making the page laggy.  
+
+In this case, we can combine **state with URL parameters**—using state to manage the input value while keeping filters in the URL for refresh persistence. The fetch request can be debounced to trigger **only when the URL changes**, reducing unnecessary re-renders.
 
 ### Example: URL + State Hybrid Approach
 
