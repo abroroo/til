@@ -133,13 +133,13 @@ pnpm workspaces automatically link internal packages and reuse the global store 
 
 ### Switching from npm to pnpm
 
-1. Remove `node_modules` and `package-lock.json`:
+1. Remove `node_modules`:
 
     ```kotlin
-    rm -rf node_modules package-lock.json
+    rm -rf node_modules
     ```
 
-2. If you have `package-lock.json`, convert it:
+2. If you have `package-lock.json`, convert it to `pnpm-lock.yaml`:
 
     ```kotlin
     pnpm import
