@@ -63,18 +63,29 @@ For example, if packageA and packageB both need lodash:
 
 ```kotlin
 node_modules/
-├── lodash/                  # hoisted (lodash@4)
+├── lodash@4/                  # hoisted (lodash@4)
 ├── packageA/
 │   └── node_modules/
-│       (empty if lodash@4 is hoisted)
+│                              # empty here, since lodash@4 is hoisted
 ├── packageB/
 │   └── node_modules/
-│       ├── lodash/          # only exists if packageB needs lodash@3
+│       ├── lodash@3/          # install if packageB needs lodash@3
 ```
 
 - If lodash@4 is hoisted, packageA is happy.
 - If packageB needs lodash@3, npm might nest it under packageB’s `node_modules`.
 - If packageB accidentally imports from the top level, it gets lodash@4 instead — version conflict.
+
+```kotlin
+node_modules/
+├── lodash@4/                  # hoisted (lodash@4)
+├── packageA/
+│   └── node_modules/
+│       
+├── packageB/
+│   └── node_modules/
+│            
+```
 
 This is why npm projects sometimes break when versions don’t match exactly.
 
