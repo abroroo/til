@@ -62,6 +62,19 @@ A **symlink is a special file that stores path url to the gloabl store**, pointi
 
 npm allows version ranges like `^3.0.0` (3.x only). During install, npm hoists shared versions to the root to save space. If most packages accept `lodash@4`, npm may hoist it, even if one package strictly needs `^3`. Due to npm’s hoisting logic or peer dependency gaps, that nested `lodash@3` can be skipped, and Node.js may accidentally load the hoisted version instead. pnpm avoids this by fully isolating every package’s dependencies with strict symlinks, so each package always gets exactly the version it asked for.
 
+```kotlin
+node_modules/
+├── lodash/                  <-- Hoisted (might be lodash@4)
+├── packageA/
+│   └── node_modules/
+│       (empty if lodash@4 was hoisted)
+├── packageB/
+│   └── node_modules/
+│       ├── lodash/          <-- Only if packageB needs lodash@3
+
+
+```
+
 ### Lockfile Differences  
 npm uses `package-lock.json`, which tracks top-level and nested dependencies in a somewhat flat format.  
 pnpm uses `pnpm-lock.yaml`, which is smaller, easier to review, and tracks nested dependencies more accurately.
