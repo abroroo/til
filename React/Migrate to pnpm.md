@@ -64,30 +64,46 @@ For example, if packageA and packageB both need lodash:
 ```kotlin
 node_modules/
 ├── lodash@4/                  # hoisted (lodash@4)
-├── packageA/
+├── react-query/
 │   └── node_modules/
 │                              # empty here, since lodash@4 is hoisted
-├── packageB/
+├── axsios/
 │   └── node_modules/
 │       ├── lodash@3/          # install if packageB needs lodash@3
 ```
 
-- If lodash@4 is hoisted, packageA is happy.
-- If packageB needs lodash@3, npm might nest it under packageB’s `node_modules`.
-- If packageB accidentally imports from the top level, it gets lodash@4 instead — version conflict.
+- If lodash@4 is hoisted, react-query is happy.
+- If axsios needs lodash@3, npm might nest it under axsios’s `node_modules`.
+- However, dur to bug, npm accidentally can skip installng loadhas@3 thinking it is compatible with the top level loadash.
 
 ```kotlin
 node_modules/
 ├── lodash@4/                  # hoisted (lodash@4)
-├── packageA/
+├── react-query/
 │   └── node_modules/
 │       
-├── packageB/
+├── axsios/                  # needs loadsh@3
 │   └── node_modules/
 │            
 ```
 
 This is why npm projects sometimes break when versions don’t match exactly.
+
+- with **pnpm**, each pacakjges gets exact version
+
+```kotlin
+node_modules/
+├── react-query -> .pnpm/lodash@4.17.21/node_modules/lodash
+├── axsios -> .pnpm/lodash@3.2.0/node_modules/lodash
+└── .pnpm/
+    ├── lodash@4.17.21/
+    │   └── node_modules/
+    │       └── lodash/  # symlink to global store: ~/.pnpm-store/v3/files/55/abc1234567
+    ├── lodash@3.2.0/
+        └── node_modules/
+            └── lodash/   # symlink to global store: ~/.pnpm-store/v3/files/68/def9876543
+```
+
 
 ---
 
