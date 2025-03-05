@@ -89,7 +89,8 @@ node_modules/
 
 This is why npm projects sometimes break when versions don’t match exactly.
 
-- with **pnpm**, each pacakjges gets exact version
+- pnpm **never hoists conflicting versions**. Each package gets exactly the version it requested, even if that means two versions exist side by side.
+
 
 ```kotlin
 node_modules/
@@ -104,37 +105,8 @@ node_modules/
             └── lodash/   # symlink to global store: ~/.pnpm-store/v3/files/68/def9876543
 ```
 
-
----
-
-### How pnpm Avoids Hoisting Problems
-
-pnpm **never hoists conflicting versions**. Each package gets exactly the version it requested, even if that means two versions exist side by side.
-
-Example folder structure in pnpm:
-
-```kotlin
-node_modules/
-├── packageA -> .pnpm/packageA@1.0.0/node_modules/packageA
-├── packageB -> .pnpm/packageB@1.0.0/node_modules/packageB
-├── lodash -> .pnpm/lodash@4.17.21/node_modules/lodash
-└── .pnpm/
-    ├── packageA@1.0.0/
-    │   └── node_modules/
-    │       └── lodash -> global store lodash@4.17.21
-    ├── packageB@1.0.0/
-    │   └── node_modules/
-    │       └── lodash -> global store lodash@3.10.1
-    ├── lodash@4.17.21/
-    │   └── node_modules/
-    │       └── lodash/
-    ├── lodash@3.10.1/
-        └── node_modules/
-            └── lodash/
-```
-
-- packageA gets lodash@4  
-- packageB gets lodash@3  
+- react-query gets lodash@4  
+- axsios gets lodash@3  
 - Each package is guaranteed to get exactly the version it needs, no accidental leaks.
 
 ---
