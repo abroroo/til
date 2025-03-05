@@ -61,7 +61,6 @@ A **symlink is a special file that stores path url to the gloabl store**, pointi
 ### Version Isolation – No Hoisting Conflicts  
 
 npm allows version ranges like `^3.0.0` (3.x only). During install, npm hoists shared versions to the root to save space. If most packages accept `lodash@4`, npm may hoist it, even if one package strictly needs `^3`. Due to npm’s hoisting logic or peer dependency gaps, that nested `lodash@3` can be skipped, and Node.js may accidentally load the hoisted version instead. pnpm avoids this by fully isolating every package’s dependencies with strict symlinks, so each package always gets exactly the version it asked for.
-Absolutely! Here’s a **clear side-by-side comparison** showing how **npm** vs **pnpm** handle hoisting and dependency storage inside `node_modules`:
 
 ---
 
@@ -73,7 +72,7 @@ If **packageA** and **packageB** both depend on **lodash**, but different versio
 - If versions conflict, **one version is hoisted, and the other might be nested inside a package’s `node_modules`**.
 - This **hoisting can cause a package to accidentally import the wrong version if it looks up the wrong path.**
 
-```
+```kotlin
 node_modules/
 ├── lodash/                  <-- Hoisted (might be lodash@4)
 ├── packageA/
@@ -94,7 +93,7 @@ node_modules/
 
 pnpm **never hoists conflicting versions**. Each package gets exactly what it needs, fully isolated inside `.pnpm`, and `node_modules` just contains **symlinks pointing to the correct version**.
 
-```
+```kotlin
 node_modules/
 ├── packageA -> .pnpm/packageA@1.0.0/node_modules/packageA
 ├── packageB -> .pnpm/packageB@1.0.0/node_modules/packageB
