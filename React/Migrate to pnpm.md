@@ -4,6 +4,11 @@
 ### Package Storage – Global Store  
 npm downloads and stores a full copy of each dependency directly inside `node_modules` for every project. Each project is independent.  
 
+### ✅ Key Benefit
+- Your `node_modules` stays **very small**.
+- All heavy files are in the **global store**, not duplicated across projects.
+- Future projects can instantly **reuse the same packages** without downloading again.
+  
 ### Example scenario  
 Let’s say you have a React project that uses `lodash` and `react`.
 
@@ -52,11 +57,6 @@ A **symlink is a special file that stores path url to the gloabl store**, pointi
 - Instead of loading files from your project’s `node_modules/lodash`, it reads directly from the **global store copy**.
 
 ---
-
-### ✅ Key Benefit
-- Your `node_modules` stays **very small**.
-- All heavy files are in the **global store**, not duplicated across projects.
-- Future projects can instantly **reuse the same packages** without downloading again.
 
 ### Version Isolation – No Hoisting Conflicts  
 
