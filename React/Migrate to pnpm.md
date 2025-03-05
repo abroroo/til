@@ -45,8 +45,6 @@ node_modules/
 
 Each symlink just points to the real files in the global store.
 
----
-
 ### What’s a Symlink?
 
 It’s a file that contiants full path to global store location on disk. When you `import lodash`, Node follows the symlink to the global store and uses files from there.
