@@ -39,10 +39,10 @@ node_modules/
 └── .pnpm/
     ├── lodash@4.17.21/
     │   └── node_modules/
-    │       └── lodash/  # symlink to global store
+    │       └── lodash/  # symlink to global store: ~/.pnpm-store/v3/files/55/abc1234567
     ├── react@18.2.0/
         └── node_modules/
-            └── react/   # symlink to global store
+            └── react/   # symlink to global store: ~/.pnpm-store/v3/files/68/def9876543
 ```
 
 Each symlink just points to the real files in the global store.
