@@ -26,6 +26,8 @@ Every project reuses the same files if they already exist — so installs are mu
 
 ---
 
+<br>
+
 ### Example Project Node Modules with pnpm
 
 Your project’s `node_modules` looks like this:
@@ -50,6 +52,8 @@ Each symlink just points to the real files in the global store.
 It’s a file that contiants full path to global store location on disk. When you `import lodash`, Node follows the symlink to the global store and uses files from there.
 
 ---
+
+<br>
 
 ### Hoisting Problem (npm)
 
@@ -108,12 +112,16 @@ node_modules/
 
 ---
 
+<br>
+
 ### Lockfile Difference
 
 npm uses `package-lock.json` — it tracks dependencies but can get messy because of hoisting.  
 pnpm uses `pnpm-lock.yaml` — smaller, easier to read, and more accurate since it tracks dependencies **per package**, not per project.
 
 ---
+
+<br>
 
 ### Monorepo Handling
 
@@ -122,7 +130,9 @@ pnpm workspaces automatically link internal packages and reuse the global store 
 
 ---
 
-### Switching from npm to pnpm (Quick Steps)
+<br>
+
+### Switching from npm to pnpm
 
 1. Remove `node_modules` and `package-lock.json`:
 
